@@ -1,16 +1,76 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/login/login",
+			"style": {
+				// "navigationBarTitleText": "首页-个人验房"
+				"navigationStyle":"custom"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle":"custom"
 			}
-		}
-	],
+		},
+		{
+			"path": "pages/login/forget_password",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		{
+            "path" : "pages/login/writing_infomation",
+            "style" : {
+				"navigationBarTitleText": "填写资料"
+			}
+        }
+        ,{
+            "path" : "pages/property_inspection/property_inspection",
+            "style" : {"navigationStyle":"custom"}
+        }
+        ,{
+            "path" : "pages/air_detection/air_detection",
+            "style" : {"navigationStyle":"custom"}
+        }
+        ,{
+            "path" : "pages/personal/personal",
+            "style" : {"navigationStyle":"custom"}
+        }
+        ,{
+            "path" : "pages/location/location",
+            "style" : {"navigationStyle":"custom"}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		// "navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/190.jpg",
+	        "selectedIconPath": "static/106.jpg",
+	        "text": "个人验房"
+	    },
+		{
+	        "pagePath": "pages/property_inspection/property_inspection",
+	        "iconPath": "static/190.jpg",
+	        "selectedIconPath": "static/106.jpg",
+	        "text": "房产查验"
+	    },
+		{
+		    "pagePath": "pages/air_detection/air_detection",
+		    "iconPath": "static/190.jpg",
+		    "selectedIconPath": "static/106.jpg",
+		    "text": "空气检测"
+		}
+		]
 	}
 }

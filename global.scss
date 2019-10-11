@@ -1,0 +1,129 @@
+.clearfic{
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	//定义变量
+	$font-color: #2d7bf6;
+	$font-size: 30upx;
+// 登陆页面样式
+//app图标名字
+	.login_container{
+		width: 100%;
+		.login_icon{
+				width: 30%;
+				margin: 15% 35% 5% 35%;
+			}
+		.login_text{
+				display: flex;
+				justify-content: center;
+				font-size: 1.5em;
+			}
+	}
+		//企业账号输入框
+	.username_container{
+		border-bottom: #000 1px solid;
+		overflow: hidden;
+		margin: 5% 100upx 0 100upx;
+		padding: 2%;
+		.username_icon{
+			width: 50upx;
+			height: 50upx;
+			float: left;
+			margin-right: 5%;
+		}
+		.username_input{
+			float: left;
+		}
+	}
+		//密码输入框
+	.password_container{
+		border-bottom: #000 1px solid;
+		overflow: hidden;
+		margin: 5% 100upx 0 100upx;
+		padding: 2%;
+		.password_icon{
+			width: 50upx;
+			height: 50upx;
+			float: left;
+			margin-right: 5%;
+		}
+		.password_input{
+			float: left;
+		}
+	}
+	//提交按钮
+	.login_submit{
+		width: 550upx;
+		margin: 5% 100upx 0 100upx;
+	}
+	//忘记密码
+	.login_forgetpassword{
+		color:$font-color;
+		font-size: $font-size;
+		margin-top: 10%;
+		margin-left: 70%;
+	}
+
+
+//忘记密码页面样式
+	.forget_container{
+		width: 100%;
+		.f_input{
+			background: #eee;
+			border-bottom: #000 1px solid;
+			overflow: hidden;
+			padding: 2%;
+			height: 70upx;
+			.f_input_img{
+				width: 50upx;
+				height: 50upx;
+				float: left;
+				margin-right: 5%;
+			}
+			.verificationcode_input{
+				display: inline-block;
+				width: 50%;
+			}
+			.verificationcode_button{
+				display: inline-block;
+				float: right;
+				width: 30%;
+				font-size: 15upx;
+				
+			}
+			
+		}
+		.forget_complete{
+			position: absolute;
+			width: 100%;
+			bottom: 5%;
+		}
+	}
+	
+	
+//填写资料页面样式
+	.writing_container{
+		width: 100%;
+		.winput_container{
+			width: 100%;
+			background: #eee;
+			border-bottom: #000 1px solid;
+			overflow: hidden;
+			padding: 2%;
+			height: 70upx;
+		.write_text{
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+		.w_input{
+			float: left;
+		}
+		}
+		.write_complete{
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+		}
+	}
