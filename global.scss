@@ -3,9 +3,72 @@
 		display: block;
 		clear: both;
 	}
-	//定义变量
-	$font-color: #2d7bf6;
-	$font-size: 30upx;
+//定义变量
+	$font-color: #2d7bf6;//字体颜色
+	$font-size: 30upx;//字体大小
+	$navtop-color: #007AFF;
+//公用样式
+	//顶部导航条
+	.navtop{
+		width: 100%;
+		height: 100upx;
+		overflow: hidden;
+		background-color: $navtop-color;
+		.navtop_head{
+			width: 20%;
+			height: 100upx;
+			display: inline-block;
+			float: left;
+			text-align: center;
+			image{
+				width: 60%;
+				margin-top: 3%;
+				border-radius: 50%;
+			}
+		}
+		.navtop_location{
+			width: 79%;
+			height: 100upx;
+			display: inline-block;
+			float: right;
+			vertical-align: middle;
+			overflow: hidden;
+			white-space: nowrap;
+			image{
+				width: 50upx;
+				margin-top: 3%;
+				vertical-align: middle;
+			}
+			.location_textc{
+				width: 90%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				display: inline-block;
+				vertical-align: bottom;
+				text{
+					float: right;
+				}
+			}
+		}
+	}
+
+
+	//图标列表样式
+	.icon_container{
+		display: inline-block;
+		width: 15%;
+		margin: 5% 5% 0 5%;
+		text-align: center;
+		image{
+			width: 100%;
+		}
+		text{
+			font-size: 0.75em;
+		}
+	}
+
+
 // 登陆页面样式
 //app图标名字
 	.login_container{
@@ -127,3 +190,7 @@
 			width: 100%;
 		}
 	}
+
+
+//个人查验页面样式
+	

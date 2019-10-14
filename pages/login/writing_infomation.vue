@@ -39,7 +39,7 @@
 			landing:()=>{
 				uni.reLaunch({
 					url: '../property_inspection/property_inspection',
-					success: res => {console.log("2")},
+					success: res => {console.log("填写资料完成，跳转成功")},
 					fail: () => {},
 					complete: () => {}
 				});

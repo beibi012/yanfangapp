@@ -1,6 +1,15 @@
 <script>
 	export default {
+		data(){
+			return{
+				
+			}
+		},
+		globalData: {  
+			navtop_headportrait:"../../static/166.jpg"
+		        },
 		onLaunch: function() {
+			
 			console.log('App Launch')
 		},
 		onShow: function() {

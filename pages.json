@@ -35,11 +35,15 @@
         }
         ,{
             "path" : "pages/personal/personal",
-            "style" : {"navigationStyle":"custom"}
+            "style" : {"navigationBarTitleText": "系统设置"}
         }
         ,{
             "path" : "pages/location/location",
-            "style" : {"navigationStyle":"custom"}
+            "style" : {"navigationBarTitleText": "定位"}
+        }
+        ,{
+            "path" : "pages/index/recheck/recheck",
+            "style" : {}
         }
     ],
 	"globalStyle": {

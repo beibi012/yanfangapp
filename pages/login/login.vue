@@ -31,11 +31,12 @@
 				uni.navigateTo({
 					url: 'writing_infomation',
 					success: res => {
-						console.log("a")
+						console.log("企业账户填写完成，页面跳转")
 					},
 					fail: () => {},
 					complete: () => {}
 				});
+				
 			}
 		}
 	}
