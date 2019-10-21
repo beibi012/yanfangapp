@@ -1,5 +1,5 @@
 <template>
-	<view>问题列表</view>
+	<view>新增</view>
 </template>
 
 <script>

@@ -1,0 +1,1 @@
+<view class="feedback_container"><form data-event-opts="{{[['submit',[['feedback_submit',['$event']]]]]}}" bindsubmit="__e"><text class="feedback_title">反馈</text><textarea class="feedback" value="" name="feedback"></textarea><button form-type="submit" type="primary">提交</button></form></view>

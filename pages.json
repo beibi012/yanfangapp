@@ -2,48 +2,128 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/login/login",
-			"style": {
-				// "navigationBarTitleText": "首页-个人验房"
-				"navigationStyle":"custom"
-			}
+			"style": {"navigationStyle":"custom"}
 		},
+				{
+					"path" : "pages/login/writing_infomation",
+					"style" : {"navigationBarTitleText": "填写资料"}
+				},
+				{
+					"path": "pages/login/forget_password",
+					"style": {"navigationBarTitleText": "找回密码"}
+				},
 		{
 			"path": "pages/index/index",
-			"style": {
-				"navigationStyle":"custom"
-			}
+			"style": {"navigationStyle":"custom"}
 		},
+			{
+				"path" : "pages/index/newly",
+				"style" : {"navigationBarTitleText": "新增"}
+			},
+				{
+					"path" : "pages/index/newly/basic_information",
+					"style" : {"navigationBarTitleText": "个人信息"}
+				},{
+					"path" : "pages/index/newly/feedback",
+					"style" : {"navigationBarTitleText": "反馈"}
+				},{
+					"path" : "pages/index/newly/measure",
+					"style" : {"navigationBarTitleText": "实测实量"}
+				},{
+					"path" : "pages/index/newly/take_notes",
+					"style" : {"navigationBarTitleText": "登记问题"}
+				},
+			{
+				"path" : "pages/index/recheck",
+				"style" : {"navigationBarTitleText": "复检"}
+			},
+				{
+					"path" : "pages/index/recheck/newly_problem",
+					"style" : {"navigationBarTitleText": "新增问题"}
+				},{
+					"path" : "pages/index/recheck/problem_list",
+					"style" : {"navigationBarTitleText": "问题列表"}
+				},
+			{
+				"path" : "pages/index/search",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/index/search/details",
+				"style" : {"navigationStyle":"custom"}
+			},{
+				"path" : "pages/index/search/problem_details",
+				"style" : {"navigationBarTitleText": "问题详情"}
+			},{
+				"path" : "pages/index/search/rectification",
+				"style" : {"navigationBarTitleText": "问题详情"}//已整改
+			},{
+				"path" : "pages/index/search/unqualified",
+				"style" : {"navigationBarTitleText": "不合格"}//说明原因
+			},
 		{
-			"path": "pages/login/forget_password",
-			"style": {
-				"navigationBarTitleText": "找回密码"
-			}
+			"path" : "pages/index/remind",
+			"style" : {"navigationBarTitleText": "任务提醒"}
 		},
+			{
+				"path" : "pages/index/remind/remind_details",
+				"style" : {"navigationBarTitleText": "任务详情"}
+			},	
 		{
-            "path" : "pages/login/writing_infomation",
-            "style" : {
-				"navigationBarTitleText": "填写资料"
-			}
-        }
-        ,{
             "path" : "pages/property_inspection/property_inspection",
             "style" : {"navigationStyle":"custom"}
-        }
-        ,{
+        },
+			{
+				"path" : "pages/property_inspection/developer/developer",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/all_states",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/complete",
+				"style" : {"navigationBarTitleText": "问题详情"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/details",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/problem_details",
+				"style" : {"navigationBarTitleText": "问题详情"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/simulate",
+				"style" : {"navigationBarTitleText": "模拟验房"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/take_notes",
+				"style" : {"navigationBarTitleText": "登记问题"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/all_flats",
+				"style" : {"navigationBarTitleText": "专项检测"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/all_numbers",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/special_item",
+				"style" : {"navigationBarTitleText": "专项检查"}
+			},
+		{
             "path" : "pages/air_detection/air_detection",
             "style" : {"navigationStyle":"custom"}
-        }
-        ,{
+        },
+		{
             "path" : "pages/personal/personal",
             "style" : {"navigationBarTitleText": "系统设置"}
-        }
-        ,{
+        },
+		{
             "path" : "pages/location/location",
             "style" : {"navigationBarTitleText": "定位"}
-        }
-        ,{
-            "path" : "pages/index/recheck/recheck",
-            "style" : {}
         }
     ],
 	"globalStyle": {

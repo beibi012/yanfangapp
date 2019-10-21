@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/writing_infomation",
+    "pages/login/forget_password",
+    "pages/index/index",
+    "pages/index/newly",
+    "pages/index/newly/basic_information",
+    "pages/index/newly/feedback",
+    "pages/index/newly/measure",
+    "pages/index/newly/take_notes",
+    "pages/index/recheck",
+    "pages/index/recheck/newly_problem",
+    "pages/index/recheck/problem_list",
+    "pages/index/search",
+    "pages/index/search/details",
+    "pages/index/search/problem_details",
+    "pages/index/search/rectification",
+    "pages/index/search/unqualified",
+    "pages/index/remind",
+    "pages/index/remind/remind_details",
+    "pages/property_inspection/property_inspection",
+    "pages/property_inspection/developer/developer",
+    "pages/property_inspection/developer/simulate/all_states",
+    "pages/property_inspection/developer/simulate/complete",
+    "pages/property_inspection/developer/simulate/details",
+    "pages/property_inspection/developer/simulate/problem_details",
+    "pages/property_inspection/developer/simulate/simulate",
+    "pages/property_inspection/developer/simulate/take_notes",
+    "pages/property_inspection/developer/all_flats/all_flats",
+    "pages/property_inspection/developer/all_flats/all_numbers",
+    "pages/property_inspection/developer/all_flats/special_item",
+    "pages/air_detection/air_detection",
+    "pages/personal/personal",
+    "pages/location/location"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/190.jpg",
+        "selectedIconPath": "static/106.jpg",
+        "text": "个人验房"
+      },
+      {
+        "pagePath": "pages/property_inspection/property_inspection",
+        "iconPath": "static/190.jpg",
+        "selectedIconPath": "static/106.jpg",
+        "text": "房产查验"
+      },
+      {
+        "pagePath": "pages/air_detection/air_detection",
+        "iconPath": "static/190.jpg",
+        "selectedIconPath": "static/106.jpg",
+        "text": "空气检测"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "yanfang-app",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
+}

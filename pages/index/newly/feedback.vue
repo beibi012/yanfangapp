@@ -1,8 +1,27 @@
 <template>
-	<view>反馈</view>
+	<view class="feedback_container">
+		<form @submit="feedback_submit">
+			<text class="feedback_title">反馈</text>
+			<textarea class="feedback" value="" name="feedback" />
+			<button form-type="submit" type="primary">提交</button>
+		</form>
+		
+	</view>
 </template>
 
 <script>
+	export default{
+		data(){
+			return{
+				
+			}
+		},
+		methods:{
+			feedback_submit:(e)=>{
+				console.log(e)
+			}
+		}
+	}
 </script>
 
 <style>

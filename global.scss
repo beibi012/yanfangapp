@@ -3,12 +3,20 @@
 		display: block;
 		clear: both;
 	}
+
 //定义变量
 	$font-color: #2d7bf6;//字体颜色
 	$font-size: 30upx;//字体大小
-	$navtop-color: #007AFF;
+	$navtop-color: #c0c0c0;//顶部导航条背景颜色
+	$bg:#ccdfee;
 //公用样式
-	//顶部导航条
+//nav顶部的div
+	.app_top{
+		height: 60upx;
+	}
+	
+	
+	//navbar顶部导航条（头像、定位）
 	.navtop{
 		width: 100%;
 		height: 100upx;
@@ -52,7 +60,41 @@
 			}
 		}
 	}
-
+	
+	
+	//普通顶部导航条（只有title、返回）
+	.normal_nav{
+		width: 100%;
+		height: 90upx;
+		white-space: nowrap;
+		background-color: #007AFF;
+		border-top: black 1px solid;
+		border-bottom: black 1px solid;
+		.left{
+			display: inline-block;
+			width: 90upx;
+			height: 90upx;
+			text-align: center;
+			line-height: 90upx;
+			float: left;
+		}
+		.title{
+			display: inline-block;
+			width: 74%;
+			height: 90upx;
+			text-align: center;
+			line-height: 90upx;
+			float: left;
+		}
+		.right{
+			display: inline-block;
+			width: 90upx;
+			height: 90upx;
+			text-align: center;
+			line-height: 90upx;
+			float: left;
+		}
+	}
 
 	//图标列表样式
 	.icon_container{
@@ -67,6 +109,307 @@
 			font-size: 0.75em;
 		}
 	}
+	
+	
+	//form表单样式
+	.bi_c{
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 70upx;
+		align-items: center;
+		margin-bottom: 2%;
+		overflow: hidden;
+		.bi_text{
+			display: flex;
+			width: 28%;
+			height: 45upx;
+			font-size: 30upx;
+			margin-left: 2%;
+		}
+		.bi_input{
+			display: flex;
+			background-color: #fff;
+			width: 65%;
+		}
+		.bi_picker{
+			position: relative;
+			display: inline-block;
+			white-space: nowrap;
+			background-color: #fff;
+			width: 487.5upx;
+			font-size: 30upx;
+			.arrow{
+				position: relative;
+				left: 350upx;
+				top: 5upx;
+				display: inline-block;
+				width: 37.5upx;
+				height: 25upx;
+				overflow: hidden;
+				line-height: 25upx;
+				.arrowbottom{
+					position: relative;
+					top:-14upx;
+					left: 10upx;
+					width: 25upx;
+					height: 25upx;
+					background-color: black;
+					transform:rotate(135deg);
+				}
+			}
+		}
+		.radio{
+			width: 65%;
+			white-space: nowrap;
+			.radio_option{
+				display: inline-block;
+				margin-left: 20%;
+			}
+			
+		}
+		
+	}
+	
+	
+	//搜索框
+	.search_cont{
+		display: inline-block;
+		height: 60upx;
+		margin-left: 2%;
+		margin-top: 2%;
+		width: 80%;
+		
+		white-space: nowrap;
+		.search{
+		display: inline-block;
+		width: 100%;
+		background-color: #fff;
+		height: 60upx;
+		vertical-align: bottom;
+		font-size: 30upx;
+		border-bottom: 1px black solid;
+		border-top: 1px black solid;
+	}
+	.search_left{
+		display: inline-block;
+		vertical-align: bottom;
+		width: 60upx;
+		height: 60upx;
+		background-color: #fff;
+		border-radius: 50% 0 0 50%;
+		border-top: black solid 1px;
+		border-left: black solid 1px;
+		border-bottom: black solid 1px;
+		.search_icon{
+			position: relative;
+			top:10upx;
+			left: 10upx;
+			width: 40upx;
+			height: 40upx;
+			border-radius: 50%;
+		}
+	}
+	.search_right{
+		display: inline-block;
+		width: 60upx;
+		height: 60upx;
+		background-color: #fff;
+		vertical-align: bottom;
+		border-radius: 0 50% 50% 0;
+		border-top: black solid 1px;
+		border-right: black solid 1px;
+		border-bottom: black solid 1px;
+	}
+	}
+	
+	
+	//登记问题页面通用样式
+	.prob_container{
+		border-top: 1px solid black;
+	}
+	.tn_title{
+		width: 100%;
+		height: 80upx;
+		line-height: 80upx;
+		font-size: 30upx;
+		font-weight: bold;
+		text-indent: 2%;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		white-space: nowrap;
+	}
+	.add_title{
+		width: 100%;
+		height: 80upx;
+		line-height: 80upx;
+		font-size: 30upx;
+		font-weight: bold;
+		text-indent: 2%;
+		border-top: 1px solid black;
+		white-space: nowrap;
+		.addnotes{
+			display: inline-block;
+			position: relative;
+			width: 50upx;
+			height: 50upx;
+			font-size: 50upx;
+			border: 1px black solid;
+			border-radius: 50%;
+			float: right;
+			margin:15upx 8% 15upx 0;
+			text{
+				position: absolute;
+				    top: -8px;
+				    left: 3px;
+			}
+		}
+	}
+	.basic_problem{
+		width: 100%;
+		}
+		.basic_container{
+			width: 100%;
+			height: 80upx;
+			line-height: 80upx;
+			overflow: hidden;
+			white-space: nowrap;
+			text{
+				font-size: 30upx;
+			}
+			.picker{
+				display: inline-block;
+				width: 65%;
+				height: 50upx;
+				font-size: 30upx;
+				margin-top: 2%;
+				line-height: 50upx;
+				background-color: #fff;
+				.arrow{
+					position: relative;
+					float: right;
+					top: 5upx;
+					display: inline-block;
+					width: 37.5upx;
+					height: 25upx;
+					overflow: hidden;
+					margin-top: 3%;
+					margin-right: 2%;
+					.arrowbottom{
+						position: relative;
+						top:-14upx;
+						left: 10upx;
+						width: 25upx;
+						height: 25upx;
+						background-color: black;
+						transform:rotate(135deg);
+					}
+				}
+			}
+			.basic_title{
+				width: 25%;
+				display: inline-block;
+				margin-left: 2%;
+				vertical-align: top;
+				float: left;
+			}
+			.basic_content{
+				display: inline-block;
+				width: 65%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow:ellipsis;
+				vertical-align: top;
+			}
+			
+		}
+		.basic_container2{
+			width: 100%;
+			.b{
+				width: 100%;
+				height: 100upx;
+			}
+			.basic_title{
+				width: 100%;
+				display: inline-block;
+				margin-left: 2%;
+				vertical-align: top;
+				font-size: 30upx;
+			}
+			.textarea{
+				background-color: #fff;
+				display: block;
+				width: 96%;
+				margin: 2% 2%;
+				height: 150upx;
+			}
+			.picture{
+				background-color: #fff;
+				width: 96%;
+				margin: 2% 2%;
+				height: 150upx;
+				overflow: hidden;
+				line-height: 150upx;
+				.addpic{
+					display: inline-block;
+					width: 50upx;
+					height:50upx;
+					font-size: 60upx;
+					border: 1px solid black;
+					border-radius: 50%;
+					margin:50upx 0 50upx 2%;
+					position: relative;
+					text{
+						position: absolute;
+						bottom:-47upx;
+						right: 6upx;
+					}
+					
+				}
+				.pic_container{
+					display: inline-block;
+					position: relative;
+					width: 140upx;
+					height: 150upx;
+					.pic{
+					display: inline-block;
+					width: 66%;
+					height: 66%;
+					margin: 17% ;
+					z-index: 0;
+				}
+				.del{
+					display: inline-block;
+					position: absolute;
+					color: #fff;
+					font-weight: bold;
+					background-color: red;
+					border: red 1px solid;
+					border-radius: 50%;
+					left: 66%;
+					width: 40upx;
+					height: 40upx;
+					vertical-align: top;
+					text-align: center;
+					view{
+						display: inline-block;
+						position: absolute;
+						top: -60upx;
+						left: 0;
+						width: 40upx;
+						height: 40upx;
+					}
+					
+				}
+				}
+				
+			}
+		}
+		.basic_container3{
+			width: 100%;
+			height: 300upx;
+		}
+	
 
 
 // 登陆页面样式
@@ -96,6 +439,7 @@
 			margin-right: 5%;
 		}
 		.username_input{
+			display: inline-block;
 			float: left;
 		}
 	}
@@ -113,6 +457,7 @@
 		}
 		.password_input{
 			float: left;
+			display: inline-block;
 		}
 	}
 	//提交按钮
@@ -190,7 +535,649 @@
 			width: 100%;
 		}
 	}
+	
+	
+	
 
 
 //个人查验页面样式
+.personal_inspection{
+	.remind{
+		width: 100%;
+		height: 100upx;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		position: fixed;
+		bottom: 120upx;//手机上要写0
+		white-space: nowrap;
+		overflow: hidden;
+		.remind_icon{
+			display: inline-block;
+			width: 80upx;
+			height: 80upx;
+			margin: 10upx 2% 10upx 2%;
+			float: left;
+		}
+		.remind_text{
+			width: 65%;
+			height: 80upx;
+			margin: 10upx 0;
+			float: left;
+			.textlist{
+				width: 100%;
+				height: 40upx;
+				
+				.textcontent{
+				display: inline-block;
+				width: 70%;
+				font-size: 35upx;
+				vertical-align: top;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.time{
+				display: inline-block;
+				width: 30%;
+				font-size: 25upx;
+				color: #C0C0C0;
+				vertical-align: top;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			}
+			
+		}
+		.unread_container{
+			width: 19%;
+			height: 80upx;
+			float: left;
+			margin: 10upx 0;
+			.unread_text{
+				font-size: 25upx;
+			}
+			.gt{
+				font-size: 50upx;
+				color: #C0C0C0;
+			}
+		}
+	}
+}
+	//任务提醒
+	.remind_container{
+		width: 100%;
+		.task{
+			width: 96%;
+			height: 180upx;
+			margin: 2% 2% 0 2%;
+			border: 1px solid black;
+			view{
+				height: 25%;
+				font-size: 35upx;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				vertical-align: top;
+			}
+			.details{
+				border-top: 1px solid black;
+				font-size: 30upx;
+				position: relative;
+				.gt{
+					position: absolute;
+					right: 0;
+					top: -12upx;
+					display: inline-block;
+					width: 40upx;
+					height: 100%;
+					font-size: 40upx;
+					color: #C0C0C0;
+					float: right;
+					float: top;
+					margin-right: 2%;
+					vertical-align: top;
+				}
+			}
+		}
+	}
 	
+	
+	//任务详情
+	.remind_details{
+		width: 100%;
+		view{
+			margin-left: 5%;
+			height: 60upx;
+			margin-top: 2%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		
+	}
+
+
+	//个人信息
+	.bi_container{
+		background-color: $bg;
+	}
+	
+	
+	//实测实量
+	.measure_container{
+		width: 100%;
+		background-color: $bg;
+		.m_title{
+			width: 100%;
+			height: 80upx;
+			border-bottom: black 1upx solid;
+			border-top: black 1upx solid;
+			line-height: 80upx;
+			font-size: 35upx;
+			text-indent: 2%;
+		}
+		.m_content{
+			display: inline-block;
+			width: 100%;
+			margin-top: 5%;
+			padding-bottom: 2%;
+			line-height: 50upx;
+			font-size: 30upx;
+			text-indent: 2%;
+			white-space: nowrap;
+			border-bottom: black 1upx solid;
+			.m_standard{
+				display: inline-block;
+				margin-left: 65%;
+			}
+			.m_inputcontent{
+				width: 100%;
+				margin-top: 3%;
+				.m_inputtext{
+					display: inline-block;
+					width: 20%;
+					vertical-align: top;
+					text{
+						color: #808080;
+					}
+				}
+				.m_inputvalue{
+					display: inline-block;
+					width: 50%;
+					background-color: #fff;
+					
+				}
+				.m_inputstandard{
+					display: inline-block;
+					width: 20%;
+					background-color: #fff;
+					margin-left: 2%;
+				}
+			}
+		}
+		.m_bottom{
+			width: 100%;
+			.m_title2{
+				display: inline-block;
+				width: 100%;
+				line-height: 50upx;
+				font-size: 30upx;
+				text-indent: 2%;
+				white-space: nowrap;
+			}
+			.m_bottominput{
+				display: inline-block;
+				width: 15%;
+				margin-left: 4%;
+				margin-top: 2%;
+				background-color: #fff;
+			}
+		}
+		.m_submit{
+			margin-top: 5%;
+		}
+	}
+	
+	
+	//登记问题页面
+	.takenotes_container{
+		background-color: $bg;
+		width: 100%;
+	}
+		
+		
+		
+	
+	
+	
+	//反馈
+	.feedback_container{
+		width: 100%;
+		background-color: $bg;
+		.feedback_title{
+			width: 100%;
+			display: inline-block;
+			margin-left: 2%;
+			font-size: 30upx;
+		}
+		.feedback{
+			background-color: #fff;
+			width: 96%;
+			margin: 2%;
+		}
+	}
+	
+	
+	//复检页面
+	.recheck_comtainer{
+		width: 100%;
+		background-color: $bg;
+	}
+	.scc{
+		width: 100%;
+		}
+		
+	
+	
+	//搜索页面
+	.search_container{
+		margin-top: 60upx;
+		width: 100%;
+		background-color: $bg;
+		min-height: 1280upx;
+		
+	}
+	.search_nav{
+		width: 100%;
+		height: 90upx;
+		white-space: nowrap;
+		background-color: #fff;
+		border-bottom: 1px solid black;
+		.back{
+			display: inline-block;
+			width: 90upx;
+			height: 90upx;
+			float: left;
+			line-height: 90upx;
+			text-align: center;
+		}
+		.searchnav_container{
+			display: inline-block;
+			width: 65%;
+			float: left;
+		}
+		.search_button{
+			display: inline-block;
+			width: 90upx;
+			height: 90upx;
+			float: left;
+			margin-left: 7%;
+			line-height: 90upx;
+			text-align: center;
+		}
+	}
+	.search_content{
+		width: 100%;
+		height: 180upx;
+		border-bottom: 1px solid black;
+		
+		.developer{
+			margin-top: 1%;
+			font-size: 30upx;
+			text-indent: 20upx;
+		}
+		.householder{
+			display: inline-block;
+			font-size: 30upx;
+			width: 25%;
+			float: left;
+			text-indent: 20upx;
+		}
+		.address{
+			display: inline-block;
+			width: 75%;
+			font-size: 30upx;
+			float: left;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.checkitem{
+			display: inline-block;
+			font-size: 28upx;
+			width: 25%;
+			float: left;
+			text-indent: 20upx;
+			color: #C0C0C0;
+		}
+		.problem_content{
+			display: inline-block;
+			width: 75%;
+			font-size: 30upx;
+			float: left;
+			color: #C0C0C0;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.date{
+			display: inline-block;
+			font-size: 28upx;
+			width: 25%;
+			float: left;
+			text-indent: 20upx;
+			color: #C0C0C0;
+		}
+		.time{
+			display: inline-block;
+			width: 75%;
+			font-size: 30upx;
+			float: left;
+			color: #C0C0C0;
+		}
+	}
+	
+	
+	//详情
+	.details_content{
+		.picker_container{
+			height: 50upx;
+			white-space: nowrap;
+			.picker{
+				display: inline-block;
+				width: 30%;
+				float: left;
+				border: black 1px solid;
+				border-radius: 6%;
+				margin: 1.3%;
+			}
+		}
+		.newly_problem{
+			width: 100%;
+			.newly_botton{
+				display: inline-block;
+				width: 70%;
+				margin: 2% 15% 2% 15%;
+				border: black 1px solid;
+				border-radius: 3%;
+				text-align: center;
+			}
+		
+		}
+		.img_container{
+			margin-bottom: 2%;
+			.img{
+				display: block;
+				width: 90%;
+				margin: 0 5% 0 5%;
+			}
+		}
+		
+		.problemlist{
+			width: 100%;
+			background-color: #eeeeee;
+			height: 560upx;
+			overflow: hidden;
+			.problem:first-child{
+				border-top: black 1px solid;
+			}
+			.problem{
+				width: 100%;
+				height: 140upx;
+				border-bottom: black 1px solid;
+				.main_item{
+					float: left;
+					display: inline-block;
+					width: 70%;
+					text-indent: 35upx;
+					font-size: 35upx;
+					image{
+						width: 35upx;
+					}
+				}
+				.problem_content{
+					display: inline-block;
+					float: left;
+					width: 70%;
+					text-indent: 70upx;
+					font-size: 30upx;
+					color: #808080;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+				.date{
+					display: inline-block;
+					width: 70%;
+					float: left;
+					text-indent: 70upx;
+					font-size: 30upx;
+					color: #808080;
+				}
+				.sate{
+					display: inline-block;
+					font-size: 35upx;
+					width: 30%;
+					height: 140upx;
+					text-align: center;
+					line-height: 140upx;
+					position: relative;
+					right: 0upx;
+					top:0upx;
+					text{
+						margin-left: 5upx;
+					}
+					.blackdot{
+						display: inline-block;
+						width: 28upx;
+						height: 28upx;
+						background-color: #000;
+						border: black 1px solid;
+						border-radius: 50%;
+						
+					}
+					.whitedot{
+						display: inline-block;
+						width:28upx;
+						height: 28upx;
+						background-color: #fff;
+						border: black 1px solid;
+						border-radius: 50%;
+						
+					}
+				}
+			}
+		}
+		.progress_container{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: #fff;
+			.progress{
+				
+				width: 90%;
+				margin: 0 5%;
+				
+				.text{
+					font-size: 35upx;
+				}
+			}
+		}
+		
+	}
+	
+	
+	//复查-问题列表
+	.problemlist_container{
+		.search_content:first-child{
+			border-top: 1px black solid;
+		}
+	}
+	
+	
+//房产查验
+.property_inspection{
+	width: 100%;
+	.developer{
+		height: 150upx;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		.developer_icon{
+			display: inline-block;
+			width: 100upx;
+			height: 100upx;
+			margin: 25upx 5% 25upx 5%;
+			float: left;
+			
+		}
+		.developer_name{
+			display: inline-block;
+			float: left;
+			font-size: 50upx;
+			margin: 45upx 0 55upx 0;
+		}
+	}
+}
+
+
+	//developer(套用公共格式)
+	
+	
+	//模拟验房
+	.simulate_container{
+		.simulate_list{
+			background-color: $bg;
+			height: 120upx;
+			border: 1px solid black;
+			.list_content{
+				display: inline-block;
+				width: 75%;
+				font-size: 35upx;
+				margin: 38upx 2% 0 2%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				float: left;
+			}
+			.list_button{
+				display: inline-block;
+				width: 12%;
+				height: 60upx;
+				line-height: 60upx;
+				float: left;
+				font-size: 30upx;
+				margin: 30upx 0 0 4%;
+				text-align: center;
+				border: 1px solid black;
+				background-color: #fff;
+				border-radius: 15%;
+				vertical-align: bottom;
+				
+			}
+		}
+	}
+	
+	
+	//楼房整改状态
+	.states{
+		width: 100%;
+		height: 100upx;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		white-space: nowrap;
+		overflow: hidden;
+		.state:first-child{
+			border-left: 0;
+		}
+		.state{
+			display: inline-block;
+			width: 20%;
+			height: 100upx;
+			vertical-align: top;
+			border-left: 1px solid black;
+			view{
+				height: 50upx;
+				text-align: center;
+			}
+		}
+	}
+	.storeys{
+		width: 100%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background-color: $bg;
+		.storey{
+			height: 60upx;
+			font-size: 35upx;
+			line-height: 60upx;
+			text-indent: 2%;
+		}
+		.number_container{
+			// height: 100upx;
+			font-size: 35upx;
+			padding-bottom: 20upx;
+			.storey_number{
+				display: inline-block;
+				width: 20%;
+				line-height: 60upx;
+				text-align: center;
+				height: 60upx;
+				margin-left: 4%;
+				margin-top: 20upx;
+				border: 1px solid black;
+				border-radius: 10%;
+				background-color: #fff;
+			}
+			.undelivered{
+				background-color: #fff;
+			}
+			.nochange{
+				background-color: #ddd;
+			}
+			.changed{
+				background-color: #bbb;
+			}
+			.delivered{
+				background-color: #999;
+			}
+		}
+	}
+	
+	
+	//整改情况页面
+	.pr_problemdetails{
+		background-color: $bg;
+		width: 100%;
+		.rectification{
+			width: 100%;
+			height: 80upx;
+			border-top: 1px solid black;
+			line-height: 80upx;
+			view{
+				display: inline-block;
+				margin-left: 2%;
+				font-size: 50upx;
+				font-weight: bold;
+			}
+			text{
+				display: inline-block;
+				margin-left: 2%;
+			}
+		}
+		.line{
+			border-top: 1px solid black;
+		}
+		.pic_nochange{
+			widows: 100%;
+			height: 150upx;
+			margin-bottom: 2%;
+			.nochange_img{
+				display: inline-block;
+				margin: 25upx 0 25upx 2%;
+				width: 100upx;
+				height: 100upx;
+			}
+		}
+	}
