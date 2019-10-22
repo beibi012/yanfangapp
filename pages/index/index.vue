@@ -1,9 +1,10 @@
 <template>
+	<!-- 个人查验样式p502 -->
 	<view class="personal_inspection">
+		<!-- 顶部导航条  css公用部分p13 p19-->
 		<view class="app_top"></view>
-		<!-- 顶部导航条 -->
 		<view class="navtop">
-			<navigator class="navtop_head" url="">
+			<navigator class="navtop_head" url="../personal/setting">
 				<image src="../../static/166.jpg" mode="widthFix"></image>
 			</navigator>
 			<navigator class="navtop_location" url="">
@@ -15,6 +16,7 @@
 		</view>
 		<!-- 内容列表 -->
 		<view class="pi_container">
+			<!-- css公用部分图标列表样式P100 -->
 			<navigator class="icon_container" v-for="e in list" :url="e.url" animation-type="pop-in" animation-duration="300">
 			<image :src="e.src" mode="widthFix"></image>
 			<text>{{e.name}}</text>

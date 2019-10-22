@@ -1,7 +1,7 @@
 <template>
 	<view>
+		<!-- 套用楼房整改样式p984-->
 		<view class="app_top">
-			
 		</view>
 		<view class="normal_nav">
 			<navigator class="left" open-type="navigateBack">返回</navigator>
@@ -17,7 +17,7 @@
 		<view class="storeys" v-for="storey in storeys">
 			<view class="storey">第{{storey}}楼</view>
 			<view class="number_container">
-				<navigator class="storey_number" v-for="n in storey_numbers" url="details" :class="n.state">{{storey}}0{{n.number}}</navigator>
+				<navigator class="storey_number" v-for="n in storey_numbers" url="special_item" :class="n.state">{{storey}}0{{n.number}}</navigator>
 			</view>
 		</view>
 	</view>

@@ -1,5 +1,6 @@
 <template>
 <view>
+	<!-- 公用样式导航条 -->
 	<view class="app_top"></view>
 	<view class="normal_nav">
 		<navigator class="left" open-type="navigateBack">返回</navigator>

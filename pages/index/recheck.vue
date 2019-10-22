@@ -1,6 +1,7 @@
 <template>
 	<view class="recheck_comtainer">
 		<view class="scc">
+			<!-- css搜索框样式p317 -->
 			<view class="search_cont">
 			<view class="search_left">
 				<image class="search_icon" src="../../static/167.jpg" mode="widthFix"></image>
@@ -10,7 +11,7 @@
 		</view>
 		</view>
 		
-		
+		<!-- css公用部分//图标列表样式 p100 -->
 		<navigator class="icon_container" v-for="e in list" :url="e.url">
 			<image :src="e.src" mode="widthFix"></image>
 			<text>{{e.name}}</text>

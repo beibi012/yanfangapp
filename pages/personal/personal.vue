@@ -1,6 +1,11 @@
 <template>
 	<view>
-		个人中心
+		<view class="setting">
+			
+		</view>
+		<navigator class="about" url="about">
+			
+		</navigator>
 	</view>
 </template>
 

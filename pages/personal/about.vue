@@ -1,0 +1,30 @@
+<template>
+	<view>
+		<view class="aboutapp">
+			<view class="icon">
+				<image src="../../static/166.jpg" mode="widthFix"></image>
+			</view>
+			<view class="explain">
+				<text class="text">Bronze age:a period of human culture between the Stone age and the Iron age, characterized by weapons and implements made of bronzeBronze age:a period of human culture between the Stone age and the Iron age, characterized by weapons and implements made of bronzeBronze</text>
+			</view>
+			
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>

@@ -1,68 +1,69 @@
 <template>
 	<view class="bi_container">
 		<form @submit="submitInfo">
-			<view class="bi_c">
-				<text class="bi_text">委托人/单位</text>
-				<input class="bi_input" name="bi_client" type="text" value="" >
+			<!-- form表单基础样式输入框、下拉框、显示内容、单选p116 -->
+			<view class="basic_container">
+				<text class="basic_title">委托人/单位</text>
+				<input class="basic_input" name="bi_client" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">联系方式</text>
-				<input class="bi_input" name="bi_cellnumber" type="number" value="" >
+			<view class="basic_container">
+				<text class="basic_title">联系方式</text>
+				<input class="basic_input" name="bi_cellnumber" type="number" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">检查项目名称</text>
-				<input class="bi_input" name="bi_project" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">检查项目名称</text>
+				<input class="basic_input" name="bi_project" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">单元房号</text>
-				<input class="bi_input" name="bi_roomnumber" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">单元房号</text>
+				<input class="basic_input" name="bi_roomnumber" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">套内建筑面积</text>
-				<input class="bi_input" name="bi_floorspace" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">套内建筑面积</text>
+				<input class="basic_input" name="bi_floorspace" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">装修程度</text>
+			<view class="basic_container">
+				<text class="basic_title">装修程度</text>
 				<picker name='bi_property_type' :range="array" :value="index" @change="changeProprtytype" >
-				<view class="bi_picker">{{array[index]}}
+				<view class="basic_picker">{{array[index]}}
 				<view class="arrow">
 					<view class="arrowbottom"></view>
 					</view>
 					</view>
 				</picker>
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">房屋类型</text>
-				<input class="bi_input" name="bi_housetype" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">房屋类型</text>
+				<input class="basic_input" name="bi_housetype" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">检查期是否通电</text>
-				<radio-group name="bi_radio_electric" class="radio">
+			<view class="basic_container">
+				<text class="basic_title">检查期是否通电</text>
+				<radio-group class="basic_radio" name="bi_radio_electric">
 						<view class="radio_option"><radio value="yes" /><text>是</text></view>
 						<view class="radio_option"><radio value="no" /><text>否</text></view>
 				</radio-group>
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">检查期是否通水</text>
-				<radio-group name="bi_radio_water" class="radio">
+			<view class="basic_container">
+				<text class="basic_title">检查期是否通水</text>
+				<radio-group class="basic_radio" name="bi_radio_water">
 						<view class="radio_option"><radio value="yes" /><text>是</text></view>
 						<view class="radio_option"><radio value="no" /><text>否</text></view>
 				</radio-group>
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">现场检查人员</text>
-				<input class="bi_input" name="bi_inspectors" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">现场检查人员</text>
+				<input class="basic_input" name="bi_inspectors" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">报告编制人</text>
-				<input class="bi_input" name="bi_reporter" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">报告编制人</text>
+				<input class="basic_input" name="bi_reporter" type="text" value="" >
 			</view>
-			<view class="bi_c">
-				<text class="bi_text">实地验房时间</text>
-				<input class="bi_input" name="bi_time" type="text" value="" >
+			<view class="basic_container">
+				<text class="basic_title">实地验房时间</text>
+				<input class="basic_input" name="bi_time" type="text" value="" >
 			</view>
 			
-			<button form-type="submit">Submit</button>
+			<button form-type="submit" type="primary">提交</button>
 		</form>
 	</view>
 </template>

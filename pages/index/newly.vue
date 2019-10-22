@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<!-- 内容列表 -->
+		<!-- css公用部分//图标列表样式 p100 -->
 		<view class="pi_container">
 			<navigator class="icon_container" v-for="e in list" :url="e.url">
 			<image :src="e.src" mode="widthFix"></image>
