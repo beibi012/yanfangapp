@@ -1,4 +1,5 @@
 <template>
+	<!-- 套用模拟验房样式p949 -->
 	<view class="simulate_container">
 		<navigator class="simulate_list" v-for="e in flatslist" :url="'all_numbers?number='+e.number+'&unit='+e.unit">
 			<view class="list_content">{{e.number}}号楼房间-{{e.unit}}单元</view>

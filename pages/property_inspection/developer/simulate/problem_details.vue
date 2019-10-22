@@ -1,13 +1,16 @@
 <template>
 	<view class="pr_problemdetails">
-		<view class="rectification">
+		<view class="rectification" @click="aaa">
 			<view>|</view>
-			<text>未整改</text>
+			<text v-if="(changed==1)?false:true">未整改</text>
+			<text v-if="(changed==1)?true:false">已整改</text>
 		</view>
 		<form @submit="takenotes_submit">
-		<view class="tn_title">
+			<!-- 页面内黑色大标题p188 -->
+		<view class="basic_headline">
 			<text>基础信息</text>
 		</view>
+		<!-- 基础样式p116 -->
 		<view class="basic_problem">
 			<view class="basic_container">
 				<text class="basic_title">委托人/单位</text>
@@ -31,10 +34,10 @@
 			</view>
 			
 		</view>
-		<view class="add_title">
+		<view class="basic_headline">
 			<text>登记问题</text>
 		</view>
-		<view class="basic_problem line">
+		<view class="basic_problem">
 			<view class="basic_container">
 				<text class="basic_title">主体</text>
 				<text class="basic_content">客厅</text>
@@ -78,19 +81,10 @@
 				<text class="basic_title">责任单位</text>
 				<text class="basic_title">南宁大大地产商</text>
 			</view>
-			<view class="tn_title">
-				<text>检查依据</text>
+			<view class="pr_button" v-if="(changed==1)?false:true">
+				<view class="pass" open-type="navigateBack" @click="changeState">合格</view>
+				<navigator class="fail" url="fail">不合格</navigator>
 			</view>
-			<view class="basic_container3"></view>
-			<view class="tn_title">
-				<text>标准规范</text>
-			</view>
-			<view class="basic_container3"></view>
-			<view class="tn_title">
-				<text>查验声明</text>
-			</view>
-			<view class="basic_container3"></view>
-			<button form-type="submit" type="primary">提交</button>
 		</form>
 	</view>
 </template>
@@ -98,11 +92,15 @@
 <script>
 	var self;
 	export default{
-		onLoad() {
+		onLoad(e) {
 			self=this;
+			console.log(e)
+			self.changed=e.changed;
+			console.log(self.changed)
 		},
 		data(){
 			return{
+				changed:0,
 				pic_index:0,
 				pic:[],
 				preview:[],
@@ -179,6 +177,16 @@
 				uni.previewImage({
 					urls:self.preview
 				})
+			},
+			changeState:()=>{
+				self.changed=1;
+				uni.$emit('state',{changed:1});
+				uni.navigateBack({})
+
+
+			},
+			aaa:()=>{
+				console.log(self.changed)
 			}
 			}
 	}

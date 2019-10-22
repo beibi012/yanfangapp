@@ -106,48 +106,74 @@
 			width: 100%;
 		}
 		text{
-			font-size: 0.75em;
+			font-size: 25upx;
 		}
 	}
 	
 	
-	//form表单样式
-	.bi_c{
-		display: flex;
-		flex-wrap: nowrap;
+	
+	//form表单通用样式
+	.basic_container{  //基础表单容器样式
 		width: 100%;
-		height: 70upx;
-		align-items: center;
-		margin-bottom: 2%;
+		height: 80upx;
+		line-height: 80upx;
 		overflow: hidden;
-		.bi_text{
-			display: flex;
-			width: 28%;
-			height: 45upx;
+		white-space: nowrap;
+		text{
 			font-size: 30upx;
-			margin-left: 2%;
 		}
-		.bi_input{
-			display: flex;
-			background-color: #fff;
-			width: 65%;
-		}
-		.bi_picker{
-			position: relative;
+		.basic_title{  //表单标题基础样式
+			width: 20%;
+			height: 80upx;
 			display: inline-block;
+			margin-left: 2%;
+			float: left;
+		}
+		.basic_content{  //表单显示内容基础样式
+			display: inline-block;
+			width: 65%;
+			overflow: hidden;
 			white-space: nowrap;
+			text-overflow:ellipsis;
+			line-height: 80upx;
+		}
+		.basic_input{  //表单输入框基础样式
+			display: inline-block;
 			background-color: #fff;
-			width: 487.5upx;
+			width: 60%;
+			height: 50upx;
+			margin: 15upx 0 15upx 5%;
+			border-radius: 10upx;
+		}
+		.basic_radio{
+			width: 65%;
+			white-space: nowrap;
+			.radio_option{
+				display: inline-block;
+				margin-left: 20%;
+			}
+			
+		}
+		.basic_picker{  //下拉框基础样式
+			display: inline-block;
+			width: 60%;
+			height: 50upx;
 			font-size: 30upx;
+			margin: 15upx 0 15upx 5%;
+			line-height: 50upx;
+			background-color: #fff;
+			border-radius: 10upx;
+			text-indent: 2%;
 			.arrow{
 				position: relative;
-				left: 350upx;
+				float: right;
 				top: 5upx;
 				display: inline-block;
 				width: 37.5upx;
 				height: 25upx;
 				overflow: hidden;
-				line-height: 25upx;
+				margin-top: 3%;
+				margin-right: 2%;
 				.arrowbottom{
 					position: relative;
 					top:-14upx;
@@ -159,17 +185,160 @@
 				}
 			}
 		}
-		.radio{
-			width: 65%;
-			white-space: nowrap;
-			.radio_option{
-				display: inline-block;
-				margin-left: 20%;
-			}
-			
-		}
+		
 		
 	}
+	.basic_headline{  //页面内黑色大标题
+		width: 100%;
+		height: 80upx;
+		line-height: 80upx;
+		font-size: 30upx;
+		font-weight: bold;
+		text-indent: 2%;
+		margin-bottom: 2%;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		white-space: nowrap;
+	}
+	.add_headline{  //含有添加按钮的黑色大标题
+		width: 100%;
+		height: 80upx;
+		line-height: 80upx;
+		font-size: 30upx;
+		font-weight: bold;
+		text-indent: 2%;
+		margin-bottom: 2%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		white-space: nowrap;
+		.add_button{  //添加按钮
+			display: inline-block;
+			position: relative;
+			background-color: #fff;
+			width: 50upx;
+			height: 50upx;
+			font-size: 50upx;
+			border: 1px black solid;
+			border-radius: 50%;
+			float: right;
+			margin:15upx 3% 15upx 0;
+			text{
+				position: absolute;
+				    top: -18upx;
+				    left: 10upx;
+			}
+		}
+	}
+	.removebottomline{
+		border-bottom: 0;
+	}
+		
+		.basic_container2{  //表单多行文本、照片存放框基础样式
+			width: 100%;
+			.basic_title{  //独占一行的标题
+				width: 100%;
+				display: inline-block;
+				margin: 2%;
+				vertical-align: top;
+				font-size: 30upx;
+			}
+			.textarea{  //另起一行多行文本
+				background-color: #fff;
+				display: block;
+				width: 96%;
+				margin: 2% 2%;
+				height: 150upx;
+				border-radius: 10upx;
+			}
+			.basic_title2{  //与textarea2搭配的标题
+				width: 20%;
+				display: inline-block;
+				margin: 2%;
+				vertical-align: top;
+				font-size: 30upx;
+			}
+			.textarea2{  //在同一行的多行文本
+				background-color: #fff;
+				display: inline-block;
+				width: 60%;
+				margin: 2% 3%;
+				height: 150upx;
+				border-radius: 10upx;
+			}
+			.picture{
+				background-color: #fff;
+				width: 96%;
+				margin: 2% 2%;
+				height: 150upx;
+				overflow: hidden;
+				line-height: 150upx;
+				border-radius: 10upx;
+				.addpic{
+					display: inline-block;
+					width: 50upx;
+					height:50upx;
+					font-size: 60upx;
+					border: 1px solid black;
+					border-radius: 50%;
+					margin:50upx 0 50upx 2%;
+					position: relative;
+					text{
+						position: absolute;
+						bottom:-47upx;
+						right: 6upx;
+					}
+					
+				}
+				.pic_container{
+					display: inline-block;
+					position: relative;
+					width: 140upx;
+					height: 150upx;
+					border-radius: 5upx;
+					.pic{
+					display: inline-block;
+					border-radius: 5upx;
+					width: 66%;
+					height: 66%;
+					margin: 17% ;
+					z-index: 0;
+				}
+				.del{
+					display: inline-block;
+					position: absolute;
+					color: #fff;
+					font-weight: bold;
+					background-color: red;
+					border: red 1px solid;
+					border-radius: 50%;
+					left: 66%;
+					width: 40upx;
+					height: 40upx;
+					vertical-align: top;
+					text-align: center;
+					view{
+						display: inline-block;
+						position: absolute;
+						top: -60upx;
+						left: 0;
+						width: 40upx;
+						height: 40upx;
+					}
+					
+				}
+				}
+				
+			}
+			.b{
+				width: 100%;
+				height: 100upx;
+			}
+		}
+		//检查依据、标准规范、查验声明
+		.basic_container3{
+			width: 100%;
+			height: 300upx;
+		}
 	
 	
 	//搜索框
@@ -224,191 +393,8 @@
 	}
 	
 	
-	//登记问题页面通用样式
-	.prob_container{
-		border-top: 1px solid black;
-	}
-	.tn_title{
-		width: 100%;
-		height: 80upx;
-		line-height: 80upx;
-		font-size: 30upx;
-		font-weight: bold;
-		text-indent: 2%;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
-		white-space: nowrap;
-	}
-	.add_title{
-		width: 100%;
-		height: 80upx;
-		line-height: 80upx;
-		font-size: 30upx;
-		font-weight: bold;
-		text-indent: 2%;
-		border-top: 1px solid black;
-		white-space: nowrap;
-		.addnotes{
-			display: inline-block;
-			position: relative;
-			width: 50upx;
-			height: 50upx;
-			font-size: 50upx;
-			border: 1px black solid;
-			border-radius: 50%;
-			float: right;
-			margin:15upx 8% 15upx 0;
-			text{
-				position: absolute;
-				    top: -8px;
-				    left: 3px;
-			}
-		}
-	}
-	.basic_problem{
-		width: 100%;
-		}
-		.basic_container{
-			width: 100%;
-			height: 80upx;
-			line-height: 80upx;
-			overflow: hidden;
-			white-space: nowrap;
-			text{
-				font-size: 30upx;
-			}
-			.picker{
-				display: inline-block;
-				width: 65%;
-				height: 50upx;
-				font-size: 30upx;
-				margin-top: 2%;
-				line-height: 50upx;
-				background-color: #fff;
-				.arrow{
-					position: relative;
-					float: right;
-					top: 5upx;
-					display: inline-block;
-					width: 37.5upx;
-					height: 25upx;
-					overflow: hidden;
-					margin-top: 3%;
-					margin-right: 2%;
-					.arrowbottom{
-						position: relative;
-						top:-14upx;
-						left: 10upx;
-						width: 25upx;
-						height: 25upx;
-						background-color: black;
-						transform:rotate(135deg);
-					}
-				}
-			}
-			.basic_title{
-				width: 25%;
-				display: inline-block;
-				margin-left: 2%;
-				vertical-align: top;
-				float: left;
-			}
-			.basic_content{
-				display: inline-block;
-				width: 65%;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow:ellipsis;
-				vertical-align: top;
-			}
-			
-		}
-		.basic_container2{
-			width: 100%;
-			.b{
-				width: 100%;
-				height: 100upx;
-			}
-			.basic_title{
-				width: 100%;
-				display: inline-block;
-				margin-left: 2%;
-				vertical-align: top;
-				font-size: 30upx;
-			}
-			.textarea{
-				background-color: #fff;
-				display: block;
-				width: 96%;
-				margin: 2% 2%;
-				height: 150upx;
-			}
-			.picture{
-				background-color: #fff;
-				width: 96%;
-				margin: 2% 2%;
-				height: 150upx;
-				overflow: hidden;
-				line-height: 150upx;
-				.addpic{
-					display: inline-block;
-					width: 50upx;
-					height:50upx;
-					font-size: 60upx;
-					border: 1px solid black;
-					border-radius: 50%;
-					margin:50upx 0 50upx 2%;
-					position: relative;
-					text{
-						position: absolute;
-						bottom:-47upx;
-						right: 6upx;
-					}
-					
-				}
-				.pic_container{
-					display: inline-block;
-					position: relative;
-					width: 140upx;
-					height: 150upx;
-					.pic{
-					display: inline-block;
-					width: 66%;
-					height: 66%;
-					margin: 17% ;
-					z-index: 0;
-				}
-				.del{
-					display: inline-block;
-					position: absolute;
-					color: #fff;
-					font-weight: bold;
-					background-color: red;
-					border: red 1px solid;
-					border-radius: 50%;
-					left: 66%;
-					width: 40upx;
-					height: 40upx;
-					vertical-align: top;
-					text-align: center;
-					view{
-						display: inline-block;
-						position: absolute;
-						top: -60upx;
-						left: 0;
-						width: 40upx;
-						height: 40upx;
-					}
-					
-				}
-				}
-				
-			}
-		}
-		.basic_container3{
-			width: 100%;
-			height: 300upx;
-		}
+	
+		
 	
 
 
@@ -540,7 +526,7 @@
 	
 
 
-//个人查验页面样式
+//个人查验页面样式index
 .personal_inspection{
 	.remind{
 		width: 100%;
@@ -548,7 +534,7 @@
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
 		position: fixed;
-		bottom: 120upx;//手机上要写0
+		bottom: 0;//手机上要写0
 		white-space: nowrap;
 		overflow: hidden;
 		.remind_icon{
@@ -664,82 +650,6 @@
 	}
 	
 	
-	//实测实量
-	.measure_container{
-		width: 100%;
-		background-color: $bg;
-		.m_title{
-			width: 100%;
-			height: 80upx;
-			border-bottom: black 1upx solid;
-			border-top: black 1upx solid;
-			line-height: 80upx;
-			font-size: 35upx;
-			text-indent: 2%;
-		}
-		.m_content{
-			display: inline-block;
-			width: 100%;
-			margin-top: 5%;
-			padding-bottom: 2%;
-			line-height: 50upx;
-			font-size: 30upx;
-			text-indent: 2%;
-			white-space: nowrap;
-			border-bottom: black 1upx solid;
-			.m_standard{
-				display: inline-block;
-				margin-left: 65%;
-			}
-			.m_inputcontent{
-				width: 100%;
-				margin-top: 3%;
-				.m_inputtext{
-					display: inline-block;
-					width: 20%;
-					vertical-align: top;
-					text{
-						color: #808080;
-					}
-				}
-				.m_inputvalue{
-					display: inline-block;
-					width: 50%;
-					background-color: #fff;
-					
-				}
-				.m_inputstandard{
-					display: inline-block;
-					width: 20%;
-					background-color: #fff;
-					margin-left: 2%;
-				}
-			}
-		}
-		.m_bottom{
-			width: 100%;
-			.m_title2{
-				display: inline-block;
-				width: 100%;
-				line-height: 50upx;
-				font-size: 30upx;
-				text-indent: 2%;
-				white-space: nowrap;
-			}
-			.m_bottominput{
-				display: inline-block;
-				width: 15%;
-				margin-left: 4%;
-				margin-top: 2%;
-				background-color: #fff;
-			}
-		}
-		.m_submit{
-			margin-top: 5%;
-		}
-	}
-	
-	
 	//登记问题页面
 	.takenotes_container{
 		background-color: $bg;
@@ -755,6 +665,7 @@
 	.feedback_container{
 		width: 100%;
 		background-color: $bg;
+		padding-bottom: 2%;
 		.feedback_title{
 			width: 100%;
 			display: inline-block;
@@ -765,6 +676,11 @@
 			background-color: #fff;
 			width: 96%;
 			margin: 2%;
+		}
+		button{
+			width: 100%;
+			position: fixed;
+			bottom: 0;
 		}
 	}
 	
@@ -879,7 +795,7 @@
 	}
 	
 	
-	//详情
+	//详情-每套房子问题筛选页面
 	.details_content{
 		.picker_container{
 			height: 50upx;
@@ -1005,6 +921,19 @@
 			}
 		}
 		
+	}
+	
+	
+	//不合格页面
+	.fail_container{
+		background-color: $bg;
+		padding-bottom: 2%;
+		.submit{
+			display: block;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+		}
 	}
 	
 	
@@ -1179,5 +1108,160 @@
 				width: 100upx;
 				height: 100upx;
 			}
+		}
+		.pr_button{
+			height: 130upx;
+			background-color: #fff;
+			white-space: nowrap;
+			navigator{
+				display: inline-block;
+				height: 90upx;
+				width: 40%;
+				text-align: center;
+				line-height: 90upx;
+				border: 1px solid black;
+				margin: 20upx 5%;
+				border-radius: 5%;
+			}
+			view{
+				display: inline-block;
+				height: 90upx;
+				width: 40%;
+				text-align: center;
+				line-height: 90upx;
+				border: 1px solid black;
+				margin: 20upx 5%;
+				border-radius: 5%;
+			}
+			.pass{
+				
+			}
+			.fail{
+				background-color: #C0C0C0;
+			}
+		}
+	}
+	
+	
+	//专项检测
+	.specialitem_container{
+		background-color: $bg;
+		input{
+			display: inline-block;
+			background-color: #fff;
+			margin: 18upx 0;
+		}
+			
+		.title{
+			height: 80upx;
+			line-height: 80upx;
+			font-size: 30upx;
+			text-indent: 2%;
+		}
+	}
+	
+	
+	//监测页面日期样式
+	.date_container{
+		height: 80upx;
+		font-size: 35upx;
+		overflow: hidden;
+		white-space: nowrap;
+		view{
+			display: inline-block;
+			width: 20%;
+			height: 60upx;
+			line-height: 60upx;
+			float: left;
+		}
+		.date{
+			background-color: #fff;
+			width: 30%;
+			margin-left: 10%;
+			text-align: center;
+			border-radius: 15upx;
+		}
+		.time{
+			background-color: #fff;
+			width: 15%;
+			margin-left: 10%;
+			text-align: center;
+			border-radius: 15upx;
+		}
+	}
+
+	
+	//实测实量
+	.measure_container{
+		width: 100%;
+		background-color: $bg;
+		.m_title{
+			width: 100%;
+			height: 80upx;
+			border-bottom: black 1upx solid;
+			border-top: black 1upx solid;
+			line-height: 80upx;
+			font-size: 35upx;
+			text-indent: 2%;
+		}
+		.m_content{
+			display: inline-block;
+			width: 100%;
+			margin-top: 5%;
+			padding-bottom: 2%;
+			line-height: 50upx;
+			font-size: 30upx;
+			text-indent: 2%;
+			white-space: nowrap;
+			border-bottom: black 1upx solid;
+			.m_standard{
+				display: inline-block;
+				margin-left: 65%;
+			}
+			.m_inputcontent{
+				width: 100%;
+				margin-top: 3%;
+				.m_inputtext{
+					display: inline-block;
+					width: 20%;
+					vertical-align: top;
+					text{
+						color: #808080;
+					}
+				}
+				.m_inputvalue{
+					display: inline-block;
+					width: 50%;
+					background-color: #fff;
+					
+				}
+				.m_inputstandard{
+					display: inline-block;
+					width: 20%;
+					background-color: #fff;
+					margin-left: 2%;
+				}
+			}
+		}
+		.m_bottom{
+			width: 100%;
+			.m_title2{
+				display: inline-block;
+				width: 100%;
+				line-height: 50upx;
+				font-size: 30upx;
+				text-indent: 2%;
+				white-space: nowrap;
+			}
+			.m_bottominput{
+				display: inline-block;
+				width: 15%;
+				margin-left: 4%;
+				margin-top: 2%;
+				background-color: #fff;
+			}
+		}
+		.m_submit{
+			margin-top: 5%;
 		}
 	}

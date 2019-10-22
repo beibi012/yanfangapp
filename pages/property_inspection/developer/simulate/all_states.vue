@@ -1,13 +1,14 @@
 <template>
 	<view>
+		<!-- 公用样式导航条 -->
 		<view class="app_top">
-			
 		</view>
 		<view class="normal_nav">
 			<navigator class="left" open-type="navigateBack">返回</navigator>
 			<view class="title">{{title.number}}号楼房间-{{title.unit}}单元</view>
 			<view class="right"></view>
 		</view>
+		<!-- 楼房整改交付状态p984 -->
 		<view class="states">
 			<view class="state" v-for="s in states" :style="'background-color:'+s.bgcolor+';'">
 				<view>{{s.state}}</view>

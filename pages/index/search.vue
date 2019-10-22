@@ -1,8 +1,10 @@
 <template>
+	<!-- 搜索页面p617 -->
 	<view class="search_container">
 		<view class="search_nav">
 			<navigator class="back" url="recheck" open-type="redirect">返回</navigator>
 			<view class="searchnav_container">
+				<!-- 搜索框样式p317 -->
 				<view class="search_cont">
 				<view class="search_left">
 					<image class="search_icon" src="../../static/167.jpg" mode="widthFix"></image>
@@ -12,6 +14,7 @@
 			</view>
 			</view>
 			<view class="search_button">搜索</view>
+			<!-- 搜索内容p708 -->
 		</view>
 		<navigator class="search_content" v-for="problem in problemlist" :url="problem.url">
 			<view class="developer">{{problem.developer}}</view>

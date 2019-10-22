@@ -1,4 +1,5 @@
 <template>
+	<!-- 任务详情样式p605 -->
 	<view class="remind_details">
 		<view>
 			验房日期：{{e_data.date}}

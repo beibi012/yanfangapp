@@ -1,4 +1,5 @@
 <template>
+	<!-- 公用样式导航条 -->
 	<view class="property_inspection">
 		<view class="app_top"></view>
 		<view class="navtop">
@@ -12,6 +13,7 @@
 				<image src="../../static/153.jpg" mode="widthFix"></image>
 			</navigator>
 		</view>
+		<!-- 开发商列表p920 -->
 		<view v-for="e in developer">
 			<navigator class="developer" :url="'developer/developer?name='+e.name">
 			<image class="developer_icon" src="../../static/169.jpg" mode="widthFix"></image>

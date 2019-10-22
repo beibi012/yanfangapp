@@ -58,7 +58,7 @@
 				"path" : "pages/index/search/rectification",
 				"style" : {"navigationBarTitleText": "问题详情"}//已整改
 			},{
-				"path" : "pages/index/search/unqualified",
+				"path" : "pages/index/search/fail",
 				"style" : {"navigationBarTitleText": "不合格"}//说明原因
 			},
 		{
@@ -116,6 +116,22 @@
 		{
             "path" : "pages/air_detection/air_detection",
             "style" : {"navigationStyle":"custom"}
+        },
+			{
+			    "path" : "pages/air_detection/personal_user",
+			    "style" : {"navigationBarTitleText": "个人用户"}
+			},{
+            "path" : "pages/air_detection/developers",
+            "style" : {"navigationBarTitleText": "开发商"}
+        },{
+            "path" : "pages/air_detection/uniform",
+            "style" : {"navigationBarTitleText": "工装"}
+        },{
+            "path" : "pages/air_detection/survey",
+            "style" : {"navigationBarTitleText": "监测"}
+        },{
+            "path" : "pages/air_detection/govern",
+            "style" : {"navigationBarTitleText": "治理"}
         },
 		{
             "path" : "pages/personal/personal",

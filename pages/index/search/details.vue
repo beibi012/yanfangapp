@@ -1,4 +1,5 @@
 <template>
+	<!-- 每套房子问题筛选页面770 -->
 	<view class="details_content">
 <!-- 顶部导航条 -->
 		<view class="app_top"></view>
@@ -27,7 +28,7 @@
 			</view>
 <!-- 问题列表 -->
 			<scroll-view class="problemlist" scroll-y="true">
-				<navigator class="problem":url="e.url" v-for="e in problemlist">
+				<navigator class="problem":url="e.url+'?changed='+e.changed" v-for="(e,index) in problemlist" @click="getIndex(index)">
 					<view class="main_item"><image src="../../../static/190.jpg" mode="widthFix"></image>{{e.main}}-{{e.checkitem}}</view>
 					<view class="problem_content"><text class="text">{{e.problem_content}}</text></view>
 					<view class="date">{{e.date}}-{{e.time}}</view>
@@ -56,6 +57,14 @@
 	export default{
 		onLoad() {
 			self=this;
+			uni.$on('state',(data)=>{
+				self.problemlist[self.problemindex].changed=data.changed;
+				if(self.problemlist[self.problemindex].changed==1){
+					self.problemlist[self.problemindex].statetext="已整改";
+					self.problemlist[self.problemindex].statedot="blackdot";
+				}
+				
+			})
 		},
 		data(){
 			return{
@@ -66,6 +75,7 @@
 				index2:0,
 				item:["插座","天花板","墙壁","门框","窗口"],
 				index3:0,
+				problemindex:-1,
 				problemlist:[
 					{developer:"天健城",
 					householder:"王先生",
@@ -77,6 +87,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"未整改",
+					changed:0,
 					statedot:"whitedot"
 					},
 					{developer:"万科城",
@@ -89,6 +100,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"已整改",
+					changed:1,
 					statedot:"blackdot"
 					},
 					{developer:"天健城",
@@ -101,6 +113,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"未整改",
+					changed:0,
 					statedot:"whitedot"
 					},
 					{developer:"万科城",
@@ -113,6 +126,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"已整改",
+					changed:1,
 					statedot:"blackdot"
 					},
 					{developer:"天健城",
@@ -125,6 +139,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"未整改",
+					changed:0,
 					statedot:"whitedot"
 					},
 					{developer:"万科城",
@@ -137,6 +152,7 @@
 					time:"上午",
 					url:"problem_details",
 					statetext:"已整改",
+					changed:1,
 					statedot:"blackdot"
 					}
 				]
@@ -153,6 +169,10 @@
 				changeItem:(e)=>{
 					self.index3=e.detail.value;
 				},
+				getIndex:(index)=>{
+					self.problemindex=index;
+					console.log(self.problemindex)
+				}
 			}
 	}
 </script>
