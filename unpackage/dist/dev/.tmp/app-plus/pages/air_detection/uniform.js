@@ -17,11 +17,6 @@ eval("/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! 
   !*** /Users/zrs/Desktop/uni/yanfangapp/pages/air_detection/uniform.vue ***!
   \*************************************************************************/
 /*! no static exports found */
-<<<<<<< HEAD
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js):\\nError: ENOENT: no such file or directory, open '/Users/zrs/Desktop/uni/yanfangapp/pages/air_detection/uniform.vue'\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIyMTcuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///217\n");
-=======
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +69,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 
 "use strict";
 eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nvar _default =\n{\n  data: function data() {\n    return {\n      list: [\n      { name: \"监测\", url: \"survey\", src: \"../../static/131.jpg\" },\n      { name: \"治理\", url: \"govern\", src: \"../../static/126.jpg\" }] };\n\n\n  },\n  methods: {} };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvYWlyX2RldGVjdGlvbi91bmlmb3JtLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBYUE7QUFDQSxNQURBLGtCQUNBO0FBQ0E7QUFDQTtBQUNBLGdFQURBO0FBRUEsZ0VBRkEsQ0FEQTs7O0FBTUEsR0FSQTtBQVNBLGFBVEEsRSIsImZpbGUiOiIyMjEuanMiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG5cdDx2aWV3PlxuXHRcdDwhLS0g5YaF5a655YiX6KGoIC0tPlxuXHRcdDx2aWV3IGNsYXNzPVwicGlfY29udGFpbmVyXCI+XG5cdFx0XHQ8bmF2aWdhdG9yIGNsYXNzPVwiaWNvbl9jb250YWluZXJcIiB2LWZvcj1cImUgaW4gbGlzdFwiIDp1cmw9XCJlLnVybFwiIGFuaW1hdGlvbi10eXBlPVwicG9wLWluXCIgYW5pbWF0aW9uLWR1cmF0aW9uPVwiMzAwXCI+XG5cdFx0XHQ8aW1hZ2UgOnNyYz1cImUuc3JjXCIgbW9kZT1cIndpZHRoRml4XCI+PC9pbWFnZT5cblx0XHRcdDx0ZXh0Pnt7ZS5uYW1lfX08L3RleHQ+XG5cdFx0PC9uYXZpZ2F0b3I+XG5cdFx0PC92aWV3PlxuXHQ8L3ZpZXc+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0PlxuXHRleHBvcnQgZGVmYXVsdCB7XG5cdFx0ZGF0YSgpIHtcblx0XHRcdHJldHVybiB7XG5cdFx0XHRcdGxpc3Q6W1xuXHRcdFx0XHRcdHtuYW1lOlwi55uR5rWLXCIsdXJsOlwic3VydmV5XCIsc3JjOlwiLi4vLi4vc3RhdGljLzEzMS5qcGdcIn0sXG5cdFx0XHRcdFx0e25hbWU6XCLmsrvnkIZcIix1cmw6XCJnb3Zlcm5cIixzcmM6XCIuLi8uLi9zdGF0aWMvMTI2LmpwZ1wifVxuXHRcdFx0XHRdXG5cdFx0XHR9XG5cdFx0fSxcblx0XHRtZXRob2RzOiB7XG5cdFx0XHRcblx0XHR9XG5cdH1cbjwvc2NyaXB0PlxuXG48c3R5bGU+XG48L3N0eWxlPlxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///221\n");
->>>>>>> 7cbe0fb186d766dcf1bd2247e79ed2a0aa80bb89
 
 /***/ })
 

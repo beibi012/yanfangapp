@@ -36,6 +36,8 @@
     "pages/air_detection/uniform",
     "pages/air_detection/survey",
     "pages/air_detection/govern",
+    "pages/personal/setting",
+    "pages/personal/about",
     "pages/personal/personal",
     "pages/location/location"
   ],

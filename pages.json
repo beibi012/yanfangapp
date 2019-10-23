@@ -147,7 +147,7 @@
 			},
 			{
 			    "path" : "pages/personal/personal",
-			    "style" : {"navigationBarTitleText": "个人中心"}
+			    "style" : {"navigationBarTitleText": "个人资料"}
 			},
 		{
             "path" : "pages/location/location",

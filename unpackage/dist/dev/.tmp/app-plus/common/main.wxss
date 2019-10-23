@@ -139,9 +139,11 @@
 }
 .basic_container .basic_content {
     display: inline-block;
-    width: 65%;
+    width: 60%;
+    height: 80rpx;
     overflow: hidden;
     white-space: nowrap;
+    margin-left: 2%;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     line-height: 80rpx;
@@ -233,7 +235,7 @@
 }
 .add_headline .add_button text {
       position: absolute;
-      top: -18rpx;
+      top: -20rpx;
       left: 10rpx;
 }
 .removebottomline {
@@ -293,8 +295,8 @@
 }
 .basic_container2 .picture .addpic text {
         position: absolute;
-        bottom: -47rpx;
-        right: 6rpx;
+        bottom: -45rpx;
+        right: 7rpx;
 }
 .basic_container2 .picture .pic_container {
       display: inline-block;
@@ -1093,6 +1095,106 @@
     margin-left: 10%;
     text-align: center;
     border-radius: 15rpx;
+}
+.setting {
+  height: 300rpx;
+  background-color: #ccdfee;
+  text-align: center;
+}
+.setting .center {
+    position: relative;
+    display: inline-block;
+    height: 240rpx;
+    width: 200rpx;
+    margin: 30rpx 0;
+    white-space: nowrap;
+    text-align: center;
+}
+.setting .center image {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+}
+.setting .center .name {
+      font-size: 35rpx;
+}
+.setting .center .profession {
+      position: relative;
+      margin: 0 auto;
+      width: 700rpx;
+      left: -125%;
+      font-size: 35rpx;
+      text-align: center;
+      color: #808080;
+}
+.about {
+  margin-top: 2%;
+  height: 80rpx;
+  font-size: 35rpx;
+  line-height: 80rpx;
+  background-color: #ccdfee;
+  text-indent: 2%;
+}
+.about .right {
+    float: right;
+    font-size: 60rpx;
+    margin-right: 5%;
+    color: #C0C0C0;
+}
+.aboutapp {
+  height: 440rpx;
+  background-color: #ccdfee;
+}
+.aboutapp .icon {
+    height: 220rpx;
+    text-align: center;
+}
+.aboutapp .icon image {
+      display: inline-block;
+      width: 160rpx;
+      height: 160rpx;
+      margin: 30rpx 0;
+}
+.aboutapp .explain {
+    height: 220rpx;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    line-height: 25rpx;
+}
+.aboutapp .explain .text {
+      font-size: 25rpx;
+}
+.personal .basic_container:first-child {
+  border-top: 1px solid black;
+}
+.personal .basic_container {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid black;
+}
+.personal .basic_title {
+  font-size: 40rpx;
+  vertical-align: middle;
+}
+.personal .basic_content {
+  width: 66%;
+  font-size: 40rpx;
+  text-align: right;
+  vertical-align: middle;
+}
+.personal .portrait {
+  display: inline-block;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  float: right;
+  margin: 5rpx 1% 5rpx 0;
+}
+.personal .right {
+  float: right;
+  font-size: 60rpx;
+  margin-right: 2%;
 }
 .measure_container {
   width: 100%;
