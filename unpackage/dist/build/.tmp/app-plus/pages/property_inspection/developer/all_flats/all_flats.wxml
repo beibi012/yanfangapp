@@ -1,0 +1,1 @@
+<view class="simulate_container"><block wx:for="{{flatslist}}" wx:for-item="e" wx:for-index="__i0__"><navigator class="simulate_list" url="{{'all_numbers?number='+e.number+'&unit='+e.unit}}"><view class="list_content">{{e.number+"号楼房间-"+e.unit+"单元"}}</view><view class="list_button">{{e.button}}</view></navigator></block></view>

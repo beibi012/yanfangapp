@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"login_containor{ width: 100%; height: 100%; }\n.",[1],"login_icon{ width: 30%; margin: 15% 35% 5% 35%; }\n",],undefined,{path:"./pages/index/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"yanfang-app","entryPagePath":"pages/login/login.html","page":{"pages/login/login.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/login/writing_infomation.html":{"window":{"navigationBarTitleText":"填写资料","usingComponents":{}}},"pages/login/forget_password.html":{"window":{"navigationBarTitleText":"找回密码","usingComponents":{}}},"pages/index/index.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/index/newly.html":{"window":{"navigationBarTitleText":"新增","usingComponents":{}}},"pages/index/newly/basic_information.html":{"window":{"navigationBarTitleText":"个人信息","usingComponents":{}}},"pages/index/newly/feedback.html":{"window":{"navigationBarTitleText":"反馈","usingComponents":{}}},"pages/index/newly/measure.html":{"window":{"navigationBarTitleText":"实测实量","usingComponents":{}}},"pages/index/newly/take_notes.html":{"window":{"navigationBarTitleText":"登记问题","usingComponents":{}}},"pages/index/recheck.html":{"window":{"navigationBarTitleText":"复检","usingComponents":{}}},"pages/index/recheck/newly_problem.html":{"window":{"navigationBarTitleText":"新增问题","usingComponents":{}}},"pages/index/recheck/problem_list.html":{"window":{"navigationBarTitleText":"问题列表","usingComponents":{}}},"pages/index/search.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/index/search/details.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/index/search/problem_details.html":{"window":{"navigationBarTitleText":"问题详情","usingComponents":{}}},"pages/index/search/rectification.html":{"window":{"navigationBarTitleText":"问题详情","usingComponents":{}}},"pages/index/search/fail.html":{"window":{"navigationBarTitleText":"不合格","usingComponents":{}}},"pages/index/remind.html":{"window":{"navigationBarTitleText":"任务提醒","usingComponents":{}}},"pages/index/remind/remind_details.html":{"window":{"navigationBarTitleText":"任务详情","usingComponents":{}}},"pages/property_inspection/property_inspection.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/property_inspection/developer/developer.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/property_inspection/developer/simulate/all_states.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/property_inspection/developer/simulate/complete.html":{"window":{"navigationBarTitleText":"问题详情","usingComponents":{}}},"pages/property_inspection/developer/simulate/details.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/property_inspection/developer/simulate/problem_details.html":{"window":{"navigationBarTitleText":"问题详情","usingComponents":{}}},"pages/property_inspection/developer/simulate/simulate.html":{"window":{"navigationBarTitleText":"模拟验房","usingComponents":{}}},"pages/property_inspection/developer/simulate/take_notes.html":{"window":{"navigationBarTitleText":"登记问题","usingComponents":{}}},"pages/property_inspection/developer/all_flats/all_flats.html":{"window":{"navigationBarTitleText":"专项检测","usingComponents":{}}},"pages/property_inspection/developer/all_flats/all_numbers.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/property_inspection/developer/all_flats/special_item.html":{"window":{"navigationBarTitleText":"专项检查","usingComponents":{}}},"pages/air_detection/air_detection.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/air_detection/personal_user.html":{"window":{"navigationBarTitleText":"个人用户","usingComponents":{}}},"pages/air_detection/developers.html":{"window":{"navigationBarTitleText":"开发商","usingComponents":{}}},"pages/air_detection/uniform.html":{"window":{"navigationBarTitleText":"工装","usingComponents":{}}},"pages/air_detection/survey.html":{"window":{"navigationBarTitleText":"监测","usingComponents":{}}},"pages/air_detection/govern.html":{"window":{"navigationBarTitleText":"治理","usingComponents":{}}},"pages/personal/setting.html":{"window":{"navigationBarTitleText":"系统设置","usingComponents":{}}},"pages/personal/about.html":{"window":{"navigationBarTitleText":"关于验房APP","usingComponents":{}}},"pages/personal/personal.html":{"window":{"navigationBarTitleText":"个人资料","usingComponents":{}}},"pages/location/location.html":{"window":{"navigationBarTitleText":"定位","usingComponents":{}}},"pages/location/test.html":{"window":{"navigationBarTitleText":"测试","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#4cb3f9","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"static/190.jpg","selectedIconPath":"static/106.jpg","text":"个人验房"},{"pagePath":"pages/property_inspection/property_inspection.html","iconPath":"static/190.jpg","selectedIconPath":"static/106.jpg","text":"房产查验"},{"pagePath":"pages/air_detection/air_detection.html","iconPath":"static/190.jpg","selectedIconPath":"static/106.jpg","text":"空气检测"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/login/login","pages/login/writing_infomation","pages/login/forget_password","pages/index/index","pages/index/newly","pages/index/newly/basic_information","pages/index/newly/feedback","pages/index/newly/measure","pages/index/newly/take_notes","pages/index/recheck","pages/index/recheck/newly_problem","pages/index/recheck/problem_list","pages/index/search","pages/index/search/details","pages/index/search/problem_details","pages/index/search/rectification","pages/index/search/fail","pages/index/remind","pages/index/remind/remind_details","pages/property_inspection/property_inspection","pages/property_inspection/developer/developer","pages/property_inspection/developer/simulate/all_states","pages/property_inspection/developer/simulate/complete","pages/property_inspection/developer/simulate/details","pages/property_inspection/developer/simulate/problem_details","pages/property_inspection/developer/simulate/simulate","pages/property_inspection/developer/simulate/take_notes","pages/property_inspection/developer/all_flats/all_flats","pages/property_inspection/developer/all_flats/all_numbers","pages/property_inspection/developer/all_flats/special_item","pages/air_detection/air_detection","pages/air_detection/personal_user","pages/air_detection/developers","pages/air_detection/uniform","pages/air_detection/survey","pages/air_detection/govern","pages/personal/setting","pages/personal/about","pages/personal/personal","pages/location/location","pages/location/test"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.7","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

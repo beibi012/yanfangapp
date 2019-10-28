@@ -1,0 +1,1 @@
+<view><view class="pi_container"><block wx:for="{{list}}" wx:for-item="e" wx:for-index="__i0__"><navigator class="icon_container" url="{{e.url}}"><image src="{{e.src}}" mode="widthFix"></image><text>{{e.name}}</text></navigator></block></view></view>
