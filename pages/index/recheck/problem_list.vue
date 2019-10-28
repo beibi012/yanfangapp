@@ -1,5 +1,6 @@
 <template>
 	<view class="problemlist_container">
+		<!-- 引用搜索页面 -->
 		<navigator class="search_content" v-for="problem in problemlist" :url="problem.url">
 			<view class="developer">{{problem.developer}}</view>
 			<view class="householder">{{problem.householder}}</view><view class="address">{{problem.address}}</view>

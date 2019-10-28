@@ -1,10 +1,17 @@
 <template>
 	<view class="feedback_container">
-		<form @submit="feedback_submit">
-			<text class="feedback_title">反馈</text>
-			<textarea class="feedback" value="" name="feedback" />
-			<button form-type="submit" type="primary" @click="navigateBack">提交</button>
+		<scroll-view scroll-y="true" >
+			<view>
+				<form @submit="feedback_submit">
+					<view class="basic_container2">
+					<text class="basic_title">反馈说明</text>
+			<textarea class="textarea" value="" name="feedback" />
+			<button class="submit" form-type="submit" type="primary" @click="navigateBack">提交</button>	
+					</view>
 		</form>
+			</view>
+		</scroll-view>
+		
 		
 	</view>
 </template>

@@ -1,6 +1,8 @@
 <template>
 	<view class="pr_problemdetails">
-		<view class="rectification" @click="aaa">
+		<scroll-view scroll-y="true" >
+			<view>
+				<view class="rectification" @click="aaa">
 			<view>|</view>
 			<text v-if="(changed==1)?false:true">未整改</text>
 			<text v-if="(changed==1)?true:false">已整改</text>
@@ -86,6 +88,8 @@
 				<navigator class="fail" url="fail">不合格</navigator>
 			</view>
 		</form>
+			</view>
+		</scroll-view>
 	</view>
 </template>
 

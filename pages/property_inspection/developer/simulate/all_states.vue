@@ -4,8 +4,9 @@
 		<view class="app_top">
 		</view>
 		<view class="normal_nav">
+			<view class="top"></view>
 			<navigator class="left" open-type="navigateBack">返回</navigator>
-			<view class="title">{{title.number}}号楼房间-{{title.unit}}单元</view>
+			<view class="title">8号楼房间-2单元</view>
 			<view class="right"></view>
 		</view>
 		<!-- 楼房整改交付状态p984 -->
@@ -25,13 +26,15 @@
 </template>
 
 <script>
-	var self;
+	var self,number1,unit1,states;
 	export default{
 		onLoad(e) {
 			self=this;
-			this.title=e
-			console.log(this.title)
-			this.states[1].number=90;
+			self.number1=e.number;
+			self.unit1=e.unit;
+			console.log(self.number1)
+			console.log(self.unit1)
+			self.states[1].number=90;
 			self.states[2].number=6;
 			self.states[3].number=6;
 			self.states[4].number=6;
@@ -39,7 +42,8 @@
 		},
 		data(){
 			return{
-				title:{},
+				number1:"",
+				unit1:"2",
 				states:[
 					{state:"全部",number:0,bgcolor:"#fff"},
 					{state:"待交付",number:0,bgcolor:"#fff"},

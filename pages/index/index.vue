@@ -4,26 +4,27 @@
 		<!-- 顶部导航条  css公用部分p13 p19-->
 		<view class="app_top"></view>
 		<view class="navtop">
+			<view class="top"></view>
 			<navigator class="navtop_head" url="../personal/setting">
-				<image src="../../static/166.jpg" mode="widthFix"></image>
+				<image :src="portrait" mode="aspectFill"></image>
 			</navigator>
-			<navigator class="navtop_location" url="">
+			<navigator class="navtop_location" url="../location/location">
 				<view class="location_textc">
-					<text>广西壮族自治区南宁市西乡塘区</text>
+					<text>{{city}}awsfafasfafasf</text>
 					</view>
-				<image src="../../static/153.jpg" mode="widthFix"></image>
+				<image src="/static/Location@2x.png" mode="widthFix"></image>
 			</navigator>
 		</view>
 		<!-- 内容列表 -->
 		<view class="pi_container">
 			<!-- css公用部分图标列表样式P100 -->
-			<navigator class="icon_container" v-for="e in list" :url="e.url" animation-type="pop-in" animation-duration="300">
-			<image :src="e.src" mode="widthFix"></image>
-			<text>{{e.name}}</text>
-		</navigator>
+			<navigator v-for="e in list" class="icon_container" :url="e.url" animation-type="pop-in" animation-duration="300">
+				<image :style="load?'':'display: none;'" :src="e.src" mode="widthFix"></image>
+				<text>{{e.name}}</text>
+			</navigator>
 		</view>
 		<navigator class="remind" url="remind">
-			<image class="remind_icon" src="../../static/167.jpg" mode="widthFix"></image>
+			<image class="remind_icon" src="/static/notice@2x.png" mode="widthFix"></image>
 			<view class="remind_text">
 				<view class="textlist"><text class="textcontent">xiao谢谢谢sadasdasdasdsa谢谢谢</text><text class="time">345小时前</text></view>
 				<view class="textlist"><text class="textcontent">xiao谢谢谢sadasdasdasdsa谢谢谢</text><text class="time">345小时前</text></view>
@@ -37,13 +38,38 @@
 </template>
 
 <script>
-	export default{
+	var self;
+	export default {
+		onLoad() {
+			self=this;
+			
+		},
+		onReady() {
+			this.load=true;
+		},
+		onShow() {
+			self=this;
+			uni.getStorage({
+			    key: 'portrait',
+			    success: function (res) {
+			       self.portrait= res.data;
+			    }
+			});
+			uni.getStorage({
+			    key: 'city',
+			    success: function (res) {
+			            self.city= res.data;
+			        }
+			});
+		},
 		data(){
 			return{
-				headportrait:"",
+				load:false,
+				city:"a",
+				portrait:"../../static/166.jpg",
 				list:[
-					{name:"新增",url:"newly",src:"../../static/131.jpg"},
-					{name:"复查",url:"recheck",src:"../../static/126.jpg"}
+					{name:"新增",url:"newly",src:"/static/Newlyadded@2x.png"},
+					{name:"复查",url:"recheck",src:"/static/Reexamination@2x.png"}
 				]
 				
 			}

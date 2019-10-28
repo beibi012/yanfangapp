@@ -1,62 +1,67 @@
 <template>
 	<view class="specialitem_container">
-		<form @submit="">
-			<view class="basic_container">
-				<text class="basic_title">项目名称</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">单元/楼栋号</text>
-				<input class="basic_input"/>
-			</view>
-			
-			<view v-for="n in takenotes">
-				<view class="add_headline">
-				<text>房间{{n}}</text>
-				<view class="add_button" @click="addnotes"><text>+</text></view>
-			</view>
-			<view class="title">打压时间与压力(Mpa)</view>
-			<view class="basic_container">
-				<text class="basic_title">初时:</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">初压:</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">终时:</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">终压:</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">降压值:</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container">
-				<text class="basic_title">结果</text>
-				<input class="basic_input"/>
-			</view>
-			<view class="basic_container2">
-				<text class="basic_title">备注</text>
-				<textarea class="textarea" value="" :name="'moreinfo'+note" />
-				<text class="basic_title">上传图片</text>
-				<view class="picture">
-					<view class="pic_container" v-for="(p,index) in pic">
-						<image class="pic" :src="p" mode="aspectFill" @click="previewPic(index)"></image>
-						<view class="del" @click="delPic(index)"><view>x</view></view>
+		<scroll-view scroll-y="true" >
+			<view>
+				<form @submit="">
+					<view class="basic_container">
+						<text class="basic_title">项目名称</text>
+						<input class="basic_input"/>
 					</view>
-					<view class="addpic"   @click="addPic"><text>+</text></view>
-				</view>
-				</view>
+					<view class="basic_container">
+						<text class="basic_title">单元/楼栋号</text>
+						<input class="basic_input"/>
+					</view>
+					
+					<view v-for="n in takenotes">
+						<view class="add_headline">
+						<text>房间{{n}}</text>
+						<view class="add_button" @click="addnotes"><text>+</text></view>
+					</view>
+					<view class="title">打压时间与压力(Mpa)</view>
+					<view class="basic_container">
+						<text class="basic_title">初时:</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container">
+						<text class="basic_title">初压:</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container">
+						<text class="basic_title">终时:</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container">
+						<text class="basic_title">终压:</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container">
+						<text class="basic_title">降压值:</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container">
+						<text class="basic_title">结果</text>
+						<input class="basic_input"/>
+					</view>
+					<view class="basic_container2">
+						<text class="basic_title">备注</text>
+						<textarea class="textarea" value="" :name="'moreinfo'+note" />
+						<text class="basic_title">上传图片</text>
+						<view class="picture">
+							<view class="pic_container" v-for="(p,index) in pic">
+								<image class="pic" :src="p" mode="aspectFill" @click="previewPic(index)"></image>
+								<view class="del" @click="delPic(index)"><view>x</view></view>
+							</view>
+							<view class="addpic"   @click="addPic"><text>+</text></view>
+						</view>
+						</view>
+					</view>
+					
+					
+					<button form-type="submit">Submit</button>
+				</form>
 			</view>
-			
-			
-			<button form-type="submit">Submit</button>
-		</form>
+		</scroll-view>
+		
 	</view>
 </template>
 

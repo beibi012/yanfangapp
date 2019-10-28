@@ -4,14 +4,14 @@
     "iPhone",
     "iPad"
   ],
-  "id": "",
-  "name": "yanfang-app",
+  "id": "__UNI__59513B0",
+  "name": "验房app",
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
   "description": "",
-  "launch_path": "__uniapptabbar.html",
+  "launch_path": "__uniappview.html",
   "developer": {
     "name": "",
     "email": "",
@@ -24,7 +24,7 @@
   },
   "plus": {
     "useragent": {
-      "value": "uni-app appservice",
+      "value": "uni-app",
       "concatenate": true
     },
     "splashscreen": {
@@ -34,11 +34,15 @@
       "delay": 0
     },
     "popGesture": "close",
-    "launchwebview": {},
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
     "statusbar": {
       "immersed": "supportedDevice",
-      "style": "dark",
-      "background": "#F8F8F8"
+      "style": "light",
+      "background": "#4cb3f9"
     },
     "usingComponents": true,
     "nvueCompiler": "uni-app",
@@ -86,7 +90,7 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "2.3.3",
+      "compilerVersion": "2.3.7",
       "control": "v8",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
@@ -94,10 +98,32 @@
         "flex-direction": "column"
       }
     },
-    "secondwebview": {
-      "id": "1",
-      "launch_path": "__uniappview.html",
-      "kernel": "WKWebview"
+    "tabBar": {
+      "color": "#000",
+      "selectedColor": "#4CB3F9",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "static/personal@2x.png",
+          "selectedIconPath": "static/personalblue@2x.png",
+          "text": "个人验房"
+        },
+        {
+          "pagePath": "pages/property_inspection/property_inspection",
+          "iconPath": "static/house@2x.png",
+          "selectedIconPath": "static/houseblue@2x.png",
+          "text": "房产查验"
+        },
+        {
+          "pagePath": "pages/air_detection/air_detection",
+          "iconPath": "static/cloud@2x.png",
+          "selectedIconPath": "static/cloudblue@2x.png",
+          "text": "空气检测"
+        }
+      ],
+      "height": "50px"
     }
   }
 }

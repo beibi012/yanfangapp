@@ -4,8 +4,9 @@
 		<view class="app_top">
 		</view>
 		<view class="normal_nav">
+			<view class="top"></view>
 			<navigator class="left" open-type="navigateBack">返回</navigator>
-			<view class="title">{{title.number}}号楼房间-{{title.unit}}单元</view>
+			<view class="title">8号楼房间-2单元</view>
 			<view class="right"></view>
 		</view>
 		<view class="states">

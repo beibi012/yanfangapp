@@ -161,13 +161,18 @@ var _default =
     toWritinginfomation: function toWritinginfomation() {
       uni.navigateTo({
         url: 'writing_infomation',
+        animationType: "pop-in",
+        animationDuration: 300,
         success: function success(res) {
-          console.log("a");
+          console.log("企业账户填写完成，页面跳转");
         },
         fail: function fail() {},
         complete: function complete() {} });
 
 
+    },
+    formSubmit: function formSubmit(e) {
+      console.log(e);
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

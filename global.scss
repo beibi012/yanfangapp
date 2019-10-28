@@ -7,21 +7,30 @@
 //定义变量
 	$font-color: #2d7bf6;//字体颜色
 	$font-size: 30upx;//字体大小
-	$navtop-color: #c0c0c0;//顶部导航条背景颜色
+	$navtop-color: #00b4ff;//顶部导航条背景颜色
+	$button-color: #00b4ff;;//按钮颜色
 	$bg:#ccdfee;
 //公用样式
 //nav顶部的div
 	.app_top{
-		height: 60upx;
+		width: 100%;
+		height: 160upx;
+		
 	}
 	
 	
 	//navbar顶部导航条（头像、定位）
 	.navtop{
+		position: fixed;
+		top: 0;
 		width: 100%;
-		height: 100upx;
+		height: 160upx;
 		overflow: hidden;
 		background-color: $navtop-color;
+		color: #fff;
+		.top{
+			height: 60upx;
+		}
 		.navtop_head{
 			width: 20%;
 			height: 100upx;
@@ -29,9 +38,11 @@
 			float: left;
 			text-align: center;
 			image{
-				width: 60%;
-				margin-top: 3%;
+				width: 90upx;
+				height: 90upx;
+				margin: 0 0 5upx 0;
 				border-radius: 50%;
+				border: 5upx solid white;
 			}
 		}
 		.navtop_location{
@@ -64,12 +75,16 @@
 	
 	//普通顶部导航条（只有title、返回）
 	.normal_nav{
+		position: fixed;
+		top: 0;
 		width: 100%;
-		height: 90upx;
+		height: 160upx;
 		white-space: nowrap;
-		background-color: #007AFF;
-		border-top: black 1px solid;
-		border-bottom: black 1px solid;
+		background-color: $navtop-color;
+		color: #fff;
+		.top{
+			height: 60upx;
+		}
 		.left{
 			display: inline-block;
 			width: 90upx;
@@ -128,6 +143,16 @@
 			display: inline-block;
 			margin-left: 2%;
 			float: left;
+			color: #333;
+		}
+		.basic_titleblod{
+			width: 20%;
+			height: 80upx;
+			display: inline-block;
+			margin-left: 2%;
+			float: left;
+			color: #333;
+			font-weight: 500;
 		}
 		.basic_content{  //表单显示内容基础样式
 			display: inline-block;
@@ -145,7 +170,11 @@
 			width: 60%;
 			height: 50upx;
 			margin: 15upx 0 15upx 5%;
+			border: 1px solid #ddd;
 			border-radius: 10upx;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 		.basic_radio{
 			width: 65%;
@@ -164,6 +193,7 @@
 			margin: 15upx 0 15upx 5%;
 			line-height: 50upx;
 			background-color: #fff;
+			border: 1px solid #ddd;
 			border-radius: 10upx;
 			text-indent: 2%;
 			.arrow{
@@ -171,20 +201,11 @@
 				float: right;
 				top: 5upx;
 				display: inline-block;
-				width: 37.5upx;
-				height: 25upx;
+				width: 40upx;
+				height: 40upx;
 				overflow: hidden;
 				margin-top: 3%;
 				margin-right: 2%;
-				.arrowbottom{
-					position: relative;
-					top:-14upx;
-					left: 10upx;
-					width: 25upx;
-					height: 25upx;
-					background-color: black;
-					transform:rotate(135deg);
-				}
 			}
 		}
 		
@@ -198,9 +219,10 @@
 		font-weight: bold;
 		text-indent: 2%;
 		margin-bottom: 2%;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
 		white-space: nowrap;
+		color: #666;
 	}
 	.add_headline{  //含有添加按钮的黑色大标题
 		width: 100%;
@@ -210,24 +232,22 @@
 		font-weight: bold;
 		text-indent: 2%;
 		margin-bottom: 2%;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
 		white-space: nowrap;
+		color: #666;
 		.add_button{  //添加按钮
 			display: inline-block;
 			position: relative;
 			background-color: #fff;
 			width: 50upx;
 			height: 50upx;
-			font-size: 50upx;
-			border: 1px black solid;
-			border-radius: 50%;
 			float: right;
-			margin:15upx 3% 15upx 0;
-			text{
+			margin:15upx 5% 15upx 0;
+			.add_img{
 				position: absolute;
-				    top: -20upx;
-				    left: 10upx;
+				width: 50upx;
+				height: 50upx;
 			}
 		}
 	}
@@ -250,6 +270,7 @@
 				width: 96%;
 				margin: 2% 2%;
 				height: 150upx;
+				border: 1px solid #ddd;
 				border-radius: 10upx;
 			}
 			.basic_title2{  //与textarea2搭配的标题
@@ -265,6 +286,7 @@
 				width: 60%;
 				margin: 2% 3%;
 				height: 150upx;
+				border: 1px solid #ddd;
 				border-radius: 10upx;
 			}
 			.picture{
@@ -275,22 +297,20 @@
 				overflow: hidden;
 				line-height: 150upx;
 				border-radius: 10upx;
+				border: 1px solid #ddd;
 				.addpic{
 					display: inline-block;
 					width: 50upx;
 					height:50upx;
-					font-size: 60upx;
-					border: 1px solid black;
-					border-radius: 50%;
-					margin:50upx 0 50upx 2%;
-					position: relative;
-					text{
-						position: absolute;
-						bottom:-45upx;
-						right: 7upx;
+					margin-left: 2%;
+					.add_img{
+						display: inline-block;
+						width: 50upx;
+						height:50upx;
+						margin:50upx 0;
 					}
 					
-				}
+				} 
 				.pic_container{
 					display: inline-block;
 					position: relative;
@@ -308,21 +328,13 @@
 				.del{
 					display: inline-block;
 					position: absolute;
-					color: #fff;
-					font-weight: bold;
-					background-color: red;
-					border: red 1px solid;
-					border-radius: 50%;
 					left: 66%;
+					top:-25%;
 					width: 40upx;
 					height: 40upx;
-					vertical-align: top;
-					text-align: center;
-					view{
+					z-index: 5;
+					.del_img{
 						display: inline-block;
-						position: absolute;
-						top: -60upx;
-						left: 0;
 						width: 40upx;
 						height: 40upx;
 					}
@@ -350,7 +362,6 @@
 		margin-left: 2%;
 		margin-top: 2%;
 		width: 80%;
-		
 		white-space: nowrap;
 		.search{
 		display: inline-block;
@@ -359,41 +370,39 @@
 		height: 60upx;
 		vertical-align: bottom;
 		font-size: 30upx;
-		border-bottom: 1px black solid;
-		border-top: 1px black solid;
+		border-bottom: 1px #ddd solid;
+		border-top: 1px #ddd solid;
 	}
 	.search_left{
 		display: inline-block;
 		vertical-align: bottom;
+		background-color: #fff;
 		width: 60upx;
 		height: 60upx;
-		background-color: #fff;
 		border-radius: 50% 0 0 50%;
-		border-top: black solid 1px;
-		border-left: black solid 1px;
-		border-bottom: black solid 1px;
+		border-top: #ddd solid 1px;
+		border-left: #ddd solid 1px;
+		border-bottom: #ddd solid 1px;
 		.search_icon{
 			position: relative;
 			top:10upx;
 			left: 10upx;
 			width: 40upx;
 			height: 40upx;
-			border-radius: 50%;
 		}
 	}
 	.search_right{
 		display: inline-block;
+		background-color: #fff;
 		width: 60upx;
 		height: 60upx;
-		background-color: #fff;
 		vertical-align: bottom;
 		border-radius: 0 50% 50% 0;
-		border-top: black solid 1px;
-		border-right: black solid 1px;
-		border-bottom: black solid 1px;
+		border-top: #ddd solid 1px;
+		border-right: #ddd solid 1px;
+		border-bottom: #ddd solid 1px;
 	}
 	}
-	
 	
 	
 		
@@ -404,6 +413,10 @@
 //app图标名字
 	.login_container{
 		width: 100%;
+		height: 1325upx;
+		// background: url(static/login.png) no-repeat 0 0;
+		background-size: cover;
+		background-image: linear-gradient(#00b4ff, #fff );;
 		.login_icon{
 				width: 30%;
 				margin: 15% 35% 5% 35%;
@@ -412,11 +425,13 @@
 				display: flex;
 				justify-content: center;
 				font-size: 1.5em;
+				color: #fff;
 			}
+			
 	}
 		//企业账号输入框
 	.username_container{
-		border-bottom: #000 1px solid;
+		border-bottom: #fff 1px solid;
 		overflow: hidden;
 		margin: 5% 100upx 0 100upx;
 		padding: 2%;
@@ -429,11 +444,12 @@
 		.username_input{
 			display: inline-block;
 			float: left;
+			color: #fff;
 		}
 	}
 		//密码输入框
 	.password_container{
-		border-bottom: #000 1px solid;
+		border-bottom: #fff 1px solid;
 		overflow: hidden;
 		margin: 5% 100upx 0 100upx;
 		padding: 2%;
@@ -449,13 +465,14 @@
 		}
 	}
 	//提交按钮
-	.login_submit{
+	.submit{
 		width: 550upx;
-		margin: 5% 100upx 0 100upx;
+		margin: 80upx 100upx 0 100upx;
+		background-color: $button-color!important;
 	}
 	//忘记密码
 	.login_forgetpassword{
-		color:$font-color;
+		color:#4CB3F9;
 		font-size: $font-size;
 		margin-top: 10%;
 		margin-left: 70%;
@@ -466,7 +483,6 @@
 	.forget_container{
 		width: 100%;
 		.f_input{
-			background: #eee;
 			border-bottom: #000 1px solid;
 			overflow: hidden;
 			padding: 2%;
@@ -475,25 +491,29 @@
 				width: 50upx;
 				height: 50upx;
 				float: left;
-				margin-right: 5%;
+				margin:10upx 0 10upx 2%;
 			}
-			.verificationcode_input{
+			.forget_input{
 				display: inline-block;
+				height: 50upx;
 				width: 50%;
+				margin: 10upx 0 15upx 50upx;
 			}
 			.verificationcode_button{
 				display: inline-block;
 				float: right;
 				width: 30%;
-				font-size: 15upx;
+				font-size: 30upx;
+				border-radius: 50upx;
+				background-color: $button-color;
 				
 			}
 			
 		}
 		.forget_complete{
-			position: absolute;
-			width: 100%;
-			bottom: 5%;
+			width: 550upx;
+			margin-top: 80upx;
+			background-color: $button-color!important;
 		}
 	}
 	
@@ -503,8 +523,7 @@
 		width: 100%;
 		.winput_container{
 			width: 100%;
-			background: #eee;
-			border-bottom: #000 1px solid;
+			border-bottom: rgba(155,155,155,0.5) 1px solid;
 			overflow: hidden;
 			padding: 2%;
 			height: 70upx;
@@ -512,15 +531,19 @@
 			float: left;
 			width: 25%;
 			text-align: center;
+			color: #666;
 		}
 		.w_input{
+			display: inline-block;
+			height: 40upx;
 			float: left;
+			margin: 10upx 0 15upx 50upx;
 		}
 		}
 		.write_complete{
-			position: absolute;
-			bottom: 5%;
-			width: 100%;
+			background-color: $button-color;
+			width: 550upx;
+			margin-top: 80upx;
 		}
 	}
 	
@@ -529,14 +552,14 @@
 
 
 //个人查验页面样式index
-.personal_inspection{
+.personal_inspection {
 	.remind{
 		width: 100%;
 		height: 100upx;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
-		position: fixed;
-		bottom: 0;//手机上要写0
+		border-top:  1px solid rgba(155,155,155,0.5);
+		border-bottom:  1px solid rgba(155,155,155,0.5);
+		position:  fixed;
+		bottom: 0; //手机上要写0
 		white-space: nowrap;
 		overflow: hidden;
 		.remind_icon{
@@ -546,7 +569,7 @@
 			margin: 10upx 2% 10upx 2%;
 			float: left;
 		}
-		.remind_text{
+		.remind_text {
 			width: 65%;
 			height: 80upx;
 			margin: 10upx 0;
@@ -565,7 +588,7 @@
 				white-space: nowrap;
 			}
 			.time{
-				display: inline-block;
+				display:  inline-block;
 				width: 30%;
 				font-size: 25upx;
 				color: #C0C0C0;
@@ -577,7 +600,7 @@
 			}
 			
 		}
-		.unread_container{
+		.unread_container {
 			width: 19%;
 			height: 80upx;
 			float: left;
@@ -585,7 +608,7 @@
 			.unread_text{
 				font-size: 25upx;
 			}
-			.gt{
+			.gt {
 				font-size: 50upx;
 				color: #C0C0C0;
 			}
@@ -600,6 +623,7 @@
 			height: 180upx;
 			margin: 2% 2% 0 2%;
 			border: 1px solid black;
+			border-radius: 10upx;
 			view{
 				height: 25%;
 				font-size: 35upx;
@@ -648,41 +672,25 @@
 
 	//个人信息
 	.bi_container{
-		background-color: $bg;
+		.basic_container{
+			margin-bottom: 2%;
+			border-bottom: 1px solid #ddd;
+		}
 	}
 	
 	
 	//登记问题页面
 	.takenotes_container{
-		background-color: $bg;
 		width: 100%;
 	}
 		
 		
-		
-	
-	
-	
 	//反馈
-	.feedback_container{
+    .feedback_container{
 		width: 100%;
-		background-color: $bg;
 		padding-bottom: 2%;
-		.feedback_title{
-			width: 100%;
-			display: inline-block;
-			margin-left: 2%;
-			font-size: 30upx;
-		}
-		.feedback{
-			background-color: #fff;
-			width: 96%;
-			margin: 2%;
-		}
-		button{
-			width: 100%;
-			position: fixed;
-			bottom: 0;
+		.textarea{
+			height: 300upx;
 		}
 	}
 	
@@ -690,11 +698,10 @@
 	//复检页面
 	.recheck_comtainer{
 		width: 100%;
-		background-color: $bg;
 	}
-	.scc{
-		width: 100%;
-		}
+	// .scc{
+	// 	width: 100%;
+	// }
 		
 	
 	
@@ -702,16 +709,19 @@
 	.search_container{
 		margin-top: 60upx;
 		width: 100%;
-		background-color: $bg;
 		min-height: 1280upx;
 		
 	}
 	.search_nav{
+		position: fixed;
+		top: 0;
 		width: 100%;
-		height: 90upx;
+		height: 160upx;
 		white-space: nowrap;
-		background-color: #fff;
-		border-bottom: 1px solid black;
+		background-color: $navtop-color;
+		.top{
+			height: 60upx;
+		}
 		.back{
 			display: inline-block;
 			width: 90upx;
@@ -719,6 +729,7 @@
 			float: left;
 			line-height: 90upx;
 			text-align: center;
+			color: #fff;
 		}
 		.searchnav_container{
 			display: inline-block;
@@ -733,23 +744,26 @@
 			margin-left: 7%;
 			line-height: 90upx;
 			text-align: center;
+			color: #fff;
 		}
 	}
 	.search_content{
 		width: 100%;
 		height: 180upx;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #ddd;
 		
 		.developer{
 			margin-top: 1%;
 			font-size: 30upx;
 			text-indent: 20upx;
+			color: #333;
 		}
 		.householder{
 			display: inline-block;
 			font-size: 30upx;
 			width: 25%;
 			float: left;
+			color: #666;
 			text-indent: 20upx;
 		}
 		.address{
@@ -759,6 +773,7 @@
 			float: left;
 			overflow: hidden;
 			white-space: nowrap;
+			color: #666;
 			text-overflow: ellipsis;
 		}
 		.checkitem{
@@ -767,14 +782,14 @@
 			width: 25%;
 			float: left;
 			text-indent: 20upx;
-			color: #C0C0C0;
+			color: #999;
 		}
 		.problem_content{
 			display: inline-block;
 			width: 75%;
 			font-size: 30upx;
 			float: left;
-			color: #C0C0C0;
+			color: #999;
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
@@ -785,14 +800,14 @@
 			width: 25%;
 			float: left;
 			text-indent: 20upx;
-			color: #C0C0C0;
+			color: #999;
 		}
 		.time{
 			display: inline-block;
 			width: 75%;
 			font-size: 30upx;
 			float: left;
-			color: #C0C0C0;
+			color: #999;
 		}
 	}
 	
@@ -806,9 +821,21 @@
 				display: inline-block;
 				width: 30%;
 				float: left;
-				border: black 1px solid;
-				border-radius: 6%;
+				border: #ddd 1px solid;
+				border-radius: 10upx;
 				margin: 1.3%;
+				color: #00B4FF;
+				.arrow{
+					position: relative;
+					float: right;
+					top: 5upx;
+					display: inline-block;
+					width: 40upx;
+					height: 40upx;
+					overflow: hidden;
+					margin-top: 8%;
+					margin-right: 2%;
+				}
 			}
 		}
 		.newly_problem{
@@ -817,8 +844,9 @@
 				display: inline-block;
 				width: 70%;
 				margin: 2% 15% 2% 15%;
-				border: black 1px solid;
-				border-radius: 3%;
+				border: #ddd 1px solid;
+				color: #666;
+				border-radius: 50upx;
 				text-align: center;
 			}
 		
@@ -834,25 +862,31 @@
 		
 		.problemlist{
 			width: 100%;
-			background-color: #eeeeee;
 			height: 560upx;
 			overflow: hidden;
 			.problem:first-child{
-				border-top: black 1px solid;
+				border-top: #ddd 1px solid;
 			}
 			.problem{
 				width: 100%;
 				height: 140upx;
-				border-bottom: black 1px solid;
+				border-bottom: #ddd 1px solid;
+				.color{
+					display: inline-block;
+					float: left;
+					width: 15upx;
+					height: 35upx;
+					margin-top: 1%;
+					margin-left: 5%;
+					background-color: #4CD964;
+				}
 				.main_item{
 					float: left;
 					display: inline-block;
 					width: 70%;
-					text-indent: 35upx;
+					color: #333;
+					text-indent: 18upx;
 					font-size: 35upx;
-					image{
-						width: 35upx;
-					}
 				}
 				.problem_content{
 					display: inline-block;
@@ -860,7 +894,7 @@
 					width: 70%;
 					text-indent: 70upx;
 					font-size: 30upx;
-					color: #808080;
+					color: #999;
 					white-space: nowrap;
 					text-overflow: ellipsis;
 					overflow: hidden;
@@ -871,7 +905,7 @@
 					float: left;
 					text-indent: 70upx;
 					font-size: 30upx;
-					color: #808080;
+					color: #999;
 				}
 				.sate{
 					display: inline-block;
@@ -886,21 +920,19 @@
 					text{
 						margin-left: 5upx;
 					}
-					.blackdot{
+					.reddot{
 						display: inline-block;
 						width: 28upx;
 						height: 28upx;
-						background-color: #000;
-						border: black 1px solid;
+						background-color: #eb3226;
 						border-radius: 50%;
 						
 					}
-					.whitedot{
+					.greendot{
 						display: inline-block;
 						width:28upx;
 						height: 28upx;
-						background-color: #fff;
-						border: black 1px solid;
+						background-color: #a5d255;
 						border-radius: 50%;
 						
 					}
@@ -940,11 +972,7 @@
 	
 	
 	//复查-问题列表
-	.problemlist_container{
-		.search_content:first-child{
-			border-top: 1px black solid;
-		}
-	}
+	
 	
 	
 //房产查验
@@ -1003,7 +1031,7 @@
 				text-align: center;
 				border: 1px solid black;
 				background-color: #fff;
-				border-radius: 15%;
+				border-radius: 10upx;
 				vertical-align: bottom;
 				
 			}
@@ -1058,7 +1086,7 @@
 				margin-left: 4%;
 				margin-top: 20upx;
 				border: 1px solid black;
-				border-radius: 10%;
+				border-radius: 10upx;
 				background-color: #fff;
 			}
 			.undelivered{
@@ -1148,6 +1176,7 @@
 	//专项检测
 	.specialitem_container{
 		background-color: $bg;
+		padding-top: 2%;
 		input{
 			display: inline-block;
 			background-color: #fff;
@@ -1169,6 +1198,11 @@
 		font-size: 35upx;
 		overflow: hidden;
 		white-space: nowrap;
+		.basic_title{
+			display: inline-block;
+			margin: 2%;
+			font-size: 30upx;
+		}
 		view{
 			display: inline-block;
 			width: 20%;
@@ -1177,11 +1211,17 @@
 			float: left;
 		}
 		.date{
+			margin-top: 2%;
 			background-color: #fff;
+			font-size: 35upx;
 			width: 30%;
 			margin-left: 10%;
 			text-align: center;
-			border-radius: 15upx;
+			border: 1px solid #ddd;
+			border-radius: 50upx;
+		}
+		.position{
+			margin-left: 3%;
 		}
 		.time{
 			background-color: #fff;
@@ -1209,6 +1249,7 @@
 		image{
 			width: 120upx;
 			height: 120upx;
+			border: 5upx solid white;
 			border-radius: 50%;
 		}
 		.name{
@@ -1281,12 +1322,12 @@
 		border-bottom: 1px solid black;
 	}
 	.basic_title{
-		font-size: 40upx;
+		font-size: 35upx;
 		vertical-align: middle;
 	}
 	.basic_content{
 		width: 66%;
-		font-size: 40upx;
+		font-size: 35upx;
 		text-align: right;
 		vertical-align: middle;
 	}
@@ -1296,7 +1337,7 @@
 		height: 90upx;
 		border-radius: 50%;
 		float: right;
-		margin: 5upx 1% 5upx 0;
+		margin: 5upx 3% 5upx 0;
 	}
 	.right{
 		float: right;
@@ -1306,78 +1347,167 @@
 	}
 }
 
+
+//定位
+.newlocation{
+	background-color: $bg;
+	margin-top: 2%;
+	min-height: 140upx;
+	.up{
+		font-size: 30upx;
+		color: #808080;
+		height: 70upx;
+		line-height: 70upx;
+		text-indent: 2%;
+	}
+	.down{
+		line-height: 70upx;
+		font-size: 35upx;
+		.img{
+			display: inline-block;
+			width: 50upx;
+			height: 50upx;
+			margin: 5upx 0 5upx 2%;
+		}
+		.left{
+			display: inline-block;
+			line-height: 70upx;
+			width: 50%;
+			height: 70upx;
+			margin-left: 2%;
+			vertical-align: top;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.right{
+			display: inline-block;
+			float: right;
+			margin-right: 2%;
+		}
+		.city{
+			display: inline-block;
+			height: 60upx;
+			width: 20%;
+			line-height: 60upx;
+			text-align: center;
+			display: inline-block;
+			background-color: #fff;
+			border: 1px solid black;
+			border-radius: 15upx;
+			margin: 2%;
+		}
+	}
+}
+
 	
 	//实测实量
 	.measure_container{
-		width: 100%;
-		background-color: $bg;
-		.m_title{
-			width: 100%;
-			height: 80upx;
-			border-bottom: black 1upx solid;
-			border-top: black 1upx solid;
-			line-height: 80upx;
-			font-size: 35upx;
-			text-indent: 2%;
+		input{
+			border-radius: 10upx;
 		}
-		.m_content{
+		.basic_headline{
+			color: #00b4ff;
+			border-bottom: 0;
+			border-top: 0;
+			font-size: 40upx;
+		}
+		.content{
 			display: inline-block;
 			width: 100%;
-			margin-top: 5%;
 			padding-bottom: 2%;
 			line-height: 50upx;
 			font-size: 30upx;
-			text-indent: 2%;
 			white-space: nowrap;
-			border-bottom: black 1upx solid;
-			.m_standard{
-				display: inline-block;
-				margin-left: 65%;
+			.roomtype{
+				margin-left: 2%;
+				font-size: 35upx;
+				color: #333;
 			}
-			.m_inputcontent{
-				width: 100%;
-				margin-top: 3%;
-				.m_inputtext{
-					display: inline-block;
-					width: 20%;
-					vertical-align: top;
-					text{
-						color: #808080;
+			.standard{
+				float: right;
+				margin-right: 10%;
+				color: #333;
+			}
+			.right1{
+				margin-left: 78%;
+				color: #999;
+			}
+			.right2{
+				margin-left: 3%;
+				color: #999;
+			}
+			.data_content{
+				display: inline-block;
+				width: 75%;
+				.wrap{
+					white-space: normal;
+				    .manyinput{
+						display: inline-block;
+						width: 70upx;
+						background-color: #fff;
+						margin-left: 3%;
+						margin-top: 1%;
+						border: 1px solid #ddd;
 					}
 				}
-				.m_inputvalue{
-					display: inline-block;
-					width: 50%;
-					background-color: #fff;
-					
+					.inputcontent{
+					width: 100%;
+					margin-top: 3%;
+					height: 60upx;
+					text-indent: 2%;
+					.inputtitle{
+						display: inline-block;
+						width: 20%;
+						vertical-align: top;
+						text{
+							color: #666;
+						}
+					}
+						.inputvalue{
+						display: inline-block;
+						width: 75%;
+						border: 1px solid #ddd;
+						
+					}
 				}
-				.m_inputstandard{
-					display: inline-block;
-					width: 20%;
-					background-color: #fff;
-					margin-left: 2%;
-				}
+			
 			}
+			
 		}
-		.m_bottom{
-			width: 100%;
-			.m_title2{
-				display: inline-block;
-				width: 100%;
-				line-height: 50upx;
-				font-size: 30upx;
-				text-indent: 2%;
-				white-space: nowrap;
-			}
-			.m_bottominput{
-				display: inline-block;
-				width: 15%;
-				margin-left: 4%;
+		.standard_container{
+			display: inline-block;
+				width: 20%;
+				height: 355upx;
+				margin-left: 3%;
 				margin-top: 2%;
-				background-color: #fff;
-			}
+				vertical-align: top;
+				border: 1px solid #ddd;
+				.inputstandard{
+				display: inline-block;
+				width: 85%;
+				margin-left: 2%;
+				margin-top: 155upx;
 		}
-		.m_submit{
-			margin-top: 5%;
+		}
+		.standard_container2{
+			display: inline-block;
+			width: 23%;
+			margin-left: 3%;
+			vertical-align: top;
+			white-space: nowrap;
+			.half{
+				display: inline-block;
+				width: 50%;
+				vertical-align: top;
+				white-space: normal;
+				.manyinput{
+					display: inline-block;
+					width: 70upx;
+					background-color: #fff;
+					margin-top: 6%;
+					border: 1px solid #ddd;
+				}
+			}
 		}
 	}

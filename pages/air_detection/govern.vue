@@ -1,31 +1,36 @@
 <template>
-	<view style="background-color: #ccdfee;">
-		<form @submit="">
-		<view class="basic_container2">
-			<text class="basic_title">治理过程(上传图片或视频)</text>
-			<view class="picture">
-				<view class="pic_container" v-for="(p,index) in pic">
-					<image class="pic" :src="p" mode="aspectFill" @click="previewPic(index)"></image>
-					<view class="del" @click="delPic(index)"><view>x</view></view>
-				</view>
-				<view class="addpic"   @click="addPic"><text>+</text></view>
+	<view style="background-color: #ccdfee;"> 
+		<scroll-view scroll-y="true" >
+			<view>
+				<form @submit="">
+				<view class="basic_container2">
+					<text class="basic_title">治理过程(上传图片或视频)</text>
+					<view class="picture">
+						<view class="pic_container" v-for="(p,index) in pic">
+							<image class="pic" :src="p" mode="aspectFill" @click="previewPic(index)"></image>
+							<view class="del" @click="delPic(index)"><view>x</view></view>
+						</view>
+						<view class="addpic"   @click="addPic"><text>+</text></view>
+					</view>
+					</view>
+					<view class="basic_headline removebottomline">
+						<text>治理时间</text>
+					</view>
+					<!-- 日期样式p1156 -->
+					<view class="date_container">
+						<view>当前选择</view>
+						<picker name="b" mode="date" :value="date" @change="pickDate">
+							<view class="date">{{date}}</view>
+						</picker>
+						<picker name="a" :value="upordown_index" :range="upordown" @change="pickTime">
+							<view class="time">{{upordown[upordown_index]}}</view>
+						</picker>
+					</view>
+					<button form-type="submit" type="primary">提交</button>
+					</form>
 			</view>
-			</view>
-			<view class="basic_headline removebottomline">
-				<text>治理时间</text>
-			</view>
-			<!-- 日期样式p1156 -->
-			<view class="date_container">
-				<view>当前选择</view>
-				<picker name="b" mode="date" :value="date" @change="pickDate">
-					<view class="date">{{date}}</view>
-				</picker>
-				<picker name="a" :value="upordown_index" :range="upordown" @change="pickTime">
-					<view class="time">{{upordown[upordown_index]}}</view>
-				</picker>
-			</view>
-			<button form-type="submit" type="primary">提交</button>
-			</form>
+		</scroll-view>
+		
 	</view>
 </template>
 

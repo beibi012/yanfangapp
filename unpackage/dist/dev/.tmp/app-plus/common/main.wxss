@@ -30,13 +30,20 @@
   clear: both;
 }
 .app_top {
-  height: 60rpx;
+  width: 100%;
+  height: 160rpx;
 }
 .navtop {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100rpx;
+  height: 160rpx;
   overflow: hidden;
-  background-color: #c0c0c0;
+  background-color: #00b4ff;
+  color: #fff;
+}
+.navtop .top {
+    height: 60rpx;
 }
 .navtop .navtop_head {
     width: 20%;
@@ -46,9 +53,11 @@
     text-align: center;
 }
 .navtop .navtop_head image {
-      width: 60%;
-      margin-top: 3%;
+      width: 90rpx;
+      height: 90rpx;
+      margin: 0 0 5rpx 0;
       border-radius: 50%;
+      border: 5rpx solid white;
 }
 .navtop .navtop_location {
     width: 79%;
@@ -77,12 +86,16 @@
         float: right;
 }
 .normal_nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 90rpx;
+  height: 160rpx;
   white-space: nowrap;
-  background-color: #007AFF;
-  border-top: black 1px solid;
-  border-bottom: black 1px solid;
+  background-color: #00b4ff;
+  color: #fff;
+}
+.normal_nav .top {
+    height: 60rpx;
 }
 .normal_nav .left {
     display: inline-block;
@@ -136,6 +149,16 @@
     display: inline-block;
     margin-left: 2%;
     float: left;
+    color: #333;
+}
+.basic_container .basic_titleblod {
+    width: 20%;
+    height: 80rpx;
+    display: inline-block;
+    margin-left: 2%;
+    float: left;
+    color: #333;
+    font-weight: 500;
 }
 .basic_container .basic_content {
     display: inline-block;
@@ -154,7 +177,12 @@
     width: 60%;
     height: 50rpx;
     margin: 15rpx 0 15rpx 5%;
+    border: 1px solid #ddd;
     border-radius: 10rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 .basic_container .basic_radio {
     width: 65%;
@@ -172,6 +200,7 @@
     margin: 15rpx 0 15rpx 5%;
     line-height: 50rpx;
     background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10rpx;
     text-indent: 2%;
 }
@@ -180,22 +209,11 @@
       float: right;
       top: 5rpx;
       display: inline-block;
-      width: 37.5rpx;
-      height: 25rpx;
+      width: 40rpx;
+      height: 40rpx;
       overflow: hidden;
       margin-top: 3%;
       margin-right: 2%;
-}
-.basic_container .basic_picker .arrow .arrowbottom {
-        position: relative;
-        top: -14rpx;
-        left: 10rpx;
-        width: 25rpx;
-        height: 25rpx;
-        background-color: black;
-        -webkit-transform: rotate(135deg);
-            -ms-transform: rotate(135deg);
-                transform: rotate(135deg);
 }
 .basic_headline {
   width: 100%;
@@ -205,9 +223,10 @@
   font-weight: bold;
   text-indent: 2%;
   margin-bottom: 2%;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   white-space: nowrap;
+  color: #666;
 }
 .add_headline {
   width: 100%;
@@ -217,9 +236,10 @@
   font-weight: bold;
   text-indent: 2%;
   margin-bottom: 2%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   white-space: nowrap;
+  color: #666;
 }
 .add_headline .add_button {
     display: inline-block;
@@ -227,16 +247,13 @@
     background-color: #fff;
     width: 50rpx;
     height: 50rpx;
-    font-size: 50rpx;
-    border: 1px black solid;
-    border-radius: 50%;
     float: right;
-    margin: 15rpx 3% 15rpx 0;
+    margin: 15rpx 5% 15rpx 0;
 }
-.add_headline .add_button text {
+.add_headline .add_button .add_img {
       position: absolute;
-      top: -20rpx;
-      left: 10rpx;
+      width: 50rpx;
+      height: 50rpx;
 }
 .removebottomline {
   border-bottom: 0;
@@ -257,6 +274,7 @@
     width: 96%;
     margin: 2% 2%;
     height: 150rpx;
+    border: 1px solid #ddd;
     border-radius: 10rpx;
 }
 .basic_container2 .basic_title2 {
@@ -272,6 +290,7 @@
     width: 60%;
     margin: 2% 3%;
     height: 150rpx;
+    border: 1px solid #ddd;
     border-radius: 10rpx;
 }
 .basic_container2 .picture {
@@ -282,21 +301,19 @@
     overflow: hidden;
     line-height: 150rpx;
     border-radius: 10rpx;
+    border: 1px solid #ddd;
 }
 .basic_container2 .picture .addpic {
       display: inline-block;
       width: 50rpx;
       height: 50rpx;
-      font-size: 60rpx;
-      border: 1px solid black;
-      border-radius: 50%;
-      margin: 50rpx 0 50rpx 2%;
-      position: relative;
+      margin-left: 2%;
 }
-.basic_container2 .picture .addpic text {
-        position: absolute;
-        bottom: -45rpx;
-        right: 7rpx;
+.basic_container2 .picture .addpic .add_img {
+        display: inline-block;
+        width: 50rpx;
+        height: 50rpx;
+        margin: 50rpx 0;
 }
 .basic_container2 .picture .pic_container {
       display: inline-block;
@@ -316,22 +333,14 @@
 .basic_container2 .picture .pic_container .del {
         display: inline-block;
         position: absolute;
-        color: #fff;
-        font-weight: bold;
-        background-color: red;
-        border: red 1px solid;
-        border-radius: 50%;
         left: 66%;
+        top: -25%;
         width: 40rpx;
         height: 40rpx;
-        vertical-align: top;
-        text-align: center;
+        z-index: 5;
 }
-.basic_container2 .picture .pic_container .del view {
+.basic_container2 .picture .pic_container .del .del_img {
           display: inline-block;
-          position: absolute;
-          top: -60rpx;
-          left: 0;
           width: 40rpx;
           height: 40rpx;
 }
@@ -358,19 +367,19 @@
     height: 60rpx;
     vertical-align: bottom;
     font-size: 30rpx;
-    border-bottom: 1px black solid;
-    border-top: 1px black solid;
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
 }
 .search_cont .search_left {
     display: inline-block;
     vertical-align: bottom;
+    background-color: #fff;
     width: 60rpx;
     height: 60rpx;
-    background-color: #fff;
     border-radius: 50% 0 0 50%;
-    border-top: black solid 1px;
-    border-left: black solid 1px;
-    border-bottom: black solid 1px;
+    border-top: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
 }
 .search_cont .search_left .search_icon {
       position: relative;
@@ -378,21 +387,25 @@
       left: 10rpx;
       width: 40rpx;
       height: 40rpx;
-      border-radius: 50%;
 }
 .search_cont .search_right {
     display: inline-block;
+    background-color: #fff;
     width: 60rpx;
     height: 60rpx;
-    background-color: #fff;
     vertical-align: bottom;
     border-radius: 0 50% 50% 0;
-    border-top: black solid 1px;
-    border-right: black solid 1px;
-    border-bottom: black solid 1px;
+    border-top: #ddd solid 1px;
+    border-right: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
 }
 .login_container {
   width: 100%;
+  height: 1325rpx;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00b4ff), to(#fff));
+  background-image: -o-linear-gradient(#00b4ff, #fff);
+  background-image: linear-gradient(#00b4ff, #fff);
 }
 .login_container .login_icon {
     width: 30%;
@@ -408,9 +421,10 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.5em;
+    color: #fff;
 }
 .username_container {
-  border-bottom: #000 1px solid;
+  border-bottom: #fff 1px solid;
   overflow: hidden;
   margin: 5% 100rpx 0 100rpx;
   padding: 2%;
@@ -424,9 +438,10 @@
 .username_container .username_input {
     display: inline-block;
     float: left;
+    color: #fff;
 }
 .password_container {
-  border-bottom: #000 1px solid;
+  border-bottom: #fff 1px solid;
   overflow: hidden;
   margin: 5% 100rpx 0 100rpx;
   padding: 2%;
@@ -441,12 +456,13 @@
     float: left;
     display: inline-block;
 }
-.login_submit {
+.submit {
   width: 550rpx;
-  margin: 5% 100rpx 0 100rpx;
+  margin: 80rpx 100rpx 0 100rpx;
+  background-color: #00b4ff !important;
 }
 .login_forgetpassword {
-  color: #2d7bf6;
+  color: #4CB3F9;
   font-size: 30rpx;
   margin-top: 10%;
   margin-left: 70%;
@@ -455,7 +471,6 @@
   width: 100%;
 }
 .forget_container .f_input {
-    background: #eee;
     border-bottom: #000 1px solid;
     overflow: hidden;
     padding: 2%;
@@ -465,30 +480,33 @@
       width: 50rpx;
       height: 50rpx;
       float: left;
-      margin-right: 5%;
+      margin: 10rpx 0 10rpx 2%;
 }
-.forget_container .f_input .verificationcode_input {
+.forget_container .f_input .forget_input {
       display: inline-block;
+      height: 50rpx;
       width: 50%;
+      margin: 10rpx 0 15rpx 50rpx;
 }
 .forget_container .f_input .verificationcode_button {
       display: inline-block;
       float: right;
       width: 30%;
-      font-size: 15rpx;
+      font-size: 30rpx;
+      border-radius: 50rpx;
+      background-color: #00b4ff;
 }
 .forget_container .forget_complete {
-    position: absolute;
-    width: 100%;
-    bottom: 5%;
+    width: 550rpx;
+    margin-top: 80rpx;
+    background-color: #00b4ff !important;
 }
 .writing_container {
   width: 100%;
 }
 .writing_container .winput_container {
     width: 100%;
-    background: #eee;
-    border-bottom: #000 1px solid;
+    border-bottom: rgba(155, 155, 155, 0.5) 1px solid;
     overflow: hidden;
     padding: 2%;
     height: 70rpx;
@@ -497,20 +515,24 @@
       float: left;
       width: 25%;
       text-align: center;
+      color: #666;
 }
 .writing_container .winput_container .w_input {
+      display: inline-block;
+      height: 40rpx;
       float: left;
+      margin: 10rpx 0 15rpx 50rpx;
 }
 .writing_container .write_complete {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
+    background-color: #00b4ff;
+    width: 550rpx;
+    margin-top: 80rpx;
 }
 .personal_inspection .remind {
   width: 100%;
   height: 100rpx;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(155, 155, 155, 0.5);
+  border-bottom: 1px solid rgba(155, 155, 155, 0.5);
   position: fixed;
   bottom: 0;
   white-space: nowrap;
@@ -575,6 +597,7 @@
     height: 180rpx;
     margin: 2% 2% 0 2%;
     border: 1px solid black;
+    border-radius: 10rpx;
 }
 .remind_container .task view {
       height: 25%;
@@ -616,53 +639,38 @@
        text-overflow: ellipsis;
     white-space: nowrap;
 }
-.bi_container {
-  background-color: #ccdfee;
+.bi_container .basic_container {
+  margin-bottom: 2%;
+  border-bottom: 1px solid #ddd;
 }
 .takenotes_container {
-  background-color: #ccdfee;
   width: 100%;
 }
 .feedback_container {
   width: 100%;
-  background-color: #ccdfee;
   padding-bottom: 2%;
 }
-.feedback_container .feedback_title {
-    width: 100%;
-    display: inline-block;
-    margin-left: 2%;
-    font-size: 30rpx;
-}
-.feedback_container .feedback {
-    background-color: #fff;
-    width: 96%;
-    margin: 2%;
-}
-.feedback_container button {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+.feedback_container .textarea {
+    height: 300rpx;
 }
 .recheck_comtainer {
-  width: 100%;
-  background-color: #ccdfee;
-}
-.scc {
   width: 100%;
 }
 .search_container {
   margin-top: 60rpx;
   width: 100%;
-  background-color: #ccdfee;
   min-height: 1280rpx;
 }
 .search_nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 90rpx;
+  height: 160rpx;
   white-space: nowrap;
-  background-color: #fff;
-  border-bottom: 1px solid black;
+  background-color: #00b4ff;
+}
+.search_nav .top {
+    height: 60rpx;
 }
 .search_nav .back {
     display: inline-block;
@@ -671,6 +679,7 @@
     float: left;
     line-height: 90rpx;
     text-align: center;
+    color: #fff;
 }
 .search_nav .searchnav_container {
     display: inline-block;
@@ -685,22 +694,25 @@
     margin-left: 7%;
     line-height: 90rpx;
     text-align: center;
+    color: #fff;
 }
 .search_content {
   width: 100%;
   height: 180rpx;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ddd;
 }
 .search_content .developer {
     margin-top: 1%;
     font-size: 30rpx;
     text-indent: 20rpx;
+    color: #333;
 }
 .search_content .householder {
     display: inline-block;
     font-size: 30rpx;
     width: 25%;
     float: left;
+    color: #666;
     text-indent: 20rpx;
 }
 .search_content .address {
@@ -710,6 +722,7 @@
     float: left;
     overflow: hidden;
     white-space: nowrap;
+    color: #666;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
 }
@@ -719,14 +732,14 @@
     width: 25%;
     float: left;
     text-indent: 20rpx;
-    color: #C0C0C0;
+    color: #999;
 }
 .search_content .problem_content {
     display: inline-block;
     width: 75%;
     font-size: 30rpx;
     float: left;
-    color: #C0C0C0;
+    color: #999;
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
@@ -738,14 +751,14 @@
     width: 25%;
     float: left;
     text-indent: 20rpx;
-    color: #C0C0C0;
+    color: #999;
 }
 .search_content .time {
     display: inline-block;
     width: 75%;
     font-size: 30rpx;
     float: left;
-    color: #C0C0C0;
+    color: #999;
 }
 .details_content .picker_container {
   height: 50rpx;
@@ -755,9 +768,21 @@
     display: inline-block;
     width: 30%;
     float: left;
-    border: black 1px solid;
-    border-radius: 6%;
+    border: #ddd 1px solid;
+    border-radius: 10rpx;
     margin: 1.3%;
+    color: #00B4FF;
+}
+.details_content .picker_container .picker .arrow {
+      position: relative;
+      float: right;
+      top: 5rpx;
+      display: inline-block;
+      width: 40rpx;
+      height: 40rpx;
+      overflow: hidden;
+      margin-top: 8%;
+      margin-right: 2%;
 }
 .details_content .newly_problem {
   width: 100%;
@@ -766,8 +791,9 @@
     display: inline-block;
     width: 70%;
     margin: 2% 15% 2% 15%;
-    border: black 1px solid;
-    border-radius: 3%;
+    border: #ddd 1px solid;
+    color: #666;
+    border-radius: 50rpx;
     text-align: center;
 }
 .details_content .img_container {
@@ -780,27 +806,33 @@
 }
 .details_content .problemlist {
   width: 100%;
-  background-color: #eeeeee;
   height: 560rpx;
   overflow: hidden;
 }
 .details_content .problemlist .problem:first-child {
-    border-top: black 1px solid;
+    border-top: #ddd 1px solid;
 }
 .details_content .problemlist .problem {
     width: 100%;
     height: 140rpx;
-    border-bottom: black 1px solid;
+    border-bottom: #ddd 1px solid;
+}
+.details_content .problemlist .problem .color {
+      display: inline-block;
+      float: left;
+      width: 15rpx;
+      height: 35rpx;
+      margin-top: 1%;
+      margin-left: 5%;
+      background-color: #4CD964;
 }
 .details_content .problemlist .problem .main_item {
       float: left;
       display: inline-block;
       width: 70%;
-      text-indent: 35rpx;
+      color: #333;
+      text-indent: 18rpx;
       font-size: 35rpx;
-}
-.details_content .problemlist .problem .main_item image {
-        width: 35rpx;
 }
 .details_content .problemlist .problem .problem_content {
       display: inline-block;
@@ -808,7 +840,7 @@
       width: 70%;
       text-indent: 70rpx;
       font-size: 30rpx;
-      color: #808080;
+      color: #999;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;
@@ -820,7 +852,7 @@
       float: left;
       text-indent: 70rpx;
       font-size: 30rpx;
-      color: #808080;
+      color: #999;
 }
 .details_content .problemlist .problem .sate {
       display: inline-block;
@@ -836,20 +868,18 @@
 .details_content .problemlist .problem .sate text {
         margin-left: 5rpx;
 }
-.details_content .problemlist .problem .sate .blackdot {
+.details_content .problemlist .problem .sate .reddot {
         display: inline-block;
         width: 28rpx;
         height: 28rpx;
-        background-color: #000;
-        border: black 1px solid;
+        background-color: #eb3226;
         border-radius: 50%;
 }
-.details_content .problemlist .problem .sate .whitedot {
+.details_content .problemlist .problem .sate .greendot {
         display: inline-block;
         width: 28rpx;
         height: 28rpx;
-        background-color: #fff;
-        border: black 1px solid;
+        background-color: #a5d255;
         border-radius: 50%;
 }
 .details_content .progress_container {
@@ -874,9 +904,6 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-}
-.problemlist_container .search_content:first-child {
-  border-top: 1px black solid;
 }
 .property_inspection {
   width: 100%;
@@ -928,7 +955,7 @@
     text-align: center;
     border: 1px solid black;
     background-color: #fff;
-    border-radius: 15%;
+    border-radius: 10rpx;
     vertical-align: bottom;
 }
 .states {
@@ -978,7 +1005,7 @@
       margin-left: 4%;
       margin-top: 20rpx;
       border: 1px solid black;
-      border-radius: 10%;
+      border-radius: 10rpx;
       background-color: #fff;
 }
 .storeys .number_container .undelivered {
@@ -1057,6 +1084,7 @@
 }
 .specialitem_container {
   background-color: #ccdfee;
+  padding-top: 2%;
 }
 .specialitem_container input {
     display: inline-block;
@@ -1075,6 +1103,11 @@
   overflow: hidden;
   white-space: nowrap;
 }
+.date_container .basic_title {
+    display: inline-block;
+    margin: 2%;
+    font-size: 30rpx;
+}
 .date_container view {
     display: inline-block;
     width: 20%;
@@ -1083,11 +1116,17 @@
     float: left;
 }
 .date_container .date {
+    margin-top: 2%;
     background-color: #fff;
+    font-size: 35rpx;
     width: 30%;
     margin-left: 10%;
     text-align: center;
-    border-radius: 15rpx;
+    border: 1px solid #ddd;
+    border-radius: 50rpx;
+}
+.date_container .position {
+    margin-left: 3%;
 }
 .date_container .time {
     background-color: #fff;
@@ -1113,6 +1152,7 @@
 .setting .center image {
       width: 120rpx;
       height: 120rpx;
+      border: 5rpx solid white;
       border-radius: 50%;
 }
 .setting .center .name {
@@ -1174,12 +1214,12 @@
   border-bottom: 1px solid black;
 }
 .personal .basic_title {
-  font-size: 40rpx;
+  font-size: 35rpx;
   vertical-align: middle;
 }
 .personal .basic_content {
   width: 66%;
-  font-size: 40rpx;
+  font-size: 35rpx;
   text-align: right;
   vertical-align: middle;
 }
@@ -1189,84 +1229,167 @@
   height: 90rpx;
   border-radius: 50%;
   float: right;
-  margin: 5rpx 1% 5rpx 0;
+  margin: 5rpx 3% 5rpx 0;
 }
 .personal .right {
   float: right;
   font-size: 60rpx;
   margin-right: 2%;
 }
-.measure_container {
-  width: 100%;
+.newlocation {
   background-color: #ccdfee;
+  margin-top: 2%;
+  min-height: 140rpx;
 }
-.measure_container .m_title {
-    width: 100%;
-    height: 80rpx;
-    border-bottom: black 1rpx solid;
-    border-top: black 1rpx solid;
-    line-height: 80rpx;
-    font-size: 35rpx;
-    text-indent: 2%;
-}
-.measure_container .m_content {
-    display: inline-block;
-    width: 100%;
-    margin-top: 5%;
-    padding-bottom: 2%;
-    line-height: 50rpx;
+.newlocation .up {
     font-size: 30rpx;
+    color: #808080;
+    height: 70rpx;
+    line-height: 70rpx;
     text-indent: 2%;
-    white-space: nowrap;
-    border-bottom: black 1rpx solid;
 }
-.measure_container .m_content .m_standard {
+.newlocation .down {
+    line-height: 70rpx;
+    font-size: 35rpx;
+}
+.newlocation .down .img {
       display: inline-block;
-      margin-left: 65%;
+      width: 50rpx;
+      height: 50rpx;
+      margin: 5rpx 0 5rpx 2%;
 }
-.measure_container .m_content .m_inputcontent {
+.newlocation .down .left {
+      display: inline-block;
+      line-height: 70rpx;
+      width: 50%;
+      height: 70rpx;
+      margin-left: 2%;
+      vertical-align: top;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+}
+.newlocation .down .right {
+      display: inline-block;
+      float: right;
+      margin-right: 2%;
+}
+.newlocation .down .city {
+      display: inline-block;
+      height: 60rpx;
+      width: 20%;
+      line-height: 60rpx;
+      text-align: center;
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 15rpx;
+      margin: 2%;
+}
+.measure_container input {
+  border-radius: 10rpx;
+}
+.measure_container .basic_headline {
+  color: #00b4ff;
+  border-bottom: 0;
+  border-top: 0;
+  font-size: 40rpx;
+}
+.measure_container .content {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 2%;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  white-space: nowrap;
+}
+.measure_container .content .roomtype {
+    margin-left: 2%;
+    font-size: 35rpx;
+    color: #333;
+}
+.measure_container .content .standard {
+    float: right;
+    margin-right: 10%;
+    color: #333;
+}
+.measure_container .content .right1 {
+    margin-left: 78%;
+    color: #999;
+}
+.measure_container .content .right2 {
+    margin-left: 3%;
+    color: #999;
+}
+.measure_container .content .data_content {
+    display: inline-block;
+    width: 75%;
+}
+.measure_container .content .data_content .wrap {
+      white-space: normal;
+}
+.measure_container .content .data_content .wrap .manyinput {
+        display: inline-block;
+        width: 70rpx;
+        background-color: #fff;
+        margin-left: 3%;
+        margin-top: 1%;
+        border: 1px solid #ddd;
+}
+.measure_container .content .data_content .inputcontent {
       width: 100%;
       margin-top: 3%;
+      height: 60rpx;
+      text-indent: 2%;
 }
-.measure_container .m_content .m_inputcontent .m_inputtext {
+.measure_container .content .data_content .inputcontent .inputtitle {
         display: inline-block;
         width: 20%;
         vertical-align: top;
 }
-.measure_container .m_content .m_inputcontent .m_inputtext text {
-          color: #808080;
+.measure_container .content .data_content .inputcontent .inputtitle text {
+          color: #666;
 }
-.measure_container .m_content .m_inputcontent .m_inputvalue {
+.measure_container .content .data_content .inputcontent .inputvalue {
         display: inline-block;
-        width: 50%;
-        background-color: #fff;
+        width: 75%;
+        border: 1px solid #ddd;
 }
-.measure_container .m_content .m_inputcontent .m_inputstandard {
-        display: inline-block;
-        width: 20%;
-        background-color: #fff;
-        margin-left: 2%;
+.measure_container .standard_container {
+  display: inline-block;
+  width: 20%;
+  height: 355rpx;
+  margin-left: 3%;
+  margin-top: 2%;
+  vertical-align: top;
+  border: 1px solid #ddd;
 }
-.measure_container .m_bottom {
-    width: 100%;
+.measure_container .standard_container .inputstandard {
+    display: inline-block;
+    width: 85%;
+    margin-left: 2%;
+    margin-top: 155rpx;
 }
-.measure_container .m_bottom .m_title2 {
+.measure_container .standard_container2 {
+  display: inline-block;
+  width: 23%;
+  margin-left: 3%;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.measure_container .standard_container2 .half {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    white-space: normal;
+}
+.measure_container .standard_container2 .half .manyinput {
       display: inline-block;
-      width: 100%;
-      line-height: 50rpx;
-      font-size: 30rpx;
-      text-indent: 2%;
-      white-space: nowrap;
-}
-.measure_container .m_bottom .m_bottominput {
-      display: inline-block;
-      width: 15%;
-      margin-left: 4%;
-      margin-top: 2%;
+      width: 70rpx;
       background-color: #fff;
-}
-.measure_container .m_submit {
-    margin-top: 5%;
+      margin-top: 6%;
+      border: 1px solid #ddd;
 }
 /*每个页面公共css */
 

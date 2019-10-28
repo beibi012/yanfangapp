@@ -4,48 +4,54 @@
 <!-- 顶部导航条 -->
 		<view class="app_top"></view>
 		<view class="normal_nav">
+			<view class="top"></view>
 			<navigator class="left" open-type="navigateBack">返回</navigator>
 			<view class="title">{{title}}</view>
 			<view class="right"></view>
 		</view>
-		<view class="picker_container">
-			<picker :range="person" @change="changePerson">
-				<view class="picker">{{person[index1]}}</view>
-			</picker>
-			<picker :range="main" @change="changeMain">
-				<view class="picker">{{main[index2]}}</view>
-			</picker>
-			<picker :range="item" @change="changeItem">
-				<view class="picker">{{item[index3]}}</view>
-			</picker>
-		</view>
-<!-- 新增问题 -->
-		<view class="newly_problem">
-			<navigator class="newly_botton" url="../newly/take_notes">新增问题</navigator>
+		<scroll-view scroll-y="true" > 
+			<view>
+				<view class="picker_container">
+							<picker :range="person" @change="changePerson">
+								<view class="picker">{{person[index1]}}</view>
+							</picker>
+							<picker :range="main" @change="changeMain">
+								<view class="picker">{{main[index2]}}</view>
+							</picker>
+							<picker :range="item" @change="changeItem">
+								<view class="picker">{{item[index3]}}</view>
+							</picker>
+						</view>
+				<!-- 新增问题 -->
+						<view class="newly_problem">
+							<navigator class="newly_botton" url="take_notes">新增问题</navigator>
+							</view>
+							<view class="img_container">
+								<image class="img" src="../../../../static/1.jpeg" mode="widthFix"></image>
+							</view>
+				<!-- 问题列表 -->
+							<scroll-view class="problemlist" scroll-y="true">
+								<navigator class="problem":url="e.url+'?changed='+e.changed" v-for="(e,index) in problemlist" @click="getIndex(index)">
+									<view class="main_item"><image src="../../../../static/190.jpg" mode="widthFix"></image>{{e.main}}-{{e.checkitem}}</view>
+									<view class="problem_content"><text class="text">{{e.problem_content}}</text></view>
+									<view class="date">{{e.date}}-{{e.time}}</view>
+									<view class="sate">
+										<view :class="e.statedot"></view>
+										<text>{{e.statetext}}</text>
+									</view>
+								</navigator>
+							</scroll-view>
+							<view class="progress_container">
+								<view class="progress">
+								<view class="text">
+									整改进度
+								</view>
+								 <progress percent="80" show-info="true" />
+							</view>
+							</view>
 			</view>
-			<view class="img_container">
-				<image class="img" src="../../../../static/1.jpeg" mode="widthFix"></image>
-			</view>
-<!-- 问题列表 -->
-			<scroll-view class="problemlist" scroll-y="true">
-				<navigator class="problem":url="e.url+'?changed='+e.changed" v-for="(e,index) in problemlist" @click="getIndex(index)">
-					<view class="main_item"><image src="../../../../static/190.jpg" mode="widthFix"></image>{{e.main}}-{{e.checkitem}}</view>
-					<view class="problem_content"><text class="text">{{e.problem_content}}</text></view>
-					<view class="date">{{e.date}}-{{e.time}}</view>
-					<view class="sate">
-						<view :class="e.statedot"></view>
-						<text>{{e.statetext}}</text>
-					</view>
-				</navigator>
-			</scroll-view>
-			<view class="progress_container">
-				<view class="progress">
-				<view class="text">
-					整改进度
-				</view>
-				 <progress percent="80" show-info="true" />
-			</view>
-			</view>
+		</scroll-view>
+		
 			
 			
 		

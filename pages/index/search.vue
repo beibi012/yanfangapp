@@ -1,21 +1,23 @@
 <template>
 	<!-- 搜索页面p617 -->
 	<view class="search_container">
+		<view class="app_top" style="height: 100upx;"></view>
 		<view class="search_nav">
+			<view class="top"></view>
 			<navigator class="back" url="recheck" open-type="redirect">返回</navigator>
 			<view class="searchnav_container">
 				<!-- 搜索框样式p317 -->
 				<view class="search_cont">
 				<view class="search_left">
-					<image class="search_icon" src="../../static/167.jpg" mode="widthFix"></image>
+					<image class="search_icon" src="/static/search@2x.png" mode="widthFix"></image>
 				</view>
-				<input class="search" type="number" value="" placeholder="请输入客户的电话号码" focus="true"/>
+				<input class="search" type="number" value="" placeholder="请输入客户的电话号码" focus="true" placeholder-style="color:#ccc;"/>
 				<view class="search_right"></view>
 			</view>
 			</view>
 			<view class="search_button">搜索</view>
-			<!-- 搜索内容p708 -->
 		</view>
+			<!-- 搜索内容p708 -->
 		<navigator class="search_content" v-for="problem in problemlist" :url="problem.url">
 			<view class="developer">{{problem.developer}}</view>
 			<view class="householder">{{problem.householder}}</view><view class="address">{{problem.address}}</view>

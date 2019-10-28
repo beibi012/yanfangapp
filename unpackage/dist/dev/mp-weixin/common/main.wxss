@@ -29,6 +29,369 @@
   display: block;
   clear: both;
 }
+.app_top {
+  height: 60rpx;
+}
+.navtop {
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden;
+  background-color: #c0c0c0;
+}
+.navtop .navtop_head {
+    width: 20%;
+    height: 100rpx;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.navtop .navtop_head image {
+      width: 90rpx;
+      height: 90rpx;
+      margin: 5rpx 0;
+      border-radius: 50%;
+}
+.navtop .navtop_location {
+    width: 79%;
+    height: 100rpx;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.navtop .navtop_location image {
+      width: 50rpx;
+      margin-top: 3%;
+      vertical-align: middle;
+}
+.navtop .navtop_location .location_textc {
+      width: 90%;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: bottom;
+}
+.navtop .navtop_location .location_textc text {
+        float: right;
+}
+.normal_nav {
+  width: 100%;
+  height: 90rpx;
+  white-space: nowrap;
+  background-color: #007AFF;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+}
+.normal_nav .left {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    float: left;
+}
+.normal_nav .title {
+    display: inline-block;
+    width: 74%;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    float: left;
+}
+.normal_nav .right {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    float: left;
+}
+.icon_container {
+  display: inline-block;
+  width: 15%;
+  margin: 5% 5% 0 5%;
+  text-align: center;
+}
+.icon_container image {
+    width: 100%;
+}
+.icon_container text {
+    font-size: 25rpx;
+}
+.basic_container {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.basic_container text {
+    font-size: 30rpx;
+}
+.basic_container .basic_title {
+    width: 20%;
+    height: 80rpx;
+    display: inline-block;
+    margin-left: 2%;
+    float: left;
+}
+.basic_container .basic_content {
+    display: inline-block;
+    width: 60%;
+    height: 80rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 2%;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    line-height: 80rpx;
+}
+.basic_container .basic_input {
+    display: inline-block;
+    background-color: #fff;
+    width: 60%;
+    height: 50rpx;
+    margin: 15rpx 0 15rpx 5%;
+    border-radius: 10rpx;
+}
+.basic_container .basic_radio {
+    width: 65%;
+    white-space: nowrap;
+}
+.basic_container .basic_radio .radio_option {
+      display: inline-block;
+      margin-left: 20%;
+}
+.basic_container .basic_picker {
+    display: inline-block;
+    width: 60%;
+    height: 50rpx;
+    font-size: 30rpx;
+    margin: 15rpx 0 15rpx 5%;
+    line-height: 50rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    text-indent: 2%;
+}
+.basic_container .basic_picker .arrow {
+      position: relative;
+      float: right;
+      top: 5rpx;
+      display: inline-block;
+      width: 37.5rpx;
+      height: 25rpx;
+      overflow: hidden;
+      margin-top: 3%;
+      margin-right: 2%;
+}
+.basic_container .basic_picker .arrow .arrowbottom {
+        position: relative;
+        top: -14rpx;
+        left: 10rpx;
+        width: 25rpx;
+        height: 25rpx;
+        background-color: black;
+        -webkit-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+                transform: rotate(135deg);
+}
+.basic_headline {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-indent: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  white-space: nowrap;
+}
+.add_headline {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-indent: 2%;
+  margin-bottom: 2%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  white-space: nowrap;
+}
+.add_headline .add_button {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    width: 50rpx;
+    height: 50rpx;
+    font-size: 50rpx;
+    border: 1px black solid;
+    border-radius: 50%;
+    float: right;
+    margin: 15rpx 3% 15rpx 0;
+}
+.add_headline .add_button text {
+      position: absolute;
+      top: -20rpx;
+      left: 10rpx;
+}
+.removebottomline {
+  border-bottom: 0;
+}
+.basic_container2 {
+  width: 100%;
+}
+.basic_container2 .basic_title {
+    width: 100%;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+    font-size: 30rpx;
+}
+.basic_container2 .textarea {
+    background-color: #fff;
+    display: block;
+    width: 96%;
+    margin: 2% 2%;
+    height: 150rpx;
+    border-radius: 10rpx;
+}
+.basic_container2 .basic_title2 {
+    width: 20%;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+    font-size: 30rpx;
+}
+.basic_container2 .textarea2 {
+    background-color: #fff;
+    display: inline-block;
+    width: 60%;
+    margin: 2% 3%;
+    height: 150rpx;
+    border-radius: 10rpx;
+}
+.basic_container2 .picture {
+    background-color: #fff;
+    width: 96%;
+    margin: 2% 2%;
+    height: 150rpx;
+    overflow: hidden;
+    line-height: 150rpx;
+    border-radius: 10rpx;
+}
+.basic_container2 .picture .addpic {
+      display: inline-block;
+      width: 50rpx;
+      height: 50rpx;
+      font-size: 60rpx;
+      border: 1px solid black;
+      border-radius: 50%;
+      margin: 50rpx 0 50rpx 2%;
+      position: relative;
+}
+.basic_container2 .picture .addpic text {
+        position: absolute;
+        bottom: -45rpx;
+        right: 7rpx;
+}
+.basic_container2 .picture .pic_container {
+      display: inline-block;
+      position: relative;
+      width: 140rpx;
+      height: 150rpx;
+      border-radius: 5rpx;
+}
+.basic_container2 .picture .pic_container .pic {
+        display: inline-block;
+        border-radius: 5rpx;
+        width: 66%;
+        height: 66%;
+        margin: 17%;
+        z-index: 0;
+}
+.basic_container2 .picture .pic_container .del {
+        display: inline-block;
+        position: absolute;
+        color: #fff;
+        font-weight: bold;
+        background-color: red;
+        border: red 1px solid;
+        border-radius: 50%;
+        left: 66%;
+        width: 40rpx;
+        height: 40rpx;
+        vertical-align: top;
+        text-align: center;
+}
+.basic_container2 .picture .pic_container .del view {
+          display: inline-block;
+          position: absolute;
+          top: -60rpx;
+          left: 0;
+          width: 40rpx;
+          height: 40rpx;
+}
+.basic_container2 .b {
+    width: 100%;
+    height: 100rpx;
+}
+.basic_container3 {
+  width: 100%;
+  height: 300rpx;
+}
+.search_cont {
+  display: inline-block;
+  height: 60rpx;
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 80%;
+  white-space: nowrap;
+}
+.search_cont .search {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    height: 60rpx;
+    vertical-align: bottom;
+    font-size: 30rpx;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+}
+.search_cont .search_left {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 60rpx;
+    height: 60rpx;
+    background-color: #fff;
+    border-radius: 50% 0 0 50%;
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+}
+.search_cont .search_left .search_icon {
+      position: relative;
+      top: 10rpx;
+      left: 10rpx;
+      width: 40rpx;
+      height: 40rpx;
+      border-radius: 50%;
+}
+.search_cont .search_right {
+    display: inline-block;
+    width: 60rpx;
+    height: 60rpx;
+    background-color: #fff;
+    vertical-align: bottom;
+    border-radius: 0 50% 50% 0;
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+}
 .login_container {
   width: 100%;
 }
@@ -60,6 +423,7 @@
     margin-right: 5%;
 }
 .username_container .username_input {
+    display: inline-block;
     float: left;
 }
 .password_container {
@@ -76,6 +440,7 @@
 }
 .password_container .password_input {
     float: left;
+    display: inline-block;
 }
 .login_submit {
   width: 550rpx;
@@ -141,6 +506,819 @@
     position: absolute;
     bottom: 5%;
     width: 100%;
+}
+.personal_inspection .remind {
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.personal_inspection .remind .remind_icon {
+    display: inline-block;
+    width: 80rpx;
+    height: 80rpx;
+    margin: 10rpx 2% 10rpx 2%;
+    float: left;
+}
+.personal_inspection .remind .remind_text {
+    width: 65%;
+    height: 80rpx;
+    margin: 10rpx 0;
+    float: left;
+}
+.personal_inspection .remind .remind_text .textlist {
+      width: 100%;
+      height: 40rpx;
+}
+.personal_inspection .remind .remind_text .textlist .textcontent {
+        display: inline-block;
+        width: 70%;
+        font-size: 35rpx;
+        vertical-align: top;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.personal_inspection .remind .remind_text .textlist .time {
+        display: inline-block;
+        width: 30%;
+        font-size: 25rpx;
+        color: #C0C0C0;
+        vertical-align: top;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.personal_inspection .remind .unread_container {
+    width: 19%;
+    height: 80rpx;
+    float: left;
+    margin: 10rpx 0;
+}
+.personal_inspection .remind .unread_container .unread_text {
+      font-size: 25rpx;
+}
+.personal_inspection .remind .unread_container .gt {
+      font-size: 50rpx;
+      color: #C0C0C0;
+}
+.remind_container {
+  width: 100%;
+}
+.remind_container .task {
+    width: 96%;
+    height: 180rpx;
+    margin: 2% 2% 0 2%;
+    border: 1px solid black;
+    border-radius: 10rpx;
+}
+.remind_container .task view {
+      height: 25%;
+      font-size: 35rpx;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: top;
+}
+.remind_container .task .details {
+      border-top: 1px solid black;
+      font-size: 30rpx;
+      position: relative;
+}
+.remind_container .task .details .gt {
+        position: absolute;
+        right: 0;
+        top: -12rpx;
+        display: inline-block;
+        width: 40rpx;
+        height: 100%;
+        font-size: 40rpx;
+        color: #C0C0C0;
+        float: right;
+        float: top;
+        margin-right: 2%;
+        vertical-align: top;
+}
+.remind_details {
+  width: 100%;
+}
+.remind_details view {
+    margin-left: 5%;
+    height: 60rpx;
+    margin-top: 2%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bi_container {
+  background-color: #ccdfee;
+}
+.takenotes_container {
+  background-color: #ccdfee;
+  width: 100%;
+}
+.feedback_container {
+  width: 100%;
+  background-color: #ccdfee;
+  padding-bottom: 2%;
+}
+.feedback_container .feedback_title {
+    width: 100%;
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 30rpx;
+}
+.feedback_container .feedback {
+    background-color: #fff;
+    width: 96%;
+    margin: 2%;
+}
+.feedback_container button {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.recheck_comtainer {
+  width: 100%;
+  background-color: #ccdfee;
+}
+.scc {
+  width: 100%;
+}
+.search_container {
+  margin-top: 60rpx;
+  width: 100%;
+  background-color: #ccdfee;
+  min-height: 1280rpx;
+}
+.search_nav {
+  width: 100%;
+  height: 90rpx;
+  white-space: nowrap;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+}
+.search_nav .back {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    float: left;
+    line-height: 90rpx;
+    text-align: center;
+}
+.search_nav .searchnav_container {
+    display: inline-block;
+    width: 65%;
+    float: left;
+}
+.search_nav .search_button {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    float: left;
+    margin-left: 7%;
+    line-height: 90rpx;
+    text-align: center;
+}
+.search_content {
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 1px solid black;
+}
+.search_content .developer {
+    margin-top: 1%;
+    font-size: 30rpx;
+    text-indent: 20rpx;
+}
+.search_content .householder {
+    display: inline-block;
+    font-size: 30rpx;
+    width: 25%;
+    float: left;
+    text-indent: 20rpx;
+}
+.search_content .address {
+    display: inline-block;
+    width: 75%;
+    font-size: 30rpx;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.search_content .checkitem {
+    display: inline-block;
+    font-size: 28rpx;
+    width: 25%;
+    float: left;
+    text-indent: 20rpx;
+    color: #C0C0C0;
+}
+.search_content .problem_content {
+    display: inline-block;
+    width: 75%;
+    font-size: 30rpx;
+    float: left;
+    color: #C0C0C0;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.search_content .date {
+    display: inline-block;
+    font-size: 28rpx;
+    width: 25%;
+    float: left;
+    text-indent: 20rpx;
+    color: #C0C0C0;
+}
+.search_content .time {
+    display: inline-block;
+    width: 75%;
+    font-size: 30rpx;
+    float: left;
+    color: #C0C0C0;
+}
+.details_content .picker_container {
+  height: 50rpx;
+  white-space: nowrap;
+}
+.details_content .picker_container .picker {
+    display: inline-block;
+    width: 30%;
+    float: left;
+    border: black 1px solid;
+    border-radius: 6%;
+    margin: 1.3%;
+}
+.details_content .newly_problem {
+  width: 100%;
+}
+.details_content .newly_problem .newly_botton {
+    display: inline-block;
+    width: 70%;
+    margin: 2% 15% 2% 15%;
+    border: black 1px solid;
+    border-radius: 3%;
+    text-align: center;
+}
+.details_content .img_container {
+  margin-bottom: 2%;
+}
+.details_content .img_container .img {
+    display: block;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+.details_content .problemlist {
+  width: 100%;
+  background-color: #eeeeee;
+  height: 560rpx;
+  overflow: hidden;
+}
+.details_content .problemlist .problem:first-child {
+    border-top: black 1px solid;
+}
+.details_content .problemlist .problem {
+    width: 100%;
+    height: 140rpx;
+    border-bottom: black 1px solid;
+}
+.details_content .problemlist .problem .main_item {
+      float: left;
+      display: inline-block;
+      width: 70%;
+      text-indent: 35rpx;
+      font-size: 35rpx;
+}
+.details_content .problemlist .problem .main_item image {
+        width: 35rpx;
+}
+.details_content .problemlist .problem .problem_content {
+      display: inline-block;
+      float: left;
+      width: 70%;
+      text-indent: 70rpx;
+      font-size: 30rpx;
+      color: #808080;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      overflow: hidden;
+}
+.details_content .problemlist .problem .date {
+      display: inline-block;
+      width: 70%;
+      float: left;
+      text-indent: 70rpx;
+      font-size: 30rpx;
+      color: #808080;
+}
+.details_content .problemlist .problem .sate {
+      display: inline-block;
+      font-size: 35rpx;
+      width: 30%;
+      height: 140rpx;
+      text-align: center;
+      line-height: 140rpx;
+      position: relative;
+      right: 0rpx;
+      top: 0rpx;
+}
+.details_content .problemlist .problem .sate text {
+        margin-left: 5rpx;
+}
+.details_content .problemlist .problem .sate .blackdot {
+        display: inline-block;
+        width: 28rpx;
+        height: 28rpx;
+        background-color: #000;
+        border: black 1px solid;
+        border-radius: 50%;
+}
+.details_content .problemlist .problem .sate .whitedot {
+        display: inline-block;
+        width: 28rpx;
+        height: 28rpx;
+        background-color: #fff;
+        border: black 1px solid;
+        border-radius: 50%;
+}
+.details_content .progress_container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.details_content .progress_container .progress {
+    width: 90%;
+    margin: 0 5%;
+}
+.details_content .progress_container .progress .text {
+      font-size: 35rpx;
+}
+.fail_container {
+  background-color: #ccdfee;
+  padding-bottom: 2%;
+}
+.fail_container .submit {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.problemlist_container .search_content:first-child {
+  border-top: 1px black solid;
+}
+.property_inspection {
+  width: 100%;
+}
+.property_inspection .developer {
+    height: 150rpx;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+}
+.property_inspection .developer .developer_icon {
+      display: inline-block;
+      width: 100rpx;
+      height: 100rpx;
+      margin: 25rpx 5% 25rpx 5%;
+      float: left;
+}
+.property_inspection .developer .developer_name {
+      display: inline-block;
+      float: left;
+      font-size: 50rpx;
+      margin: 45rpx 0 55rpx 0;
+}
+.simulate_container .simulate_list {
+  background-color: #ccdfee;
+  height: 120rpx;
+  border: 1px solid black;
+}
+.simulate_container .simulate_list .list_content {
+    display: inline-block;
+    width: 75%;
+    font-size: 35rpx;
+    margin: 38rpx 2% 0 2%;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+.simulate_container .simulate_list .list_button {
+    display: inline-block;
+    width: 12%;
+    height: 60rpx;
+    line-height: 60rpx;
+    float: left;
+    font-size: 30rpx;
+    margin: 30rpx 0 0 4%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 15%;
+    vertical-align: bottom;
+}
+.states {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.states .state:first-child {
+    border-left: 0;
+}
+.states .state {
+    display: inline-block;
+    width: 20%;
+    height: 100rpx;
+    vertical-align: top;
+    border-left: 1px solid black;
+}
+.states .state view {
+      height: 50rpx;
+      text-align: center;
+}
+.storeys {
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #ccdfee;
+}
+.storeys .storey {
+    height: 60rpx;
+    font-size: 35rpx;
+    line-height: 60rpx;
+    text-indent: 2%;
+}
+.storeys .number_container {
+    font-size: 35rpx;
+    padding-bottom: 20rpx;
+}
+.storeys .number_container .storey_number {
+      display: inline-block;
+      width: 20%;
+      line-height: 60rpx;
+      text-align: center;
+      height: 60rpx;
+      margin-left: 4%;
+      margin-top: 20rpx;
+      border: 1px solid black;
+      border-radius: 10%;
+      background-color: #fff;
+}
+.storeys .number_container .undelivered {
+      background-color: #fff;
+}
+.storeys .number_container .nochange {
+      background-color: #ddd;
+}
+.storeys .number_container .changed {
+      background-color: #bbb;
+}
+.storeys .number_container .delivered {
+      background-color: #999;
+}
+.pr_problemdetails {
+  background-color: #ccdfee;
+  width: 100%;
+}
+.pr_problemdetails .rectification {
+    width: 100%;
+    height: 80rpx;
+    border-top: 1px solid black;
+    line-height: 80rpx;
+}
+.pr_problemdetails .rectification view {
+      display: inline-block;
+      margin-left: 2%;
+      font-size: 50rpx;
+      font-weight: bold;
+}
+.pr_problemdetails .rectification text {
+      display: inline-block;
+      margin-left: 2%;
+}
+.pr_problemdetails .line {
+    border-top: 1px solid black;
+}
+.pr_problemdetails .pic_nochange {
+    widows: 100%;
+    height: 150rpx;
+    margin-bottom: 2%;
+}
+.pr_problemdetails .pic_nochange .nochange_img {
+      display: inline-block;
+      margin: 25rpx 0 25rpx 2%;
+      width: 100rpx;
+      height: 100rpx;
+}
+.pr_problemdetails .pr_button {
+    height: 130rpx;
+    background-color: #fff;
+    white-space: nowrap;
+}
+.pr_problemdetails .pr_button navigator {
+      display: inline-block;
+      height: 90rpx;
+      width: 40%;
+      text-align: center;
+      line-height: 90rpx;
+      border: 1px solid black;
+      margin: 20rpx 5%;
+      border-radius: 5%;
+}
+.pr_problemdetails .pr_button view {
+      display: inline-block;
+      height: 90rpx;
+      width: 40%;
+      text-align: center;
+      line-height: 90rpx;
+      border: 1px solid black;
+      margin: 20rpx 5%;
+      border-radius: 5%;
+}
+.pr_problemdetails .pr_button .fail {
+      background-color: #C0C0C0;
+}
+.specialitem_container {
+  background-color: #ccdfee;
+}
+.specialitem_container input {
+    display: inline-block;
+    background-color: #fff;
+    margin: 18rpx 0;
+}
+.specialitem_container .title {
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    text-indent: 2%;
+}
+.date_container {
+  height: 80rpx;
+  font-size: 35rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.date_container view {
+    display: inline-block;
+    width: 20%;
+    height: 60rpx;
+    line-height: 60rpx;
+    float: left;
+}
+.date_container .date {
+    background-color: #fff;
+    width: 30%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 15rpx;
+}
+.date_container .time {
+    background-color: #fff;
+    width: 15%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 15rpx;
+}
+.setting {
+  height: 300rpx;
+  background-color: #ccdfee;
+  text-align: center;
+}
+.setting .center {
+    position: relative;
+    display: inline-block;
+    height: 240rpx;
+    width: 200rpx;
+    margin: 30rpx 0;
+    white-space: nowrap;
+    text-align: center;
+}
+.setting .center image {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+}
+.setting .center .name {
+      font-size: 35rpx;
+}
+.setting .center .profession {
+      position: relative;
+      margin: 0 auto;
+      width: 700rpx;
+      left: -125%;
+      font-size: 35rpx;
+      text-align: center;
+      color: #808080;
+}
+.about {
+  margin-top: 2%;
+  height: 80rpx;
+  font-size: 35rpx;
+  line-height: 80rpx;
+  background-color: #ccdfee;
+  text-indent: 2%;
+}
+.about .right {
+    float: right;
+    font-size: 60rpx;
+    margin-right: 5%;
+    color: #C0C0C0;
+}
+.aboutapp {
+  height: 440rpx;
+  background-color: #ccdfee;
+}
+.aboutapp .icon {
+    height: 220rpx;
+    text-align: center;
+}
+.aboutapp .icon image {
+      display: inline-block;
+      width: 160rpx;
+      height: 160rpx;
+      margin: 30rpx 0;
+}
+.aboutapp .explain {
+    height: 220rpx;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    line-height: 25rpx;
+}
+.aboutapp .explain .text {
+      font-size: 25rpx;
+}
+.personal .basic_container:first-child {
+  border-top: 1px solid black;
+}
+.personal .basic_container {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid black;
+}
+.personal .basic_title {
+  font-size: 35rpx;
+  vertical-align: middle;
+}
+.personal .basic_content {
+  width: 66%;
+  font-size: 35rpx;
+  text-align: right;
+  vertical-align: middle;
+}
+.personal .portrait {
+  display: inline-block;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  float: right;
+  margin: 5rpx 3% 5rpx 0;
+}
+.personal .right {
+  float: right;
+  font-size: 60rpx;
+  margin-right: 2%;
+}
+.newlocation {
+  background-color: #ccdfee;
+  margin-top: 2%;
+  min-height: 140rpx;
+}
+.newlocation .up {
+    font-size: 30rpx;
+    color: #808080;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-indent: 2%;
+}
+.newlocation .down {
+    line-height: 70rpx;
+    font-size: 35rpx;
+}
+.newlocation .down .img {
+      display: inline-block;
+      width: 50rpx;
+      height: 50rpx;
+      margin: 5rpx 0 5rpx 2%;
+}
+.newlocation .down .left {
+      display: inline-block;
+      line-height: 70rpx;
+      width: 50%;
+      height: 70rpx;
+      margin-left: 2%;
+      vertical-align: top;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+}
+.newlocation .down .right {
+      float: right;
+      margin-right: 2%;
+}
+.newlocation .down .city {
+      display: inline-block;
+      height: 60rpx;
+      width: 20%;
+      line-height: 60rpx;
+      text-align: center;
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 15rpx;
+      margin: 2%;
+}
+.measure_container {
+  width: 100%;
+  background-color: #ccdfee;
+}
+.measure_container .m_title {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: black 1rpx solid;
+    border-top: black 1rpx solid;
+    line-height: 80rpx;
+    font-size: 35rpx;
+    text-indent: 2%;
+}
+.measure_container .m_content {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    line-height: 50rpx;
+    font-size: 30rpx;
+    text-indent: 2%;
+    white-space: nowrap;
+    border-bottom: black 1rpx solid;
+}
+.measure_container .m_content .m_standard {
+      display: inline-block;
+      margin-left: 65%;
+}
+.measure_container .m_content .m_inputcontent {
+      width: 100%;
+      margin-top: 3%;
+}
+.measure_container .m_content .m_inputcontent .m_inputtext {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+}
+.measure_container .m_content .m_inputcontent .m_inputtext text {
+          color: #808080;
+}
+.measure_container .m_content .m_inputcontent .m_inputvalue {
+        display: inline-block;
+        width: 50%;
+        background-color: #fff;
+}
+.measure_container .m_content .m_inputcontent .m_inputstandard {
+        display: inline-block;
+        width: 20%;
+        background-color: #fff;
+        margin-left: 2%;
+}
+.measure_container .m_bottom {
+    width: 100%;
+}
+.measure_container .m_bottom .m_title2 {
+      display: inline-block;
+      width: 100%;
+      line-height: 50rpx;
+      font-size: 30rpx;
+      text-indent: 2%;
+      white-space: nowrap;
+}
+.measure_container .m_bottom .m_bottominput {
+      display: inline-block;
+      width: 15%;
+      margin-left: 4%;
+      margin-top: 2%;
+      background-color: #fff;
+}
+.measure_container .m_submit {
+    margin-top: 5%;
 }
 /*每个页面公共css */
 

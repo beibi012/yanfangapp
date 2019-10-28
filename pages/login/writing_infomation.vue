@@ -3,23 +3,23 @@
 		<form action="" @submit="formSubmit">
 			<view class="winput_container">
 				<text class="write_text" space="ensp">姓    名</text>
-				<input name="name" class="writing_name w_input" type="text" placeholder="请输入您的姓名">
+				<input name="name" class="writing_name w_input" type="text" placeholder="请输入您的姓名" placeholder-style="color:rgba(155,155,155,0.5);">
 			</view>
 			<view class="winput_container">
 				<text class="write_text" space="ensp">账    号</text>
-				<input name="id" class="writing_id w_input" type="text" placeholder="请输入您的账号">
+				<input name="id" class="writing_id w_input" type="text" placeholder="请输入您的账号" placeholder-style="color:rgba(155,155,155,0.5);">
 			</view>
 			<view class="winput_container">
 				<text class="write_text" space="ensp">手    机</text>
-				<input name="cell" class="writing_cell w_input" type="number" placeholder="请输入手机号码">
+				<input name="cell" class="writing_cell w_input" type="number" placeholder="请输入手机号码" placeholder-style="color:rgba(155,155,155,0.5);">
 			</view>
 			<view class="winput_container">
 				<text class="write_text" space="ensp">岗    位</text>
-				<input name="post" class="writing_post w_input" type="text" placeholder="请输入岗位名称">
+				<input name="post" class="writing_post w_input" type="text" placeholder="请输入岗位名称" placeholder-style="color:rgba(155,155,155,0.5);">
 			</view>
 			<view class="winput_container">
-				<text class="write_text w_input" space="ensp">所在部门</text>
-				<input name="department" class="writing_department" type="text" placeholder="请输入所属部门">
+				<text class="write_text" space="ensp">所在部门</text>
+				<input name="department" class="writing_department w_input" type="text" placeholder="请输入所属部门" placeholder-style="color:rgba(155,155,155,0.5);">
 			</view>
 			
 			

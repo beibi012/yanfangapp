@@ -3,12 +3,13 @@
 	<view class="property_inspection">
 		<view class="app_top"></view>
 		<view class="navtop">
+			<view class="top"></view>
 			<navigator class="navtop_head" url="../personal/setting">
-				<image src="../../static/166.jpg" mode="widthFix"></image>
+				<image :src="portrait" mode="aspectFill"></image>
 			</navigator>
-			<navigator class="navtop_location" url="">
+			<navigator class="navtop_location" url="../location/location">
 				<view class="location_textc">
-					<text>广西壮族自治区南宁市西乡塘区</text>
+					<text>{{city}}</text>
 					</view>
 				<image src="../../static/153.jpg" mode="widthFix"></image>
 			</navigator>
@@ -25,14 +26,58 @@
 </template>
 
 <script>
+var self;
 	export default {
+		onLoad() {
+			self=this;
+			
+			uni.getStorage({
+			    key: 'province',
+			    success: function (res) {
+			            self.province= res.data;
+			        }
+			});
+			uni.getStorage({
+			    key: 'city',
+			    success: function (res) {
+			            self.city= res.data;
+			        }
+			});
+			uni.getStorage({
+			    key: 'district',
+			    success: function (res) {
+			            self.district= res.data;
+			        }
+			});
+			
+		},
+		onShow() {
+			self=this;
+			uni.getStorage({
+			    key: 'portrait',
+			    success: function (res) {
+			       self.portrait= res.data;
+			    }
+			});
+			uni.getStorage({
+			    key: 'city',
+			    success: function (res) {
+			            self.city= res.data;
+			        }
+			});
+		},
 		data() {
 			return {
+				portrait:"../../static/166.jpg",
 				developer:[
 					{name:"万科城",img:"",url:""},
 					{name:"精通瑞城",img:"",url:""},
 					{name:"天健城",img:"",url:""}
-				]
+				],
+				province:"",
+				city:"",
+				district:""
+				
 			}
 		},
 		methods: {

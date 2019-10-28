@@ -39,35 +39,36 @@
     "pages/personal/setting",
     "pages/personal/about",
     "pages/personal/personal",
-    "pages/location/location"
+    "pages/location/location",
+    "pages/location/test"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4cb3f9",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#000",
+    "selectedColor": "#4CB3F9",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "static/190.jpg",
-        "selectedIconPath": "static/106.jpg",
+        "iconPath": "static/personal@2x.png",
+        "selectedIconPath": "static/personalblue@2x.png",
         "text": "个人验房"
       },
       {
         "pagePath": "pages/property_inspection/property_inspection",
-        "iconPath": "static/190.jpg",
-        "selectedIconPath": "static/106.jpg",
+        "iconPath": "static/house@2x.png",
+        "selectedIconPath": "static/houseblue@2x.png",
         "text": "房产查验"
       },
       {
         "pagePath": "pages/air_detection/air_detection",
-        "iconPath": "static/190.jpg",
-        "selectedIconPath": "static/106.jpg",
+        "iconPath": "static/cloud@2x.png",
+        "selectedIconPath": "static/cloudblue@2x.png",
         "text": "空气检测"
       }
     ]
@@ -78,7 +79,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "yanfang-app",
-  "compilerVersion": "2.3.3",
+  "appname": "验房app",
+  "compilerVersion": "2.3.7",
   "usingComponents": {}
 }

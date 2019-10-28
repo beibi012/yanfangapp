@@ -11,7 +11,7 @@
 					<input class="basic_input" name="bi_client" type="text" value="" >
 				</view>
 				<view class="basic_container">
-					<text class="basic_title">委托方信息</text>
+					<text class="basic_titleblod">委托方信息</text>
 					<text class="basic_content"></text>
 				</view>
 				<view class="basic_container">
@@ -31,7 +31,7 @@
 					<input class="basic_input" name="bi_client" type="text" value="" >
 				</view>
 				<view class="basic_container">
-					<text class="basic_title">受检方信息</text>
+					<text class="basic_titleblod">受检方信息</text>
 					<text class="basic_content"></text>
 				</view>
 				<view class="basic_container">
