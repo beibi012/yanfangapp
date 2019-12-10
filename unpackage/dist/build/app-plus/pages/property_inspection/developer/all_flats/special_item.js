@@ -1,1 +1,2 @@
+setCssToHead([".",[1],"add_button{ width: 20%; float: right; margin-right: 5%; background-color: #00B4FF; color: #fff; border-radius: ",[0,10],"; margin-top:2% ; text-align: center; }\n.",[1],"submit{ width: ",[0,550],"; margin: ",[0,80]," ",[0,100]," 0 ",[0,100],"; background-color: #00B4FF!important; color: #fff; }\n",],undefined,{path:"./pages/property_inspection/developer/all_flats/special_item.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/property_inspection/developer/all_flats/special_item.wxml') } }));

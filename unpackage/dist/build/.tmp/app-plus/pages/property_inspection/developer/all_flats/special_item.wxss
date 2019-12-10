@@ -1,0 +1,18 @@
+
+.add_button{
+width: 20%;
+float: right;
+margin-right: 5%;
+background-color: #00B4FF;
+color: #fff;
+border-radius: 10rpx;
+margin-top:2% ;
+text-align: center;
+}
+.submit{
+	width: 550rpx;
+	margin: 80rpx 100rpx 0 100rpx;
+	background-color: #00B4FF!important;
+	color: #fff;
+}
+

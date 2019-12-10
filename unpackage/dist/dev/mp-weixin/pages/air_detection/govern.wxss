@@ -1,0 +1,90 @@
+
+.picture_govern{
+	background-color: #fff;
+	width: 96%;
+	margin: 2% 2%;
+	max-height: 750rpx;
+	overflow: hidden;
+	line-height: 150rpx;
+	border-radius: 20rpx;
+	border: 1px solid #ddd;
+}
+.addpic{
+		display: inline-block;
+		width: 50rpx;
+		height:50rpx;
+		margin-left: 350rpx;
+}
+.add_img{
+			display: inline-block;
+			width: 50rpx;
+			height:50rpx;
+			margin:50rpx 0;
+}
+.pic_cont{
+	display: block!important;
+	width: 750rpx;
+	height: 150rpx;
+	border-radius: 10rpx;
+}
+.pic{
+	display: inline-block;
+	border-radius: 20rpx;
+	width: 100rpx;
+	height: 100rpx;
+	margin: 25rpx;
+}
+.vde{
+		display: inline-block;
+		width: 100rpx;
+		height: 100rpx;
+		margin: 25rpx;
+}
+.del{
+		display: inline-block;
+		position: relative;
+		left: -50rpx;
+		top:-100rpx;
+		width: 40rpx;
+		height: 40rpx;
+		z-index: 5;
+}
+.del_img{
+			display: inline-block;
+			width: 40rpx;
+			height: 40rpx;
+}
+.pic_describe{
+			display: inline-block;
+			vertical-align: top;
+			margin: 25rpx 0;
+			width: 500rpx;
+			height: 100rpx;
+}
+.describe_input{
+			display: inline-block;
+			border: 1px solid #ddd;
+			border-radius: 10rpx;
+			width: 500rpx;
+			height: 100rpx;
+			font-size: 35rpx;
+			line-height: 35rpx;
+			white-space: normal;
+			text-indent: 10rpx;
+}
+.vde_input{
+			margin-left:38rpx;
+}
+.submit{
+	position: fixed;
+	bottom: 0;
+	width: 75%;
+	background-color: #00B4FF!important;
+	margin-bottom: 5%;
+	margin: 0 12.5%;
+	z-index: 2;
+}
+.time_container{
+	height: 750rpx;
+}
+

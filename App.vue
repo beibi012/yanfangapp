@@ -1,4 +1,6 @@
 <script>
+	// const app = getApp()
+	// console.log(app.globalData.ctx)
 	export default {
 		data(){
 			return{
@@ -6,7 +8,10 @@
 			}
 		},
 		globalData: {  
-			navtop_headportrait:"../../static/166.jpg"
+			navtop_headportrait:"../../static/166.jpg",
+			ctx:"http://192.168.0.18:8086",
+			// ctx:"http://192.168.0.110:8080",
+			// ctx:"http://www.elab123.com/inspectionroom"
 		        },
 		onLaunch: function() {
 			console.log(this)
@@ -15,7 +20,6 @@
 				type:"gcj02",
 				geocode:true,
 				success: function (res) {
-					console.log('当前位置的地址信息：' + res.address.country);
 					console.log('当前位置的地址信息：' + res.address.province);
 					console.log('当前位置的地址信息：' + res.address.city);
 					console.log('当前位置的地址信息：' + res.address.district);

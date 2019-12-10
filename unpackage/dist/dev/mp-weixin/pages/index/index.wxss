@@ -1,10 +1,212 @@
 
-.login_containor{
+.personal_inspection{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.remind{
+width: 100%;
+height: 100rpx;
+border-top:  1px solid rgba(155,155,155,0.5);
+border-bottom:  1px solid rgba(155,155,155,0.5);
+position:  fixed;
+bottom: 0; /*手机上要写0 */
+background-color: #fff;
+white-space: nowrap;
+overflow: hidden;
+}
+.remind_icon{
+	display: inline-block;
+	width: 80rpx;
+	height: 80rpx;
+	margin: 10rpx 2% 10rpx 2%;
+	float: left;
+}
+.remind_text {
+	width: 65%;
+	height: 80rpx;
+	margin: 10rpx 0;
+	float: left;
+}
+.textlist{
+		width: 100%;
+		height: 40rpx;
+}
+.textcontent{
+		display: inline-block;
+		width: 70%;
+		font-size: 35rpx;
+		vertical-align: top;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis;
+		white-space: nowrap;
+}
+.time{
+		display:  inline-block;
+		width: 30%;
+		font-size: 25rpx;
+		color: #C0C0C0;
+		vertical-align: top;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis;
+		white-space: nowrap;
+}
+.unread_container {
+	width: 19%;
+	height: 80rpx;
+	float: left;
+	margin: 10rpx 0;
+}
+.unread_text{
+		font-size: 25rpx;
+		color: red;
+}
+.gt {
+		font-size: 50rpx;
+		color: #C0C0C0;
+}
+.newclient{
+		display: inline-block;
+		width: 75%;
+		height: 60rpx;
+		line-height: 60rpx;
+		margin: 20rpx 12.5%;
+		background-color: #00B4FF;
+		color: #fff;
+		border-radius: 50rpx;
+		text-align: center;
+}
+.clientlist_scroll{
+		width: 100%;
+		height: 75vh;
+}
+.clientlist:first-child{
+		border-top: 1px solid #ddd;
+}
+.clientlist{
+		border-bottom: 1px solid #ddd;
+		height: 200rpx;
+		font-size: 30rpx;
+		color: #333;
+		line-height: 50rpx;
+}
+.pull_up{
+		height: 200rpx;
+		width: 100%;
+		color: #999;
+		text-align: center;
+}
+.row{
+		width: 750rpx;
+		height: 50rpx;
+		white-space: nowrap;
+		overflow: hidden;
+}
+.row_title{
+		display: inline-block;
+		width: 20%;
+		float: left;
+		text-align: center;
+		white-space: pre-wrap;
+		vertical-align: top;
+}
+.row_title .color{
+		display: inline-block;
+		width: 10rpx;
+		height: 30rpx;
+		background-color: red;
+		margin: 10rpx 10rpx 10rpx 0;
+		vertical-align: top;
+		border-radius: 10rpx;
+}
+.row_content{
+		display: inline-block;
+		width: 58%;
+		height: 50rpx;
+		float: left;
+}
+.row_right{
+		display: inline-block;
+		width: 100rpx;
+		height: 40rpx;
+		line-height: 40rpx;
+		margin: 5rpx 30rpx;
+		float: right;
+		text-align: center;
+}
+.row_de{
+		border-radius: 5rpx;
+		background-color: #00B4FF;
+		color: #fff;
+		vertical-align: top;
+}
+.row_de text{
+		line-height: 50rpx;
+}
+.c999{
+		color: #999;
+}
+.bg{
+		position: fixed;
+		width: 100%;
+		height: 1500rpx;
+		z-index: 0;
+		background-color: rgba(0,0,0,0.3);
+}
+.remind_container{
+		position: fixed;
+		width: 100%;
+		height: 70vh;
+		border-radius: 20rpx;
+		color: #333;
+		background-color: #FFFFFF;
+		overflow: hidden;
+		border: 1px solid #ddd;
+		z-index: 100;
+}
+.task{
+			width: 96%;
+			height: 180rpx;
+			margin: 2% 2% 0 2%;
+			border: 1px solid #ddd;
+			border-radius: 10rpx;
+}
+.task view{
+				height: 25%;
+				font-size: 35rpx;
+				overflow: hidden;
+				-o-text-overflow: ellipsis;
+				   text-overflow: ellipsis;
+				white-space: nowrap;
+				vertical-align: top;
+}
+.details{
+				border-top: 1px solid #ddd;
+				font-size: 30rpx;
+				position: relative;
+}
+.gt{
+					position: absolute;
+					right: 0;
+					top: -12rpx;
+					display: inline-block;
+					width: 40rpx;
+					height: 100%;
+					font-size: 40rpx;
+					color: #666;
+					float: right;
+					float: top;
+					margin-right: 2%;
+					vertical-align: top;
+}
+/* .login_containor{
 	width: 100%;
 	height: 100%;
 }
 .login_icon{
 	width: 30%;
 	margin: 15% 35% 5% 35%;
-}
+} */
 

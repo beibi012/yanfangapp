@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "监测",
+  "navigationBarTitleText": "检测",
+  "bounce": "none",
   "usingComponents": {}
 }

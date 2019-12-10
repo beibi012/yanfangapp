@@ -4,7 +4,7 @@
 			<!-- css搜索框样式p317 -->
 			<view class="search_cont">
 			<view class="search_left">
-				<image class="search_icon" src="../../static/167.jpg" mode="widthFix"></image>
+				<image class="search_icon" src="../../static/search@2x.png" mode="widthFix"></image>
 			</view>
 			<input class="search" type="text"  placeholder="城市/拼音" />
 			<view class="search_right"></view>
@@ -14,7 +14,7 @@
 		<view class="newlocation">
 			<view class="up">当前定位</view>
 			<view class="down">
-				<image class="img" src="../../static/106.jpg" mode="widthFix"></image>
+				<image class="img" src="/static/sign@2x.png" mode="widthFix"></image>
 				<view class="left"><text>{{current_city}}{{current_district}}{{current_street}}</text></view>
 				<view class="right" @click="relocation">重新定位</view>
 			</view>
@@ -22,7 +22,7 @@
 		<view class="newlocation">
 			<view class="up">定位/最近访问</view>
 			<view class="down">
-				<view class="city"><text>南宁</text></view>
+				<view class="city" ><text>南宁</text></view>
 			</view>
 		</view>
 		<view class="newlocation">
@@ -42,7 +42,8 @@ var self;
 		},
 		data() {
 			return {
-				hotcity:["桂林","柳州","崇左","玉林","深圳","钦州","广州","上海"],
+				hotcity:["桂林","柳州","崇左","玉林","呼和浩特","深圳","钦州","广州","上海",
+				],
 				current_city:"南宁市",
 				current_district:"",
 				current_street:"",
@@ -105,6 +106,14 @@ var self;
 						    title: '重新定位完成'
 						});
 					    }
+				});
+			},
+			toTest:()=>{
+				uni.navigateTo({
+					url: 'test',
+					success: res => {},
+					fail: () => {},
+					complete: () => {}
 				});
 			}
 		}

@@ -11,16 +11,22 @@
 				<view class="location_textc">
 					<text>{{city}}</text>
 					</view>
-				<image src="../../static/153.jpg" mode="widthFix"></image>
+				<image src="/static/Location@2x.png" mode="widthFix"></image>
 			</navigator>
 		</view>
 		<!-- 开发商列表p920 -->
-		<view v-for="e in developer">
-			<navigator class="developer" :url="'developer/developer?name='+e.name">
-			<image class="developer_icon" src="../../static/169.jpg" mode="widthFix"></image>
-			<view class="developer_name">{{e.name}}</view>
+		<view v-for="(e,index) in developer">
+			<navigator class="developer" :url="'developer/simulate/simulate?PrId='+developer[index].prId">
+			<image class="developer_icon" src="../../static/fdc.png" mode="widthFix"></image>
+			<view class="developer_name">{{e.prName}}</view>
 		</navigator>
 		</view>
+		<!-- <view >//测试
+			<navigator class="developer" url="developer/simulate/simulate">
+			<image class="developer_icon" src="../../static/fdc.png" mode="widthFix"></image>
+			<view class="developer_name">万科</view>
+		</navigator>
+		</view> -->
 		
 	</view>
 </template>
@@ -49,10 +55,22 @@ var self;
 			            self.district= res.data;
 			        }
 			});
+			uni.getStorage({
+			    key: 'cookies',
+			    success: function (res) {
+					self.cookies=res.data;
+					console.log("监测获取到cookies值为:"+self.cookies);
+			    }
+			});
+			
 			
 		},
 		onShow() {
 			self=this;
+			uni.showLoading({
+			    title: '加载中',
+				mask:true
+			});
 			uni.getStorage({
 			    key: 'portrait',
 			    success: function (res) {
@@ -65,15 +83,44 @@ var self;
 			            self.city= res.data;
 			        }
 			});
+			self.developer=[]
+			const app = getApp()
+			console.log(app.globalData.ctx)
+			uni.request({
+				url: app.globalData.ctx+'/home/problem/rs/problemlist?prClass=1',
+				method: 'POST',
+				header:{
+					'Content-type':'application/json',
+					'Cookie':self.cookies
+				},
+				data: {
+					
+				},
+				success: res => {
+					console.log(res)
+					self.getData=res.data.rows
+					console.log(self.getData)
+					// for (var i = 1; i < res.data.length; i++) {
+					// 	self.developer.push(res.data[i])
+					// }
+					for (var i = 0; i < res.data.rows.length; i++) {
+						self.developer.push(res.data.rows[i])
+					}
+					console.log(JSON.stringify(self.developer))
+				},
+				fail: () => {},
+				complete: () => {
+					uni.hideLoading()
+				}
+			});
+			
 		},
 		data() {
 			return {
-				portrait:"../../static/166.jpg",
-				developer:[
-					{name:"万科城",img:"",url:""},
-					{name:"精通瑞城",img:"",url:""},
-					{name:"天健城",img:"",url:""}
-				],
+				getData:[],
+				cookies:"",
+				portrait:"/static/tx.png",
+				developer:[],
 				province:"",
 				city:"",
 				district:""

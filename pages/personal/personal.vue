@@ -38,7 +38,7 @@
 		},
 		data() {
 			return {
-				portrait:"../../static/166.jpg",
+				portrait:"/static/tx.png",
 				p:["../../static/166.jpg"]
 			}
 		},

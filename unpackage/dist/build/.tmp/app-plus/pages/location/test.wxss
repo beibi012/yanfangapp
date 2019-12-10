@@ -1,0 +1,12 @@
+
+.aaa{
+	border: #007AFF 5px solid;
+	height: 700rpx;
+	width: 700rpx;
+}
+.bbb{
+	border: black 5px solid;
+	width: 50vw;
+	height: 100vh;
+}
+

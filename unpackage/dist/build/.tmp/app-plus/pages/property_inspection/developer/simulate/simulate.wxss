@@ -1,0 +1,71 @@
+
+.simulate_container{
+	width: 750rpx;
+	overflow: hidden;
+}
+.one{
+		position: relative;
+		width: 1550rpx;
+}
+.half{
+		display: inline-block;
+		width: 750rpx;
+		float: left;
+}
+.web_title{
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		height: 8vh;
+		width: 750rpx;
+		white-space: nowrap;
+		z-index: 100;
+}
+.kong{
+		height: 8vh;
+		width: 750rpx;
+}
+.active{
+		color: #333!important;
+		border-bottom: #00B4FF solid 5rpx!important;
+}
+.nav{
+		display: inline-block;
+		width: 373rpx;
+		height: 8vh;
+		line-height: 8vh;
+		text-align: center;
+		color: #999;
+		border: 1px solid #ddd;
+}
+.simulate_list{
+		height: 120rpx;
+		border: 1px solid #ddd;
+		color: #666;
+}
+.list_content{
+			display: inline-block;
+			width: 75%;
+			font-size: 35rpx;
+			margin: 38rpx 2% 0 2%;
+			white-space: nowrap;
+			-o-text-overflow: ellipsis;
+			   text-overflow: ellipsis;
+			overflow: hidden;
+			float: left;
+}
+.list_button{
+			display: inline-block;
+			width: 12%;
+			height: 60rpx;
+			line-height: 60rpx;
+			float: left;
+			font-size: 30rpx;
+			margin: 30rpx 0 0 4%;
+			text-align: center;
+			background-color: #f3ad3d;
+			color: #fff;
+			border-radius: 10rpx;
+			vertical-align: bottom;
+}
+

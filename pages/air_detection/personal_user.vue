@@ -21,8 +21,8 @@
 			return {
 				load:false,
 				list:[
-					{name:"监测",url:"survey",src:"../../static/131.jpg"},
-					{name:"治理",url:"govern",src:"../../static/126.jpg"}
+					{name:"监测",url:"survey",src:"/static/Monitor@2x.png"},
+					{name:"治理",url:"govern",src:"/static/Government@2x.png"}
 				]
 			}
 		},

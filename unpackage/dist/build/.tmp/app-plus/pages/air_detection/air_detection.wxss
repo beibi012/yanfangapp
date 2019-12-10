@@ -1,0 +1,158 @@
+
+.newsurvey{
+	display: inline-block;
+	width: 75%;
+	height: 60rpx;
+	line-height: 60rpx;
+	margin: 20rpx 12.5%;
+	background-color: #00B4FF;
+	color: #fff;
+	border-radius: 50rpx;
+	text-align: center;
+}
+.web_title{
+		height: 6vh;
+		width: 750rpx;
+		margin-bottom: 2%;
+		white-space: nowrap;
+}
+.nav{
+		display: inline-block;
+		width: 373rpx;
+		height: 80rpx;
+		line-height: 80rpx;
+		text-align: center;
+		color: #999;
+		border: 1px solid #ddd;
+}
+.active{
+		color: #333;
+		border-bottom: #00B4FF solid 5rpx;
+}
+.display{
+	width: 100%;
+	overflow: hidden;
+}
+.doublewidth{
+	width: 1550rpx;
+	white-space: nowrap;
+	position: absolute;
+}
+.clientlist_scroll{
+	position: relative;
+	width: 750rpx;
+	height: 75vh;
+	top: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+.clientlist_scroll1{
+		position: relative;
+		width: 750rpx;
+		height: 75vh;
+		top: 0;
+		left: 750rpx;
+		display: inline-block;
+		overflow: hidden;
+}
+.goverup{
+		position: relative;
+		top: -100rpx;
+}
+.clientlist{
+		
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		width: 750rpx;
+		height: 200rpx;
+		font-size: 30rpx;
+		color: #333;
+		line-height: 50rpx;
+}
+.pull_up{
+		height: 200rpx;
+		width: 100%;
+		color: #999;
+		text-align: center;
+}
+.row{
+		width: 750rpx;
+		height: 50rpx;
+		white-space: nowrap;
+		overflow: hidden;
+		position: relative;
+}
+.row_title{
+		display: inline-block;
+		width: 18%;
+		float: left;
+		white-space: pre-wrap;
+		vertical-align: top;
+		text-indent: 20rpx;
+}
+.row_title1{
+		display: inline-block;
+		width: 75%;
+		float: left;
+		white-space: pre-wrap;
+		vertical-align: top;
+		text-indent: 20rpx;
+		white-space: nowrap;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis;
+		overflow: hidden;
+}
+.row_title .color{
+		display: inline-block;
+		width: 10rpx;
+		height: 30rpx;
+		background-color: red;
+		margin: 10rpx 10rpx 10rpx 0;
+		vertical-align: top;
+		border-radius: 10rpx;
+}
+.row_content{
+		display: inline-block;
+		width: 53%;
+		height: 50rpx;
+		float: left;
+}
+.row_right{
+		display: inline-block;
+		width: 100rpx;
+		height: 40rpx;
+		line-height: 40rpx;
+		margin: 5rpx 30rpx;
+		float: right;
+		text-align: center;
+}
+.row_de{
+		border-radius: 10rpx;
+		background-color: #00B4FF;
+		color: #fff;
+		vertical-align: top;
+		width: 120rpx!important;
+		height: 60rpx!important;
+		line-height: 60rpx!important;
+		right: 5rpx;
+		bottom: 5rpx;
+		position: absolute;
+		z-index: 100!important;
+}
+.nohidden{
+		overflow: inherit!important;
+}
+.row_de text{
+		line-height: 50rpx;
+}
+.c999{
+		color: #999;
+}
+.bg{
+		position: fixed;
+		width: 100%;
+		height: 1500rpx;
+		z-index: 0;
+		background-color: rgba(0,0,0,0.3);
+}
+

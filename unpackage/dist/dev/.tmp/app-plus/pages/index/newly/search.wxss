@@ -1,0 +1,13 @@
+
+.search_cont{
+	height: 8vh;
+	width: 100%;
+	font-size: 35rpx;
+}
+.search_cont .black{
+	height: 4vh;
+	width: 100%;
+	
+	line-height: 4vh;
+}
+

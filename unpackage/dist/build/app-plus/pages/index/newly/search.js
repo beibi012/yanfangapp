@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"search_cont{ height: 8vh; width: 100%; font-size: ",[0,35],"; }\n.",[1],"search_cont .",[1],"black{ height: 4vh; width: 100%; line-height: 4vh; }\n",],undefined,{path:"./pages/index/newly/search.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/newly/search.wxml') } }));

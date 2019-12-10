@@ -1,1 +1,2 @@
+setCssToHead([".",[1],"remind_details{ width: 96%; border: 1px solid #ddd; border-radius: ",[0,10],"; margin: 2% 2%; color: #333; }\n.",[1],"remind_details wx-view{ margin-left: 5%; height: ",[0,60],"; margin-top: 2%; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }\n",],undefined,{path:"./pages/index/remind/remind_details.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/remind/remind_details.wxml') } }));

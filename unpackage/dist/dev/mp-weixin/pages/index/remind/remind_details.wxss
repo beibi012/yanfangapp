@@ -1,0 +1,18 @@
+
+.remind_details{
+	width: 96%;
+	border: 1px solid #ddd;
+	border-radius: 10rpx;
+	margin: 2% 2%;
+	color: #333;
+}
+.remind_details view{
+		margin-left: 5%;
+		height: 60rpx;
+		margin-top: 2%;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis;
+		white-space: nowrap;
+}
+

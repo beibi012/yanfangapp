@@ -28,6 +28,7 @@
 		overflow: hidden;
 		background-color: $navtop-color;
 		color: #fff;
+		z-index: 200;
 		.top{
 			height: 60upx;
 		}
@@ -46,7 +47,7 @@
 			}
 		}
 		.navtop_location{
-			width: 79%;
+			width: 40%;
 			height: 100upx;
 			display: inline-block;
 			float: right;
@@ -59,7 +60,7 @@
 				vertical-align: middle;
 			}
 			.location_textc{
-				width: 90%;
+				width: 80%;
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;
@@ -82,6 +83,7 @@
 		white-space: nowrap;
 		background-color: $navtop-color;
 		color: #fff;
+		z-index: 100;
 		.top{
 			height: 60upx;
 		}
@@ -130,7 +132,7 @@
 	//form表单通用样式
 	.basic_container{  //基础表单容器样式
 		width: 100%;
-		height: 80upx;
+		min-height: 80upx;
 		line-height: 80upx;
 		overflow: hidden;
 		white-space: nowrap;
@@ -143,7 +145,7 @@
 			display: inline-block;
 			margin-left: 2%;
 			float: left;
-			color: #333;
+			color: #666;
 		}
 		.basic_titleblod{
 			width: 20%;
@@ -163,6 +165,29 @@
 			margin-left: 2%;
 			text-overflow:ellipsis;
 			line-height: 80upx;
+		}
+		.basic_contentb{  //表单显示内容基础样式
+			display: inline-block;
+			width: 60%;
+			height: 80upx;
+			overflow: hidden;
+			white-space: nowrap;
+			margin-left: 2%;
+			text-overflow:ellipsis;
+			line-height: 80upx;
+			font-weight: 800;
+		}
+		.basic_content2{
+			margin-top: 20upx;
+			display: inline-block;
+			width: 60%;
+			white-space: normal; 
+			min-height: 80upx;
+			overflow: inherit;
+			line-height: 40upx; 
+			font-size: 30upx; 
+			color: #333;
+			margin-left: 2%;
 		}
 		.basic_input{  //表单输入框基础样式
 			display: inline-block;
@@ -215,14 +240,14 @@
 		width: 100%;
 		height: 80upx;
 		line-height: 80upx;
-		font-size: 30upx;
+		font-size: 35upx;
 		font-weight: bold;
 		text-indent: 2%;
 		margin-bottom: 2%;
 		border-bottom: 1px solid #ddd;
 		border-top: 1px solid #ddd;
 		white-space: nowrap;
-		color: #666;
+		color: #333;
 	}
 	.add_headline{  //含有添加按钮的黑色大标题
 		width: 100%;
@@ -238,17 +263,15 @@
 		color: #666;
 		.add_button{  //添加按钮
 			display: inline-block;
-			position: relative;
-			background-color: #fff;
-			width: 50upx;
-			height: 50upx;
+			background-color: $button-color;
+			width: 180upx;
+			height: 50upx; 
+			line-height: 50upx;
+			font-size: 30upx;
+			text-align: center;
 			float: right;
+			text-indent: 0;
 			margin:15upx 5% 15upx 0;
-			.add_img{
-				position: absolute;
-				width: 50upx;
-				height: 50upx;
-			}
 		}
 	}
 	.removebottomline{
@@ -263,6 +286,7 @@
 				margin: 2%;
 				vertical-align: top;
 				font-size: 30upx;
+				color: #333;
 			}
 			.textarea{  //另起一行多行文本
 				background-color: #fff;
@@ -279,6 +303,7 @@
 				margin: 2%;
 				vertical-align: top;
 				font-size: 30upx;
+				color: #333;
 			}
 			.textarea2{  //在同一行的多行文本
 				background-color: #fff;
@@ -296,7 +321,7 @@
 				height: 150upx;
 				overflow: hidden;
 				line-height: 150upx;
-				border-radius: 10upx;
+				border-radius: 20upx;
 				border: 1px solid #ddd;
 				.addpic{
 					display: inline-block;
@@ -310,21 +335,26 @@
 						margin:50upx 0;
 					}
 					
-				} 
+				}
 				.pic_container{
 					display: inline-block;
 					position: relative;
 					width: 140upx;
 					height: 150upx;
-					border-radius: 5upx;
+					border-radius: 10upx;
 					.pic{
 					display: inline-block;
-					border-radius: 5upx;
+					border-radius: 20upx;
 					width: 66%;
 					height: 66%;
 					margin: 17% ;
-					z-index: 0;
-				}
+					}
+					.vde{
+						display: inline-block;
+						width: 66%;
+						height: 66%;
+						margin: 17% ;
+					}
 				.del{
 					display: inline-block;
 					position: absolute;
@@ -342,6 +372,20 @@
 				}
 				}
 				
+			}
+			.pic_nochange{
+				widows: 100%;
+				height: 150upx;
+				margin: 2%;
+				border: 1px solid #ddd;
+				border-radius: 10upx;
+				.nochange_img{
+					display: inline-block;
+					margin: 25upx 0 25upx 36upx;
+					width: 100upx;
+					height: 100upx;
+					border-radius: 20upx;
+				}
 			}
 			.b{
 				width: 100%;
@@ -404,270 +448,69 @@
 	}
 	}
 	
-	
-		
-	
-
-
-// 登陆页面样式
-//app图标名字
-	.login_container{
+	.load_bottom{
+		height: 15vh;
 		width: 100%;
-		height: 1325upx;
-		// background: url(static/login.png) no-repeat 0 0;
-		background-size: cover;
-		background-image: linear-gradient(#00b4ff, #fff );;
-		.login_icon{
-				width: 30%;
-				margin: 15% 35% 5% 35%;
-			}
-		.login_text{
-				display: flex;
-				justify-content: center;
-				font-size: 1.5em;
-				color: #fff;
-			}
-			
+		text-align: center;
+		color: #999;
 	}
-		//企业账号输入框
-	.username_container{
-		border-bottom: #fff 1px solid;
-		overflow: hidden;
-		margin: 5% 100upx 0 100upx;
-		padding: 2%;
-		.username_icon{
-			width: 50upx;
-			height: 50upx;
-			float: left;
-			margin-right: 5%;
-		}
-		.username_input{
-			display: inline-block;
-			float: left;
-			color: #fff;
-		}
-	}
-		//密码输入框
-	.password_container{
-		border-bottom: #fff 1px solid;
-		overflow: hidden;
-		margin: 5% 100upx 0 100upx;
-		padding: 2%;
-		.password_icon{
-			width: 50upx;
-			height: 50upx;
-			float: left;
-			margin-right: 5%;
-		}
-		.password_input{
-			float: left;
-			display: inline-block;
-		}
-	}
-	//提交按钮
-	.submit{
-		width: 550upx;
-		margin: 80upx 100upx 0 100upx;
-		background-color: $button-color!important;
-	}
-	//忘记密码
-	.login_forgetpassword{
-		color:#4CB3F9;
-		font-size: $font-size;
-		margin-top: 10%;
-		margin-left: 70%;
-	}
-
-
-//忘记密码页面样式
-	.forget_container{
-		width: 100%;
-		.f_input{
-			border-bottom: #000 1px solid;
-			overflow: hidden;
-			padding: 2%;
-			height: 70upx;
-			.f_input_img{
-				width: 50upx;
-				height: 50upx;
-				float: left;
-				margin:10upx 0 10upx 2%;
-			}
-			.forget_input{
-				display: inline-block;
-				height: 50upx;
-				width: 50%;
-				margin: 10upx 0 15upx 50upx;
-			}
-			.verificationcode_button{
-				display: inline-block;
-				float: right;
-				width: 30%;
-				font-size: 30upx;
-				border-radius: 50upx;
-				background-color: $button-color;
-				
-			}
-			
-		}
-		.forget_complete{
-			width: 550upx;
-			margin-top: 80upx;
-			background-color: $button-color!important;
-		}
-	}
-	
-	
-//填写资料页面样式
-	.writing_container{
-		width: 100%;
-		.winput_container{
-			width: 100%;
-			border-bottom: rgba(155,155,155,0.5) 1px solid;
-			overflow: hidden;
-			padding: 2%;
-			height: 70upx;
-		.write_text{
-			float: left;
-			width: 25%;
-			text-align: center;
-			color: #666;
-		}
-		.w_input{
-			display: inline-block;
-			height: 40upx;
-			float: left;
-			margin: 10upx 0 15upx 50upx;
-		}
-		}
-		.write_complete{
-			background-color: $button-color;
-			width: 550upx;
-			margin-top: 80upx;
-		}
-	}
-	
 	
 	
 
-
-//个人查验页面样式index
-.personal_inspection {
-	.remind{
-		width: 100%;
-		height: 100upx;
-		border-top:  1px solid rgba(155,155,155,0.5);
-		border-bottom:  1px solid rgba(155,155,155,0.5);
-		position:  fixed;
-		bottom: 0; //手机上要写0
-		white-space: nowrap;
-		overflow: hidden;
-		.remind_icon{
-			display: inline-block;
-			width: 80upx;
-			height: 80upx;
-			margin: 10upx 2% 10upx 2%;
-			float: left;
-		}
-		.remind_text {
-			width: 65%;
-			height: 80upx;
-			margin: 10upx 0;
-			float: left;
-			.textlist{
-				width: 100%;
-				height: 40upx;
-				
-				.textcontent{
-				display: inline-block;
-				width: 70%;
-				font-size: 35upx;
-				vertical-align: top;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-			}
-			.time{
-				display:  inline-block;
-				width: 30%;
-				font-size: 25upx;
-				color: #C0C0C0;
-				vertical-align: top;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-			}
-			}
-			
-		}
-		.unread_container {
-			width: 19%;
-			height: 80upx;
-			float: left;
-			margin: 10upx 0;
-			.unread_text{
-				font-size: 25upx;
-			}
-			.gt {
-				font-size: 50upx;
-				color: #C0C0C0;
-			}
-		}
-	}
-}
+/////////////////////////////////
 	//任务提醒
-	.remind_container{
-		width: 100%;
-		.task{
-			width: 96%;
-			height: 180upx;
-			margin: 2% 2% 0 2%;
-			border: 1px solid black;
-			border-radius: 10upx;
-			view{
-				height: 25%;
-				font-size: 35upx;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				vertical-align: top;
-			}
-			.details{
-				border-top: 1px solid black;
-				font-size: 30upx;
-				position: relative;
-				.gt{
-					position: absolute;
-					right: 0;
-					top: -12upx;
-					display: inline-block;
-					width: 40upx;
-					height: 100%;
-					font-size: 40upx;
-					color: #C0C0C0;
-					float: right;
-					float: top;
-					margin-right: 2%;
-					vertical-align: top;
-				}
-			}
-		}
-	}
+	// .remind_container{
+	// 	width: 100%;
+	// 	.task{
+	// 		width: 96%;
+	// 		height: 180upx;
+	// 		margin: 2% 2% 0 2%;
+	// 		border: 1px solid black;
+	// 		border-radius: 10upx;
+	// 		view{
+	// 			height: 25%;
+	// 			font-size: 35upx;
+	// 			overflow: hidden;
+	// 			text-overflow: ellipsis;
+	// 			white-space: nowrap;
+	// 			vertical-align: top;
+	// 		}
+	// 		.details{
+	// 			border-top: 1px solid black;
+	// 			font-size: 30upx;
+	// 			position: relative;
+	// 			.gt{
+	// 				position: absolute;
+	// 				right: 0;
+	// 				top: -12upx;
+	// 				display: inline-block;
+	// 				width: 40upx;
+	// 				height: 100%;
+	// 				font-size: 40upx;
+	// 				color: #C0C0C0;
+	// 				float: right;
+	// 				float: top;
+	// 				margin-right: 2%;
+	// 				vertical-align: top;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	
 	
 	//任务详情
-	.remind_details{
-		width: 100%;
-		view{
-			margin-left: 5%;
-			height: 60upx;
-			margin-top: 2%;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
+	// .remind_details{
+	// 	width: 100%;
+	// 	view{
+	// 		margin-left: 5%;
+	// 		height: 60upx;
+	// 		margin-top: 2%;
+	// 		overflow: hidden;
+	// 		text-overflow: ellipsis;
+	// 		white-space: nowrap;
+	// 	}
 		
-	}
+	// }
 
 
 	//个人信息
@@ -675,6 +518,9 @@
 		.basic_container{
 			margin-bottom: 2%;
 			border-bottom: 1px solid #ddd;
+			input{
+				border: 0;
+			}
 		}
 	}
 	
@@ -813,8 +659,8 @@
 	
 	
 	//详情-每套房子问题筛选页面
-	.details_content{
-		.picker_container{
+	.details_content1{
+		.picker_container{ 
 			height: 50upx;
 			white-space: nowrap;
 			.picker{
@@ -878,7 +724,12 @@
 					height: 35upx;
 					margin-top: 1%;
 					margin-left: 5%;
-					background-color: #4CD964;
+				}
+				.color_red{
+					background-color: #eb3226;
+				}
+				.color_green{
+					background-color: #a5d255;
 				}
 				.main_item{
 					float: left;
@@ -920,21 +771,11 @@
 					text{
 						margin-left: 5upx;
 					}
-					.reddot{
+					.dot{
 						display: inline-block;
 						width: 28upx;
 						height: 28upx;
-						background-color: #eb3226;
 						border-radius: 50%;
-						
-					}
-					.greendot{
-						display: inline-block;
-						width:28upx;
-						height: 28upx;
-						background-color: #a5d255;
-						border-radius: 50%;
-						
 					}
 				}
 			}
@@ -945,12 +786,11 @@
 			width: 100%;
 			background-color: #fff;
 			.progress{
-				
 				width: 90%;
-				margin: 0 5%;
+				margin: 0 5%; 
 				
-				.text{
-					font-size: 35upx;
+				.text{ 
+					font-size: 35upx; 
 				}
 			}
 		}
@@ -958,16 +798,68 @@
 	}
 	
 	
+	//整改情况页面
+	// .pr_problemdetails{
+	// 	width: 100%;
+	// 	.rectification{
+	// 		width: 100%;
+	// 		height: 80upx;
+	// 		border-top: 1px solid black;
+	// 		line-height: 80upx;
+	// 		.color{
+	// 			display: inline-block;
+	// 			height: 50upx;
+	// 			width: 10upx;
+	// 			margin: 15upx 0 15upx 2%;
+	// 		}
+	// 		.color_red{
+	// 			background-color: #eb3226;
+	// 		}
+	// 		.color_green{
+	// 			background-color: #a5d255;
+	// 		}
+	// 		text{
+	// 			display: inline-block;
+	// 			margin-left: 2%;
+	// 			vertical-align: top;
+	// 		}
+	// 	}
+	// 	.line{
+	// 		border-top: 1px solid black;
+	// 	}
+	// 	.pr_button{
+	// 		height: 130upx;
+	// 		background-color: #fff;
+	// 		white-space: nowrap;
+	// 		.fail{
+	// 			display: inline-block;
+	// 			height: 90upx;
+	// 			width: 40%;
+	// 			text-align: center;
+	// 			line-height: 90upx;
+	// 			border: 1px solid #DDD;
+	// 			margin: 20upx 5%;
+	// 			border-radius: 10upx;
+	// 			color: red;
+	// 		}
+	// 		.pass{
+	// 			display: inline-block;
+	// 			height: 90upx;
+	// 			width: 40%;
+	// 			text-align: center;
+	// 			line-height: 90upx;
+	// 			border: 1px solid #DDD;
+	// 			margin: 20upx 5%;
+	// 			border-radius: 10upx;
+	// 			color: #FFFFFF;
+	// 			background-color: $button-color;
+	// 		}
+	// 	}
+	// }
+	
 	//不合格页面
 	.fail_container{
-		background-color: $bg;
 		padding-bottom: 2%;
-		.submit{
-			display: block;
-			width: 100%;
-			position: fixed;
-			bottom: 0;
-		}
 	}
 	
 	
@@ -1005,68 +897,39 @@
 	
 	
 	//模拟验房
-	.simulate_container{
-		.simulate_list{
-			background-color: $bg;
-			height: 120upx;
-			border: 1px solid black;
-			.list_content{
-				display: inline-block;
-				width: 75%;
-				font-size: 35upx;
-				margin: 38upx 2% 0 2%;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				float: left;
-			}
-			.list_button{
-				display: inline-block;
-				width: 12%;
-				height: 60upx;
-				line-height: 60upx;
-				float: left;
-				font-size: 30upx;
-				margin: 30upx 0 0 4%;
-				text-align: center;
-				border: 1px solid black;
-				background-color: #fff;
-				border-radius: 10upx;
-				vertical-align: bottom;
-				
-			}
-		}
-	}
+	
 	
 	
 	//楼房整改状态
 	.states{
 		width: 100%;
 		height: 100upx;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
+		// border-bottom: 1px solid #ddd;
+		// border-top: 1px solid #ddd;
 		white-space: nowrap;
 		overflow: hidden;
 		.state:first-child{
 			border-left: 0;
+		}
+		.state:first-child{
+			border-right: 1px solid #ddd;
 		}
 		.state{
 			display: inline-block;
 			width: 20%;
 			height: 100upx;
 			vertical-align: top;
-			border-left: 1px solid black;
+			// border-left: 1px solid #ddd;
 			view{
 				height: 50upx;
 				text-align: center;
 			}
 		}
 	}
-	.storeys{
+	.storeys{ 
 		width: 100%;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
-		background-color: $bg;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
 		.storey{
 			height: 60upx;
 			font-size: 35upx;
@@ -1085,109 +948,56 @@
 				height: 60upx;
 				margin-left: 4%;
 				margin-top: 20upx;
-				border: 1px solid black;
+				border: 1px solid #ddd;
 				border-radius: 10upx;
 				background-color: #fff;
 			}
-			.undelivered{
+		    .undelivered{  //未交付
 				background-color: #fff;
+				color: #333;
 			}
-			.nochange{
-				background-color: #ddd;
+			.nochange{  //待整改
+				background-color: #ed5d68;
+				color: #fff;
 			}
-			.changed{
-				background-color: #bbb;
+			.changed{  //已整改
+				background-color: #a5d457;
+				color: #fff;
 			}
-			.delivered{
-				background-color: #999;
+			.delivered{  //已交付
+				background-color: #f3ae3e;
+				color: #fff;
 			}
 		}
 	}
 	
 	
-	//整改情况页面
-	.pr_problemdetails{
-		background-color: $bg;
-		width: 100%;
-		.rectification{
-			width: 100%;
-			height: 80upx;
-			border-top: 1px solid black;
-			line-height: 80upx;
-			view{
-				display: inline-block;
-				margin-left: 2%;
-				font-size: 50upx;
-				font-weight: bold;
-			}
-			text{
-				display: inline-block;
-				margin-left: 2%;
-			}
-		}
-		.line{
-			border-top: 1px solid black;
-		}
-		.pic_nochange{
-			widows: 100%;
-			height: 150upx;
-			margin-bottom: 2%;
-			.nochange_img{
-				display: inline-block;
-				margin: 25upx 0 25upx 2%;
-				width: 100upx;
-				height: 100upx;
-			}
-		}
-		.pr_button{
-			height: 130upx;
-			background-color: #fff;
-			white-space: nowrap;
-			navigator{
-				display: inline-block;
-				height: 90upx;
-				width: 40%;
-				text-align: center;
-				line-height: 90upx;
-				border: 1px solid black;
-				margin: 20upx 5%;
-				border-radius: 5%;
-			}
-			view{
-				display: inline-block;
-				height: 90upx;
-				width: 40%;
-				text-align: center;
-				line-height: 90upx;
-				border: 1px solid black;
-				margin: 20upx 5%;
-				border-radius: 5%;
-			}
-			.pass{
-				
-			}
-			.fail{
-				background-color: #C0C0C0;
-			}
-		}
-	}
+	
+	
 	
 	
 	//专项检测
 	.specialitem_container{
-		background-color: $bg;
 		padding-top: 2%;
-		input{
-			display: inline-block;
-			background-color: #fff;
-			margin: 18upx 0;
+		.basic_input{
+			margin: 18upx 20upx;
+			border: 0;
 		}
-			
+		.basic_container{
+			border-bottom: 1px solid #ddd;
+		}.basic_container2{
+			border-bottom: 1px solid #ddd;
+		}
+		.s{
+			text-indent: 30upx;
+			color: #666;
+		}
 		.title{
 			height: 80upx;
 			line-height: 80upx;
 			font-size: 30upx;
 			text-indent: 2%;
+			border-bottom: 1px solid #ddd;
 		}
 	}
 	
@@ -1200,8 +1010,8 @@
 		white-space: nowrap;
 		.basic_title{
 			display: inline-block;
-			margin: 2%;
-			font-size: 30upx;
+			margin-left: 2%;
+			font-size: 35upx;
 		}
 		view{
 			display: inline-block;
@@ -1211,11 +1021,11 @@
 			float: left;
 		}
 		.date{
-			margin-top: 2%;
+			// margin-top: 2%;
 			background-color: #fff;
 			font-size: 35upx;
 			width: 30%;
-			margin-left: 10%;
+			margin-left: 5%;
 			text-align: center;
 			border: 1px solid #ddd;
 			border-radius: 50upx;
@@ -1224,19 +1034,21 @@
 			margin-left: 3%;
 		}
 		.time{
+			// margin-top: 2%;
 			background-color: #fff;
 			width: 15%;
 			margin-left: 10%;
 			text-align: center;
-			border-radius: 15upx;
+			border: 1px solid #ddd;
+			border-radius: 50upx;
+			
 		}
 	}
 	
 
 //系统设置样式
 .setting{
-	height: 300upx;
-	background-color: $bg;
+	 height: 300upx; 
 	text-align: center;
 	.center{
 		position: relative;
@@ -1249,11 +1061,12 @@
 		image{
 			width: 120upx;
 			height: 120upx;
-			border: 5upx solid white;
+			border: 5upx solid #ddd;
 			border-radius: 50%;
 		}
 		.name{
 			font-size: 35upx;
+			color: #333;
 		}
 		.profession{
 			position: relative;
@@ -1271,20 +1084,21 @@
 	height: 80upx;
 	font-size: 35upx;
 	line-height: 80upx;
-	background-color: $bg;
 	text-indent: 2%;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	.right{
 		float: right;
 		font-size: 60upx;
 		margin-right: 5%;
-		color: #C0C0C0;
+		color: #ddd;
 	}
 }
 
 //关于验房APP页面
 .aboutapp{
 	height: 440upx;
-	background-color: $bg;
 	.icon{
 		height: 220upx;
 		text-align: center;
@@ -1294,6 +1108,11 @@
 			height: 160upx;
 			margin: 30upx 0;
 		}
+	}
+	.version{
+		font-size: 25upx;
+		text-align: center;
+		margin-bottom: 3%;
 	}
 	.explain{
 		height: 220upx;
@@ -1313,13 +1132,10 @@
 
 //个人资料
 .personal{
-	.basic_container:first-child{
-		border-top: 1px solid black;
-	}
 	.basic_container{
 		height: 100upx;
 		line-height: 100upx;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #ddd;
 	}
 	.basic_title{
 		font-size: 35upx;
@@ -1330,6 +1146,7 @@
 		font-size: 35upx;
 		text-align: right;
 		vertical-align: middle;
+		color: #333;
 	}
 	.portrait{
 		display: inline-block;
@@ -1343,6 +1160,7 @@
 		float: right;
 		font-size: 60upx;
 		margin-right: 2%;
+		color: #ddd;
 		
 	}
 }
@@ -1350,12 +1168,11 @@
 
 //定位
 .newlocation{
-	background-color: $bg;
 	margin-top: 2%;
 	min-height: 140upx;
 	.up{
 		font-size: 30upx;
-		color: #808080;
+		color: #999;
 		height: 70upx;
 		line-height: 70upx;
 		text-indent: 2%;
@@ -1363,6 +1180,7 @@
 	.down{
 		line-height: 70upx;
 		font-size: 35upx;
+		color: #333;
 		.img{
 			display: inline-block;
 			width: 50upx;
@@ -1374,6 +1192,7 @@
 			line-height: 70upx;
 			width: 50%;
 			height: 70upx;
+			color: #333;
 			margin-left: 2%;
 			vertical-align: top;
 			overflow: hidden;
@@ -1384,6 +1203,7 @@
 			display: inline-block;
 			float: right;
 			margin-right: 2%;
+			color: $button-color;
 		}
 		.city{
 			display: inline-block;
@@ -1393,7 +1213,7 @@
 			text-align: center;
 			display: inline-block;
 			background-color: #fff;
-			border: 1px solid black;
+			border: 1px solid #ddd;
 			border-radius: 15upx;
 			margin: 2%;
 		}
@@ -1401,113 +1221,114 @@
 }
 
 	
-	//实测实量
-	.measure_container{
-		input{
-			border-radius: 10upx;
-		}
-		.basic_headline{
-			color: #00b4ff;
-			border-bottom: 0;
-			border-top: 0;
-			font-size: 40upx;
-		}
-		.content{
-			display: inline-block;
-			width: 100%;
-			padding-bottom: 2%;
-			line-height: 50upx;
-			font-size: 30upx;
-			white-space: nowrap;
-			.roomtype{
-				margin-left: 2%;
-				font-size: 35upx;
-				color: #333;
-			}
-			.standard{
-				float: right;
-				margin-right: 10%;
-				color: #333;
-			}
-			.right1{
-				margin-left: 78%;
-				color: #999;
-			}
-			.right2{
-				margin-left: 3%;
-				color: #999;
-			}
-			.data_content{
-				display: inline-block;
-				width: 75%;
-				.wrap{
-					white-space: normal;
-				    .manyinput{
-						display: inline-block;
-						width: 70upx;
-						background-color: #fff;
-						margin-left: 3%;
-						margin-top: 1%;
-						border: 1px solid #ddd;
-					}
-				}
-					.inputcontent{
-					width: 100%;
-					margin-top: 3%;
-					height: 60upx;
-					text-indent: 2%;
-					.inputtitle{
-						display: inline-block;
-						width: 20%;
-						vertical-align: top;
-						text{
-							color: #666;
-						}
-					}
-						.inputvalue{
-						display: inline-block;
-						width: 75%;
-						border: 1px solid #ddd;
+	// //实测实量
+	// .measure_container{
+	// 	input{
+	// 		border-radius: 10upx;
+	// 	}
+	// 	.basic_headline{
+	// 		color: #00b4ff;
+	// 		border-bottom: 0;
+	// 		border-top: 0;
+	// 		font-size: 40upx;
+	// 	}
+	// 	.content{
+	// 		display: inline-block;
+	// 		width: 100%;
+	// 		padding-bottom: 2%;
+	// 		line-height: 50upx;
+	// 		font-size: 30upx;
+	// 		white-space: nowrap;
+	// 		.roomtype{
+	// 			margin-left: 2%;
+	// 			font-size: 35upx;
+	// 			color: #333;
+	// 		}
+	// 		.standard{
+	// 			float: right;
+	// 			margin-right: 10%;
+	// 			color: #333;
+	// 		}
+	// 		.right1{
+	// 			margin-left: 78%;
+	// 			color: #999;
+	// 		}
+	// 		.right2{
+	// 			margin-left: 3%;
+	// 			color: #999;
+	// 		}
+	// 		.data_content{
+	// 			display: inline-block;
+	// 			width: 75%;
+	// 			.wrap{
+	// 				white-space: normal;
+	// 			    .manyinput{
+	// 					display: inline-block;
+	// 					width: 70upx;
+	// 					background-color: #fff;
+	// 					margin-left: 3%;
+	// 					margin-top: 1%;
+	// 					border: 1px solid #ddd;
+	// 				}
+	// 			}
+	// 				.inputcontent{
+	// 				width: 100%;
+	// 				margin-top: 3%;
+	// 				height: 60upx;
+	// 				text-indent: 2%;
+	// 				.inputtitle{
+	// 					display: inline-block;
+	// 					width: 20%;
+	// 					vertical-align: top;
+	// 					text{
+	// 						color: #666;
+	// 					}
+	// 				}
+	// 					.inputvalue{
+	// 					display: inline-block;
+	// 					width: 75%;
+	// 					border: 1px solid #ddd;
 						
-					}
-				}
+	// 				}
+	// 			}
 			
-			}
+	// 		}
 			
-		}
-		.standard_container{
-			display: inline-block;
-				width: 20%;
-				height: 355upx;
-				margin-left: 3%;
-				margin-top: 2%;
-				vertical-align: top;
-				border: 1px solid #ddd;
-				.inputstandard{
-				display: inline-block;
-				width: 85%;
-				margin-left: 2%;
-				margin-top: 155upx;
-		}
-		}
-		.standard_container2{
-			display: inline-block;
-			width: 23%;
-			margin-left: 3%;
-			vertical-align: top;
-			white-space: nowrap;
-			.half{
-				display: inline-block;
-				width: 50%;
-				vertical-align: top;
-				white-space: normal;
-				.manyinput{
-					display: inline-block;
-					width: 70upx;
-					background-color: #fff;
-					margin-top: 6%;
-					border: 1px solid #ddd;
-				}
-			}
-		}
-	}
+	// 	}
+	// 	.standard_container{
+	// 		display: inline-block;
+	// 			width: 20%;
+	// 			height: 355upx;
+	// 			margin-left: 3%;
+	// 			margin-top: 2%;
+	// 			vertical-align: top;
+	// 			border: 1px solid #ddd;
+	// 			border-radius: 10upx;
+	// 			.inputstandard{
+	// 			display: inline-block;
+	// 			width: 85%;
+	// 			margin-left: 2%;
+	// 			margin-top: 155upx;
+	// 	}
+	// 	}
+	// 	.standard_container2{
+	// 		display: inline-block;
+	// 		width: 23%;
+	// 		margin-left: 3%;
+	// 		vertical-align: top;
+	// 		white-space: nowrap;
+	// 		.half{
+	// 			display: inline-block;
+	// 			width: 50%;
+	// 			vertical-align: top;
+	// 			white-space: normal;
+	// 			.manyinput{
+	// 				display: inline-block;
+	// 				width: 70upx;
+	// 				background-color: #fff;
+	// 				margin-top: 6%;
+	// 				border: 1px solid #ddd;
+	// 			}
+	// 		}
+	// 	}
+	// }

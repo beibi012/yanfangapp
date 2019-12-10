@@ -4,17 +4,26 @@
 			"path": "pages/login/login",
 			"style": {"navigationStyle":"custom"}
 		},
-				{
-					"path" : "pages/login/writing_infomation",
-					"style" : {"navigationBarTitleText": "填写资料"}
-				},
-				{
-					"path": "pages/login/forget_password",
-					"style": {"navigationBarTitleText": "找回密码"}
-				},
+		
+				// {
+				// 	"path" : "pages/login/writing_infomation",
+				// 	"style" : {"navigationBarTitleText": "填写资料"}
+				// },
+				// {
+				// 	"path": "pages/login/forget_password",
+				// 	"style": {"navigationBarTitleText": "找回密码"}
+				// },
 		{
 			"path": "pages/index/index",
-			"style": {"navigationStyle":"custom"}
+			"style": {
+				"navigationStyle":"custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path" : "pages/index/search/details",
+			"style" : {"navigationStyle":"custom",
+			"app-plus":{"bounce":"none"}}
 		},
 			{
 				"path" : "pages/index/newly",
@@ -34,6 +43,15 @@
 					"style" : {"navigationBarTitleText": "登记问题",
 					"app-plus":{"bounce":"none"}}
 				},
+				{
+					"path" : "pages/index/newly/new_problem",
+					"style" : {"navigationBarTitleText": "新增问题描述",
+					"app-plus":{"bounce":"none"}}
+				},
+				{
+					"path" : "pages/index/newly/search",
+					"style" : {"navigationStyle":"custom"}
+				},
 			{
 				"path" : "pages/index/recheck",
 				"style" : {"navigationBarTitleText": "复检"}
@@ -50,9 +68,6 @@
 				"style" : {"navigationStyle":"custom"}
 			},
 			{
-				"path" : "pages/index/search/details",
-				"style" : {"navigationStyle":"custom"}
-			},{
 				"path" : "pages/index/search/problem_details",
 				"style" : {"navigationBarTitleText": "问题详情"}
 			},{
@@ -88,11 +103,15 @@
 			},
 			{
 				"path" : "pages/property_inspection/developer/simulate/details",
-				"style" : {"navigationStyle":"custom"}
+				"style" : {"navigationStyle":"custom",
+				"app-plus":{"bounce":"none"}}
 			},
 			{
 				"path" : "pages/property_inspection/developer/simulate/problem_details",
 				"style" : {"navigationBarTitleText": "问题详情"}
+			},{
+				"path" : "pages/property_inspection/developer/simulate/fail",
+				"style" : {"navigationBarTitleText": "不合格"}
 			},
 			{
 				"path" : "pages/property_inspection/developer/simulate/simulate",
@@ -103,11 +122,44 @@
 				"style" : {"navigationBarTitleText": "登记问题"}
 			},
 			{
+				"path" : "pages/property_inspection/developer/simulate/search",
+				"style" : {"navigationStyle":"custom",
+				"app-plus":{"bounce":"none"}}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/searchdescribe",
+				"style" : {"navigationBarTitleText": "筛选问题",
+				"app-plus":{"bounce":"none"}}
+			},
+			{
+				"path" : "pages/property_inspection/developer/simulate/new_problem",
+				"style" : {"navigationBarTitleText": "选择问题描述",
+				"app-plus":{"bounce":"none"}}
+			},
+			{
 				"path" : "pages/property_inspection/developer/all_flats/all_flats",
 				"style" : {"navigationBarTitleText": "专项检测"}
 			},
 			{
+				"path" : "pages/property_inspection/developer/all_flats/take_notes",
+				"style" : {"navigationBarTitleText": "新增专项检测",
+				"app-plus":{"bounce":"none"}}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/problem_details",
+				"style" : {"navigationBarTitleText": "专项检测详情",
+				"app-plus":{"bounce":"none"}}
+			},
+			{
 				"path" : "pages/property_inspection/developer/all_flats/all_numbers",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/all_states",
+				"style" : {"navigationStyle":"custom"}
+			},
+			{
+				"path" : "pages/property_inspection/developer/all_flats/details",
 				"style" : {"navigationStyle":"custom"}
 			},
 			{
@@ -116,27 +168,37 @@
 			},
 		{
             "path" : "pages/air_detection/air_detection",
-            "style" : {"navigationStyle":"custom"}
+            "style" : {"navigationStyle":"custom",
+				"app-plus":{"bounce":"none"}}
         },
+		{
+			"path" : "pages/air_detection/surveydetail",
+			"style" : {"navigationBarTitleText": "检测详情"}
+		},
+		{
+			"path" : "pages/air_detection/governdetail",
+			"style" : {"navigationBarTitleText": "治理详情"}
+		},
+		{
+			"path" : "pages/air_detection/resurvey",
+			"style" : {"navigationBarTitleText": "复检",
+					"app-plus":{"bounce":"none"}}
+		},
 			{
 			    "path" : "pages/air_detection/personal_user",
 			    "style" : {"navigationBarTitleText": "个人用户"}
 			},
 			{
-            "path" : "pages/air_detection/developers",
-            "style" : {"navigationBarTitleText": "开发商"}
-			},
-			{
-				"path" : "pages/air_detection/uniform",
-				"style" : {"navigationBarTitleText": "工装"}
-			},
-			{
 				"path" : "pages/air_detection/survey",
-				"style" : {"navigationBarTitleText": "监测"}
+				"style" : {
+					"navigationBarTitleText": "检测",
+					"app-plus":{"bounce":"none"}
+					}
 			},
 			{
 				"path" : "pages/air_detection/govern",
-				"style" : {"navigationBarTitleText": "治理"}
+				"style" : {"navigationBarTitleText": "治理",
+				"app-plus":{"bounce":"none"}}
 			},
 		{
             "path" : "pages/personal/setting",
@@ -144,7 +206,7 @@
         },
 			{
 			    "path" : "pages/personal/about",
-			    "style" : {"navigationBarTitleText": "关于验房APP"}
+			    "style" : {"navigationBarTitleText": "关于"}
 			},
 			{
 			    "path" : "pages/personal/personal",
@@ -162,7 +224,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		// "navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#4cb3f9",
+		"navigationBarBackgroundColor": "#00B4FF",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {

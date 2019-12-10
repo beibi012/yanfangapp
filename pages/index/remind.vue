@@ -2,7 +2,7 @@
 	<!-- 任务提醒样式p595 -->
 	<view class="remind_container">
 		<navigator class="task" :url="'remind/remind_details?date='+e.date+'&number='+e.number" v-for="e in tasklist">
-			<view>小区名称：{{e.name}}</view>
+			<view>任务名称：{{e.name}}</view>
 			<view>房号：{{e.number}}</view>
 			<view>验房时间：{{e.date}}</view>
 			<view class="details">

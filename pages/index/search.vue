@@ -4,7 +4,9 @@
 		<view class="app_top" style="height: 100upx;"></view>
 		<view class="search_nav">
 			<view class="top"></view>
-			<navigator class="back" url="recheck" open-type="redirect">返回</navigator>
+			<navigator class="back" url="recheck" open-type="redirect">
+				<image style="width: 25upx;height: 25upx;" src="/static/back.png" mode="widthFix"></image>
+			</navigator>
 			<view class="searchnav_container">
 				<!-- 搜索框样式p317 -->
 				<view class="search_cont">

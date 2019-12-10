@@ -31,4 +31,41 @@
 </script>
 
 <style>
+	//忘记密码页面样式
+		.forget_container{
+			width: 100%;
+			.f_input{
+				border-bottom: #000 1px solid;
+				overflow: hidden;
+				padding: 2%;
+				height: 70upx;
+				.f_input_img{
+					width: 50upx;
+					height: 50upx;
+					float: left;
+					margin:10upx 0 10upx 2%;
+				}
+				.forget_input{
+					display: inline-block;
+					height: 50upx;
+					width: 50%;
+					margin: 10upx 0 15upx 50upx;
+				}
+				.verificationcode_button{
+					display: inline-block;
+					float: right;
+					width: 30%;
+					font-size: 30upx;
+					border-radius: 50upx;
+					background-color: $button-color;
+					
+				}
+				
+			}
+			.forget_complete{
+				width: 550upx;
+				margin-top: 80upx;
+				background-color: $button-color!important;
+			}
+		}
 </style>

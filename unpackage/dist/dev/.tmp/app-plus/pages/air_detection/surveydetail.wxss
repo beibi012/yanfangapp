@@ -1,0 +1,62 @@
+
+.side{
+	width: 96%!important;
+	margin: 0 2%!important;
+}
+.options{
+	position: fixed;
+	top: 0;
+	width: 750rpx;
+	height: 150rpx;
+	background-color: #fff;
+	z-index: 200;
+}
+.options_container{
+	display: inline-block;
+	width: 600rpx;
+	height: 120rpx;
+	margin: 15rpx 75rpx;
+}
+.option{
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+	font-size: 35rpx;
+	text-align: center;
+	line-height: 120rpx;
+	background-color: #ccc;
+	color: #fff;
+}
+.option_color{
+	background-color: #00B4FF !important;
+}
+.hr{
+	display: inline-block;
+	width: 110rpx;
+	height: 20rpx;
+	background-color: #ccc;
+}
+.next{
+	background-color: #00B4FF !important;
+	width: 75%;
+	margin-bottom: 5%;
+}
+.addtype{
+	display: block;
+	background-color: #00B4FF!important;
+	font-size: 30rpx;
+	width: 180rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	float: right;
+	margin-right: 5%;
+	margin-top: 18rpx;
+	color: #fff;
+}
+.submit{
+	width: 75%;
+	background-color: #00B4FF;
+	margin-bottom: 5%;
+}
+
