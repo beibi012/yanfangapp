@@ -9,9 +9,9 @@
 		},
 		globalData: {  
 			navtop_headportrait:"../../static/166.jpg",
-			ctx:"http://192.168.0.18:8086",
+			// ctx:"http://192.168.0.18:8086",
 			// ctx:"http://192.168.0.110:8080",
-			// ctx:"http://www.elab123.com/inspectionroom"
+			ctx:"http://www.elab123.com/inspectionroom"
 		        },
 		onLaunch: function() {
 			console.log(this)
